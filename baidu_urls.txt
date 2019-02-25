@@ -1,0 +1,6 @@
+http://blog.wayneshao.com/Consul-服务治理发现.html
+http://blog.wayneshao.com/如何修改-.NET-Core.html
+http://blog.wayneshao.com/两种软件开发模式：瀑布与敏捷.html
+http://blog.wayneshao.com/最小可行化产品MVP.html
+http://blog.wayneshao.com/Selenium-PhantomJS-巧妙过渡到-Firefox-Chrome.html
+http://blog.wayneshao.com/Net-Core-2-0-EFCore-MySQL-System-TypeLoadException-occurred-问题解决.html
