@@ -1,6 +1,6 @@
-http://blog.wayneshao.com/Consul-服务治理发现.html
-http://blog.wayneshao.com/如何修改-.NET-Core.html
-http://blog.wayneshao.com/两种软件开发模式：瀑布与敏捷.html
-http://blog.wayneshao.com/最小可行化产品MVP.html
-http://blog.wayneshao.com/Selenium-PhantomJS-巧妙过渡到-Firefox-Chrome.html
-http://blog.wayneshao.com/Net-Core-2-0-EFCore-MySQL-System-TypeLoadException-occurred-问题解决.html
+https://blog.wayneshao.com/使用不安全代码修改-String.Empty-的值.html
+https://blog.wayneshao.com/记一次失败的安卓逆向之旅.html
+https://blog.wayneshao.com/bash脚本错误-Syntax-error-else-unexpected-(expecting-then-)解决.html
+https://blog.wayneshao.com/x微服务学习xPolly：熔断降级组件.html
+https://blog.wayneshao.com/Consul-服务治理发现.html
+https://blog.wayneshao.com/如何修改-.NET-Core.html
