@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.wayneshao.com/"/>
-  <updated>2019-03-11T16:03:40.234Z</updated>
+  <updated>2019-03-11T16:03:40.000Z</updated>
   <id>https://blog.wayneshao.com/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="https://blog.wayneshao.com/%E4%BD%BF%E7%94%A8%E4%B8%8D%E5%AE%89%E5%85%A8%E4%BB%A3%E7%A0%81%E4%BF%AE%E6%94%B9-String.Empty-%E7%9A%84%E5%80%BC.html"/>
     <id>https://blog.wayneshao.com/使用不安全代码修改-String.Empty-的值.html</id>
     <published>2019-03-11T12:42:10.000Z</published>
-    <updated>2019-03-11T16:03:40.234Z</updated>
+    <updated>2019-03-11T16:03:40.000Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Mar 12 2019 22:39:24 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;前几天的时候看到了 &lt;a href=&quot;https://mvp.microsoft.com/en-us/PublicProfile/5003225&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;吕毅&lt;/a&gt; 大佬写的博客&lt;br&gt;&lt;a href=&quot;https://blog.walterlv.com/post/why-string-empty-is-a-readonly-field-but-not-a-constant.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;为什么 C# 的 string.Empty 是一个静态只读字段，而不是一个常量呢？&lt;/a&gt;，&lt;br&gt;非常感谢吕毅大佬的分享，在文章的末尾大佬提到了通过反射修改 String.Empty 的可能，于是我打算自己实践一下。&lt;br&gt;&lt;img src=&quot;http://qiniucdn.wayneshao.com/%E4%BD%BF%E7%94%A8%E4%B8%8D%E5%AE%89%E5%85%A8%E4%BB%A3%E7%A0%81%E4%BF%AE%E6%94%B9-String.Empty-%E7%9A%84%E5%80%BC/20190311084845629.png&quot; alt&gt;&lt;/p&gt;
+      &lt;!-- build time:Wed Mar 13 2019 16:54:23 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;前几天的时候看到了 &lt;a href=&quot;https://mvp.microsoft.com/en-us/PublicProfile/5003225&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;吕毅&lt;/a&gt; 大佬写的博客&lt;br&gt;&lt;a href=&quot;https://blog.walterlv.com/post/why-string-empty-is-a-readonly-field-but-not-a-constant.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;为什么 C# 的 string.Empty 是一个静态只读字段，而不是一个常量呢？&lt;/a&gt;，&lt;br&gt;非常感谢吕毅大佬的分享，在文章的末尾大佬提到了通过反射修改 String.Empty 的可能，于是我打算自己实践一下。&lt;br&gt;&lt;img src=&quot;http://qiniucdn.wayneshao.com/使用不安全代码修改-String.Empty-的值/20190311084845629.png&quot; alt&gt;&lt;/p&gt;
     
     </summary>
     
@@ -47,11 +47,11 @@
     <link href="https://blog.wayneshao.com/%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%AE%89%E5%8D%93%E9%80%86%E5%90%91%E4%B9%8B%E6%97%85.html"/>
     <id>https://blog.wayneshao.com/记一次失败的安卓逆向之旅.html</id>
     <published>2019-03-09T15:43:02.000Z</published>
-    <updated>2019-03-12T12:01:28.000Z</updated>
+    <updated>2019-03-12T12:01:28.241Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Mar 12 2019 22:39:24 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;记录为期一天的失败破解之旅．&lt;/p&gt;&lt;h2 id=&quot;缘起&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#缘起&quot;&gt;&lt;/a&gt; 缘起&lt;/h2&gt;&lt;p&gt;最近突然觉得手头的 Ninebot 平衡车速度是确实有几分慢了，想起了刚买到手的时候似乎在论坛看到过一篇帖子是讲如何破解速度上限的，拼着几丝印象找到了当时的帖子：&lt;a href=&quot;http://bbs.ninebot.cn/thread-197301-1-1.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;传送门&lt;/a&gt;&lt;/p&gt;
+      &lt;!-- build time:Wed Mar 13 2019 16:54:23 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;记录为期一天的失败破解之旅．&lt;/p&gt;&lt;h2 id=&quot;缘起&quot;&gt;&lt;a href=&quot;#缘起&quot; class=&quot;headerlink&quot; title=&quot;缘起&quot;&gt;&lt;/a&gt;缘起&lt;/h2&gt;&lt;p&gt;最近突然觉得手头的 Ninebot 平衡车速度是确实有几分慢了，想起了刚买到手的时候似乎在论坛看到过一篇帖子是讲如何破解速度上限的，拼着几丝印象找到了当时的帖子：&lt;a href=&quot;http://bbs.ninebot.cn/thread-197301-1-1.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;传送门&lt;/a&gt;&lt;br&gt;
     
     </summary>
     
@@ -77,7 +77,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Mar 12 2019 22:39:24 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;今天在使用 bash 脚本发布程序时，发生了这样的错误&lt;/p&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;xxx.sh: Syntax error: &lt;span class=&quot;string&quot;&gt;&quot;else&quot;&lt;/span&gt; unexpected (expecting &lt;span class=&quot;string&quot;&gt;&quot;then&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;到处搜索资料尝试无果之后想到会不会是编码问题导致，&lt;br&gt;dos2unix 处理后测试果然可以&lt;/p&gt;
+      &lt;!-- build time:Wed Mar 13 2019 16:54:23 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;今天在使用 bash 脚本发布程序时，发生了这样的错误&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;xxx.sh: Syntax error: &lt;span class=&quot;string&quot;&gt;&quot;else&quot;&lt;/span&gt; unexpected (expecting &lt;span class=&quot;string&quot;&gt;&quot;then&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;到处搜索资料尝试无果之后想到会不会是编码问题导致，&lt;br&gt;dos2unix 处理后测试果然可以&lt;br&gt;
     
     </summary>
     
@@ -101,7 +101,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Mar 12 2019 22:39:24 GMT+0800 (GMT+08:00) --&gt;&lt;h2 id=&quot;何为熔断降级&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#何为熔断降级&quot;&gt;&lt;/a&gt; 何为熔断降级&lt;/h2&gt;&lt;p&gt;“熔断器如同电力过载保护器。它可以实现快速失败，如果它在一段时间内侦测到许多类似的错误，会强迫其以后的多个调用快速失败，不再访问远程服务器，从而防止应用程序不断地尝试执行可能会失败的操作，使得应用程序继续执行而不用等待修正错误，或者浪费时间去等到长时间的超时产生。”&lt;br&gt;降级的目的是当某个服务提供者发生故障的时候，向调用方返回一个替代响应。&lt;br&gt;简单一句话概括，降级就是在调用的下游服务A出现问题（常见超时），提供PLAN-B，返回的效果可能没有服务A好，但是聊胜于无。而熔断器的存在就是要保障何时走到降级方法，何时恢复，以什么样的策略恢复。&lt;/p&gt;
+      &lt;!-- build time:Wed Mar 13 2019 16:54:23 GMT+0800 (GMT+08:00) --&gt;&lt;h2 id=&quot;何为熔断降级&quot;&gt;&lt;a href=&quot;#何为熔断降级&quot; class=&quot;headerlink&quot; title=&quot;何为熔断降级&quot;&gt;&lt;/a&gt;何为熔断降级&lt;/h2&gt;&lt;p&gt;“熔断器如同电力过载保护器。它可以实现快速失败，如果它在一段时间内侦测到许多类似的错误，会强迫其以后的多个调用快速失败，不再访问远程服务器，从而防止应用程序不断地尝试执行可能会失败的操作，使得应用程序继续执行而不用等待修正错误，或者浪费时间去等到长时间的超时产生。”&lt;br&gt;降级的目的是当某个服务提供者发生故障的时候，向调用方返回一个替代响应。&lt;br&gt;简单一句话概括，降级就是在调用的下游服务A出现问题（常见超时），提供PLAN-B，返回的效果可能没有服务A好，但是聊胜于无。而熔断器的存在就是要保障何时走到降级方法，何时恢复，以什么样的策略恢复。&lt;/p&gt;
     
     </summary>
     
@@ -131,7 +131,7 @@
       
         
         
-          &lt;!-- build time:Tue Mar 12 2019 22:39:24 GMT+0800 (GMT+08:00) --&gt;&lt;h2 id=&quot;consul-服务治理发现&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;
+          &lt;!-- build time:Wed Mar 13 2019 16:54:23 GMT+0800 (GMT+08:00) --&gt;&lt;h2 id=&quot;Consul-服务治理发现&quot;&gt;&lt;a href=&quot;#Consul-服务治理发现&quot; class=&quot;headerlink&quot;
         
       
     
@@ -159,7 +159,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Mar 12 2019 22:39:24 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;今天在尝试 Consul 的时候需要动态改变 .NET Core Kestrel 下的端口以方便测试，故而查了查，发现原来除了最常使用的 UseUrls 之外，还有许多其他方法，故而总结一下。&lt;/p&gt;
+      &lt;!-- build time:Wed Mar 13 2019 16:54:23 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;今天在尝试 Consul 的时候需要动态改变 .NET Core Kestrel 下的端口以方便测试，故而查了查，发现原来除了最常使用的 UseUrls 之外，还有许多其他方法，故而总结一下。&lt;br&gt;
     
     </summary>
     
@@ -185,7 +185,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Mar 12 2019 22:39:24 GMT+0800 (GMT+08:00) --&gt;&lt;h2 id=&quot;瀑布开发模式&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#瀑布开发模式&quot;&gt;&lt;/a&gt; 瀑布开发模式&lt;/h2&gt;&lt;p&gt;瀑布模式是一种前几年在国内各大项目中比较流行的开发模式，特点是分阶段进行，每个阶段都很清晰，只有阶段对应的人员才会参与当前阶段的开发，每个阶段必须有产出物才可以开始下个阶段，整个周期较长，早期需求分析和设计的时间消耗较多，整个流程会尽量避免需求的改动，更适用于B端产品的开发。&lt;br&gt;&lt;img src=&quot;http://qiniucdn.wayneshao.com/%E4%B8%A4%E7%A7%8D%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E6%A8%A1%E5%BC%8F%EF%BC%9A%E7%80%91%E5%B8%83%E4%B8%8E%E6%95%8F%E6%8D%B7/20181101031030742.png&quot; alt&gt;&lt;/p&gt;
+      &lt;!-- build time:Wed Mar 13 2019 16:54:23 GMT+0800 (GMT+08:00) --&gt;&lt;h2 id=&quot;瀑布开发模式&quot;&gt;&lt;a href=&quot;#瀑布开发模式&quot; class=&quot;headerlink&quot; title=&quot;瀑布开发模式&quot;&gt;&lt;/a&gt;瀑布开发模式&lt;/h2&gt;&lt;p&gt;瀑布模式是一种前几年在国内各大项目中比较流行的开发模式，特点是分阶段进行，每个阶段都很清晰，只有阶段对应的人员才会参与当前阶段的开发，每个阶段必须有产出物才可以开始下个阶段，整个周期较长，早期需求分析和设计的时间消耗较多，整个流程会尽量避免需求的改动，更适用于B端产品的开发。&lt;br&gt;&lt;img src=&quot;http://qiniucdn.wayneshao.com/两种软件开发模式：瀑布与敏捷/20181101031030742.png&quot; alt&gt;&lt;br&gt;
     
     </summary>
     
@@ -209,7 +209,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Mar 12 2019 22:39:24 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;最简可行产品&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#最简可行产品&quot;&gt;&lt;/a&gt; 最简可行产品：&lt;/h1&gt;&lt;h2 id=&quot;概念&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#概念&quot;&gt;&lt;/a&gt; 概念&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://zh.wikipedia.org/zh-cn/%E6%9C%80%E7%B0%A1%E5%8F%AF%E8%A1%8C%E7%94%A2%E5%93%81&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;最简可行产品&lt;/strong&gt;&lt;/a&gt;（&lt;em&gt;&lt;strong&gt;minimum viable product&lt;/strong&gt;&lt;/em&gt;，简称&lt;strong&gt;MVP&lt;/strong&gt;）是&lt;strong&gt;新产品开发&lt;/strong&gt;中的名词，是指有部分机能，恰好可以让设计者表达其&lt;strong&gt;核心设计概念&lt;/strong&gt;的产品。&lt;br&gt;设计者可以进行&lt;strong&gt;验证式学习&lt;/strong&gt;，根据使用者的&lt;strong&gt;回馈&lt;/strong&gt;，进一步&lt;strong&gt;了解使用情形&lt;/strong&gt;，并且&lt;strong&gt;继续开发&lt;/strong&gt;此产品 。&lt;br&gt;由最简可行产品来搜集相关想法常常会比开发有更多机能的产品要&lt;strong&gt;便宜&lt;/strong&gt;。开发更多机能产品的的费用较高，也会有产品失败的风险（例如产品基本假设有误的情形）。&lt;br&gt;最简可行产品一词是由&lt;strong&gt;法兰克·罗宾生&lt;/strong&gt;（&lt;em&gt;&lt;strong&gt;Frank Robinson&lt;/strong&gt;&lt;/em&gt;）创建，因&lt;strong&gt;史蒂夫·布兰克&lt;/strong&gt;及&lt;strong&gt;埃里克·莱斯&lt;/strong&gt;的使用而流行。&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;“要贩售愿景及提供最简可行产品给有远见的人，不是给所有的人。”&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;——&lt;strong&gt;史蒂夫·布兰克&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+      &lt;!-- build time:Wed Mar 13 2019 16:54:23 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;最简可行产品：&quot;&gt;&lt;a href=&quot;#最简可行产品：&quot; class=&quot;headerlink&quot; title=&quot;最简可行产品：&quot;&gt;&lt;/a&gt;最简可行产品：&lt;/h1&gt;&lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://zh.wikipedia.org/zh-cn/%E6%9C%80%E7%B0%A1%E5%8F%AF%E8%A1%8C%E7%94%A2%E5%93%81&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;最简可行产品&lt;/strong&gt;&lt;/a&gt;（&lt;strong&gt;&lt;em&gt;minimum viable product&lt;/em&gt;&lt;/strong&gt;，简称&lt;strong&gt;MVP&lt;/strong&gt;）是&lt;strong&gt;新产品开发&lt;/strong&gt;中的名词，是指有部分机能，恰好可以让设计者表达其&lt;strong&gt;核心设计概念&lt;/strong&gt;的产品。&lt;br&gt;设计者可以进行&lt;strong&gt;验证式学习&lt;/strong&gt;，根据使用者的&lt;strong&gt;回馈&lt;/strong&gt;，进一步&lt;strong&gt;了解使用情形&lt;/strong&gt;，并且&lt;strong&gt;继续开发&lt;/strong&gt;此产品 。&lt;br&gt;由最简可行产品来搜集相关想法常常会比开发有更多机能的产品要&lt;strong&gt;便宜&lt;/strong&gt;。开发更多机能产品的的费用较高，也会有产品失败的风险（例如产品基本假设有误的情形）。&lt;br&gt;最简可行产品一词是由&lt;strong&gt;法兰克·罗宾生&lt;/strong&gt;（&lt;strong&gt;&lt;em&gt;Frank Robinson&lt;/em&gt;&lt;/strong&gt;）创建，因&lt;strong&gt;史蒂夫·布兰克&lt;/strong&gt;及&lt;strong&gt;埃里克·莱斯&lt;/strong&gt;的使用而流行。&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;“要贩售愿景及提供最简可行产品给有远见的人，不是给所有的人。”&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;——&lt;strong&gt;史蒂夫·布兰克&lt;/strong&gt;&lt;br&gt;
     
     </summary>
     
@@ -235,7 +235,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Mar 12 2019 22:39:24 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;phantomjs-obsolete&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#phantomjs-obsolete&quot;&gt;&lt;/a&gt; PhantomJS Obsolete&lt;/h1&gt;&lt;h2 id=&quot;origin&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#origin&quot;&gt;&lt;/a&gt; Origin&lt;/h2&gt;&lt;p&gt;前段时间因为一些个人爱好，想要对某网站的数据进行整站采集，其中需要对某些页面的一些区块进行截图采集，整个采集任务中还涉及一些验证码识别之类的工作。学艺不精，我当前掌握的 Scrapy 知识很难完成这样一个爬虫，就使用了 Selenium + PhantomJS 制作了一个模拟浏览器访问来爬取数据的小爬虫，完成了整套抓取任务。&lt;br&gt;&lt;img src=&quot;http://qiniucdn.wayneshao.com/20180711045204672.gif&quot; alt&gt;&lt;/p&gt;
+      &lt;!-- build time:Wed Mar 13 2019 16:54:23 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;PhantomJS-Obsolete&quot;&gt;&lt;a href=&quot;#PhantomJS-Obsolete&quot; class=&quot;headerlink&quot; title=&quot;PhantomJS Obsolete&quot;&gt;&lt;/a&gt;PhantomJS Obsolete&lt;/h1&gt;&lt;h2 id=&quot;Origin&quot;&gt;&lt;a href=&quot;#Origin&quot; class=&quot;headerlink&quot; title=&quot;Origin&quot;&gt;&lt;/a&gt;Origin&lt;/h2&gt;&lt;p&gt;前段时间因为一些个人爱好，想要对某网站的数据进行整站采集，其中需要对某些页面的一些区块进行截图采集，整个采集任务中还涉及一些验证码识别之类的工作。学艺不精，我当前掌握的 Scrapy 知识很难完成这样一个爬虫，就使用了 Selenium + PhantomJS 制作了一个模拟浏览器访问来爬取数据的小爬虫，完成了整套抓取任务。&lt;br&gt;&lt;img src=&quot;http://qiniucdn.wayneshao.com/20180711045204672.gif&quot; alt&gt;&lt;br&gt;
     
     </summary>
     
@@ -257,11 +257,11 @@
     <link href="https://blog.wayneshao.com/Net-Core-2-0-EFCore-MySQL-System-TypeLoadException-occurred-%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3.html"/>
     <id>https://blog.wayneshao.com/Net-Core-2-0-EFCore-MySQL-System-TypeLoadException-occurred-问题解决.html</id>
     <published>2018-04-09T11:02:00.000Z</published>
-    <updated>2019-03-12T11:58:37.000Z</updated>
+    <updated>2019-03-12T11:58:37.278Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Mar 12 2019 22:39:24 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;今天在使用 EFCore + MySQL 搭一个小Demo的时候,在 Migration 环节遇到了这样一个问题。&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;System.TypeLoadException occurred&lt;br&gt;HResult=0x80131522&lt;br&gt;Message=Method ‘Clone’ in type ‘MySQL.Data.EntityFrameworkCore.Infraestructure.Internal.MySQLOptionsExtension’ from assembly ‘MySql.Data.EntityFrameworkCore, Version=8.0.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d’ does not have an implementation.&lt;/p&gt;&lt;/blockquote&gt;
+      &lt;!-- build time:Wed Mar 13 2019 16:54:23 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;今天在使用 EFCore + MySQL 搭一个小Demo的时候,在 Migration 环节遇到了这样一个问题。&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;System.TypeLoadException occurred&lt;br&gt;HResult=0x80131522&lt;br&gt;Message=Method ‘Clone’ in type ‘MySQL.Data.EntityFrameworkCore.Infraestructure.Internal.MySQLOptionsExtension’ from assembly ‘MySql.Data.EntityFrameworkCore, Version=8.0.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d’ does not have an implementation.&lt;/p&gt;&lt;/blockquote&gt;
     
     </summary>
     
@@ -279,11 +279,11 @@
     <link href="https://blog.wayneshao.com/%E5%85%B3%E4%BA%8E20180313.html"/>
     <id>https://blog.wayneshao.com/关于20180313.html</id>
     <published>2018-03-11T14:46:44.000Z</published>
-    <updated>2019-03-12T12:00:16.000Z</updated>
+    <updated>2019-03-12T12:00:16.351Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Mar 12 2019 22:39:24 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;关于2018年3月9日面试某公司网站后台开发工程师的一些总结。&lt;/p&gt;
+      &lt;!-- build time:Wed Mar 13 2019 16:54:23 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;关于2018年3月9日面试某公司网站后台开发工程师的一些总结。&lt;br&gt;
     
     </summary>
     
@@ -303,11 +303,11 @@
     <link href="https://blog.wayneshao.com/x51NOD%E5%88%B7%E9%A2%98x1182-%E5%AE%8C%E7%BE%8E%E5%AD%97%E7%AC%A6%E4%B8%B2.html"/>
     <id>https://blog.wayneshao.com/x51NOD刷题x1182-完美字符串.html</id>
     <published>2018-03-08T12:12:46.000Z</published>
-    <updated>2019-03-12T11:53:42.000Z</updated>
+    <updated>2019-03-12T11:53:42.575Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Mar 12 2019 22:39:24 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;a href=&quot;http://www.51nod.com/onlineJudge/questionCode.html#!problemId=1182&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;**1182 完美字符串 **&lt;/a&gt;&lt;br&gt;题目来源： Facebook Hacker Cup选拔&lt;br&gt;基准时间限制：1 秒 空间限制：131072 KB 分值: 5 难度：1级算法题&lt;/p&gt;&lt;p&gt;约翰认为字符串的完美度等于它里面所有字母的完美度之和。每个字母的完美度可以由你来分配，不同字母的完美度不同，分别对应一个1-26之间的整数。&lt;br&gt;约翰不在乎字母大小写。（也就是说字母F和f）的完美度相同。给定一个字符串，输出它的最大可能的完美度。例如：dad，你可以将26分配给d，25分配给a，这样整个字符串完美度为77。&lt;/p&gt;
+      &lt;!-- build time:Wed Mar 13 2019 16:54:23 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;a href=&quot;http://www.51nod.com/onlineJudge/questionCode.html#!problemId=1182&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;1182 完美字符串&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;题目来源： Facebook Hacker Cup选拔&lt;br&gt;基准时间限制：1 秒 空间限制：131072 KB 分值: 5 难度：1级算法题&lt;/p&gt;&lt;p&gt;约翰认为字符串的完美度等于它里面所有字母的完美度之和。每个字母的完美度可以由你来分配，不同字母的完美度不同，分别对应一个1-26之间的整数。&lt;br&gt;约翰不在乎字母大小写。（也就是说字母F和f）的完美度相同。给定一个字符串，输出它的最大可能的完美度。例如：dad，你可以将26分配给d，25分配给a，这样整个字符串完美度为77。&lt;/p&gt;
     
     </summary>
     
@@ -327,11 +327,11 @@
     <link href="https://blog.wayneshao.com/Cx%E8%B0%83%E7%94%A8%E8%BF%85%E9%9B%B7%E3%80%81IDM%E4%B8%8B%E8%BD%BD%E6%96%B9%E6%B3%95%E6%B1%87%E6%80%BB.html"/>
     <id>https://blog.wayneshao.com/Cx调用迅雷、IDM下载方法汇总.html</id>
     <published>2018-03-07T01:36:14.000Z</published>
-    <updated>2019-03-12T11:57:47.000Z</updated>
+    <updated>2019-03-12T11:57:47.243Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Mar 12 2019 22:39:24 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;在开发桌面软件时常常有下载文件的需求，小文件、少文件可以自己做相应的网络请求，但是当文件的大小或者数量达到一定规模时，自己封装网络请求就不是很划算的事情了，这时我们可以采取调用迅雷或者IDM、aria2c之类的专业下载软件来进行下载。&lt;/p&gt;
+      &lt;!-- build time:Wed Mar 13 2019 16:54:23 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;在开发桌面软件时常常有下载文件的需求，小文件、少文件可以自己做相应的网络请求，但是当文件的大小或者数量达到一定规模时，自己封装网络请求就不是很划算的事情了，这时我们可以采取调用迅雷或者IDM、aria2c之类的专业下载软件来进行下载。&lt;br&gt;
     
     </summary>
     
@@ -359,7 +359,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Mar 12 2019 22:39:24 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;a href=&quot;http://Asp.Net&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Asp.Net&lt;/a&gt; Core 应用如果需要托管在IIS下，需要为IIS&lt;a href=&quot;https://www.microsoft.com/net/download/all&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;下载&lt;/a&gt;安装 AspNetCoreModule 模块。&lt;/p&gt;
+      &lt;!-- build time:Wed Mar 13 2019 16:54:23 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;Asp.Net Core 应用如果需要托管在IIS下，需要为IIS&lt;a href=&quot;https://www.microsoft.com/net/download/all&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;下载&lt;/a&gt;安装 AspNetCoreModule 模块。&lt;/p&gt;
     
     </summary>
     
@@ -377,11 +377,11 @@
     <link href="https://blog.wayneshao.com/1283-%E6%9C%80%E5%B0%8F%E5%91%A8%E9%95%BF.html"/>
     <id>https://blog.wayneshao.com/1283-最小周长.html</id>
     <published>2018-03-04T15:22:22.000Z</published>
-    <updated>2019-03-12T11:56:35.000Z</updated>
+    <updated>2019-03-12T11:56:35.228Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Mar 12 2019 22:39:24 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;a href=&quot;http://www.51nod.com/onlineJudge/questionCode.html#!problemId=1283&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;1283 最小周长&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;题目来源： Codility&lt;br&gt;基准时间限制：1 秒 空间限制：131072 KB 分值: 5 难度：1级算法题&lt;br&gt;一个矩形的面积为S，已知该矩形的边长都是整数，求所有满足条件的矩形中，周长的最小值。例如：S = 24，那么有{1 24} {2 12} {3 8} {4 6}这4种矩形，其中{4 6}的周长最小，为20。&lt;/p&gt;
+      &lt;!-- build time:Wed Mar 13 2019 16:54:23 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;a href=&quot;http://www.51nod.com/onlineJudge/questionCode.html#!problemId=1283&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;1283 最小周长&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;题目来源： Codility&lt;br&gt;基准时间限制：1 秒 空间限制：131072 KB 分值: 5 难度：1级算法题&lt;br&gt;一个矩形的面积为S，已知该矩形的边长都是整数，求所有满足条件的矩形中，周长的最小值。例如：S = 24，那么有{1 24} {2 12} {3 8} {4 6}这4种矩形，其中{4 6}的周长最小，为20。&lt;br&gt;
     
     </summary>
     
@@ -401,11 +401,11 @@
     <link href="https://blog.wayneshao.com/%E8%AE%AF%E9%A3%9E%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%ABDemo.html"/>
     <id>https://blog.wayneshao.com/讯飞语音识别Demo.html</id>
     <published>2018-03-02T03:35:00.000Z</published>
-    <updated>2019-03-12T12:04:19.000Z</updated>
+    <updated>2019-03-12T12:04:19.899Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Mar 12 2019 22:39:24 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;a href=&quot;http://www.xfyun.cn/services/voicedictation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;讯飞语音识别&lt;/a&gt;官方号称具有以下六个优势：&lt;/p&gt;&lt;ol&gt;&lt;li&gt;超过95%的准确率&lt;/li&gt;&lt;li&gt;支持多种语种和方言&lt;/li&gt;&lt;li&gt;方便快捷的信息沟通&lt;/li&gt;&lt;li&gt;个性的语音识别&lt;/li&gt;&lt;li&gt;中文标点智能预测&lt;/li&gt;&lt;li&gt;支持垂直领域和应用级听写&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;img src=&quot;http://qiniucdn.wayneshao.com/20180302113535116/20180302114420073.png&quot; alt&gt;&lt;/p&gt;
+      &lt;!-- build time:Wed Mar 13 2019 16:54:23 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;a href=&quot;http://www.xfyun.cn/services/voicedictation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;讯飞语音识别&lt;/a&gt;官方号称具有以下六个优势：&lt;/p&gt;&lt;ol&gt;&lt;li&gt;超过95%的准确率&lt;/li&gt;&lt;li&gt;支持多种语种和方言&lt;/li&gt;&lt;li&gt;方便快捷的信息沟通&lt;/li&gt;&lt;li&gt;个性的语音识别&lt;/li&gt;&lt;li&gt;中文标点智能预测&lt;/li&gt;&lt;li&gt;支持垂直领域和应用级听写&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;img src=&quot;http://qiniucdn.wayneshao.com/20180302113535116/20180302114420073.png&quot; alt&gt;&lt;br&gt;
     
     </summary>
     
@@ -427,11 +427,11 @@
     <link href="https://blog.wayneshao.com/Prim%E7%AE%97%E6%B3%95.html"/>
     <id>https://blog.wayneshao.com/Prim算法.html</id>
     <published>2018-02-28T13:16:20.000Z</published>
-    <updated>2019-03-12T11:58:48.000Z</updated>
+    <updated>2019-03-12T11:58:48.832Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Mar 12 2019 22:39:24 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;最小生成树的Prim算法也是贪心算法的一大经典应用。Prim算法的特点是时刻维护一棵树，算法不断加边，加的过程始终是一棵树。&lt;/p&gt;
+      &lt;!-- build time:Wed Mar 13 2019 16:54:23 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;最小生成树的Prim算法也是贪心算法的一大经典应用。Prim算法的特点是时刻维护一棵树，算法不断加边，加的过程始终是一棵树。&lt;br&gt;
     
     </summary>
     
@@ -455,11 +455,11 @@
     <link href="https://blog.wayneshao.com/x51NOD%E5%88%B7%E9%A2%98x1284-2-3-5-7%E7%9A%84%E5%80%8D%E6%95%B0.html"/>
     <id>https://blog.wayneshao.com/x51NOD刷题x1284-2-3-5-7的倍数.html</id>
     <published>2018-02-27T01:30:32.000Z</published>
-    <updated>2019-03-12T11:53:42.000Z</updated>
+    <updated>2019-03-12T11:53:42.522Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Mar 12 2019 22:39:24 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;a href=&quot;http://www.51nod.com/onlineJudge/questionCode.html#!problemId=1284&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;**1284 2 3 5 7的倍数 **&lt;/a&gt;&lt;br&gt;基准时间限制：1 秒 空间限制：131072 KB 分值: 5 难度：1级算法题&lt;/p&gt;&lt;p&gt;给出一个数N，求1至N中，有多少个数不是2 3 5 7的倍数。 例如N = 10，只有1不是2 3 5 7的倍数。&lt;/p&gt;
+      &lt;!-- build time:Wed Mar 13 2019 16:54:23 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;a href=&quot;http://www.51nod.com/onlineJudge/questionCode.html#!problemId=1284&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;1284 2 3 5 7的倍数&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;基准时间限制：1 秒 空间限制：131072 KB 分值: 5 难度：1级算法题&lt;/p&gt;&lt;p&gt;给出一个数N，求1至N中，有多少个数不是2 3 5 7的倍数。 例如N = 10，只有1不是2 3 5 7的倍数。&lt;br&gt;
     
     </summary>
     
@@ -479,11 +479,11 @@
     <link href="https://blog.wayneshao.com/x51NOD%E5%88%B7%E9%A2%98x1289-%E5%A4%A7%E9%B1%BC%E5%90%83%E5%B0%8F%E9%B1%BC.html"/>
     <id>https://blog.wayneshao.com/x51NOD刷题x1289-大鱼吃小鱼.html</id>
     <published>2018-02-26T17:24:40.000Z</published>
-    <updated>2019-03-12T11:53:42.000Z</updated>
+    <updated>2019-03-12T11:53:42.522Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Mar 12 2019 22:39:24 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;a href=&quot;http://www.51nod.com/onlineJudge/questionCode.html#!problemId=1289&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;**1289 大鱼吃小鱼 **&lt;/a&gt;&lt;br&gt;题目来源： &lt;a href=&quot;https://codility.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Codility&lt;/a&gt;&lt;br&gt;基准时间限制：1 秒 空间限制：131072 KB 分值: 5 难度：1级算法题&lt;br&gt;有N条鱼每条鱼的位置及大小均不同，他们沿着X轴游动，有的向左，有的向右。游动的速度是一样的，两条鱼相遇大鱼会吃掉小鱼。从左到右给出每条鱼的大小和游动的方向（0表示向左，1表示向右）。问足够长的时间之后，能剩下多少条鱼？&lt;/p&gt;
+      &lt;!-- build time:Wed Mar 13 2019 16:54:23 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;a href=&quot;http://www.51nod.com/onlineJudge/questionCode.html#!problemId=1289&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;1289 大鱼吃小鱼&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;题目来源： &lt;a href=&quot;https://codility.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Codility&lt;/a&gt;&lt;br&gt;基准时间限制：1 秒 空间限制：131072 KB 分值: 5 难度：1级算法题&lt;br&gt;有N条鱼每条鱼的位置及大小均不同，他们沿着X轴游动，有的向左，有的向右。游动的速度是一样的，两条鱼相遇大鱼会吃掉小鱼。从左到右给出每条鱼的大小和游动的方向（0表示向左，1表示向右）。问足够长的时间之后，能剩下多少条鱼？&lt;br&gt;
     
     </summary>
     
@@ -503,11 +503,11 @@
     <link href="https://blog.wayneshao.com/x51NOD%E5%88%B7%E9%A2%98x1305-Pairwise-Sum-and-Divide.html"/>
     <id>https://blog.wayneshao.com/x51NOD刷题x1305-Pairwise-Sum-and-Divide.html</id>
     <published>2018-02-24T09:25:50.000Z</published>
-    <updated>2019-03-12T11:53:42.000Z</updated>
+    <updated>2019-03-12T11:53:42.523Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Mar 12 2019 22:39:24 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;a href=&quot;http://www.51nod.com/onlineJudge/questionCode.html#!problemId=1305&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;**1305 Pairwise Sum and Divide **&lt;/a&gt;&lt;/p&gt;&lt;p&gt;题目来源： HackerRank&lt;br&gt;基准时间限制：1 秒 空间限制：131072 KB 分值: 5 难度：1级算法题&lt;/p&gt;&lt;p&gt;有这样一段程序，fun会对整数数组A进行求值，其中Floor表示向下取整：&lt;/p&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;fun(A)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    sum = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; to A.length&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; j = i+&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; to A.length&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            sum = sum + Floor((A[i]+A[j])/(A[i]*A[j])) &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; sum&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;给出数组A，由你来计算fun(A)的结果。例如：A = {1, 4, 1}，fun(A) = [5/4] + [2/1] + [5/4] = 1 + 2 + 1 = 4。&lt;/p&gt;
+      &lt;!-- build time:Wed Mar 13 2019 16:54:23 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;a href=&quot;http://www.51nod.com/onlineJudge/questionCode.html#!problemId=1305&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;1305 Pairwise Sum and Divide&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;题目来源： HackerRank&lt;br&gt;基准时间限制：1 秒&amp;#8195;空间限制：131072 KB&amp;#8195;分值: 5&amp;#8195;难度：1级算法题&lt;/p&gt;&lt;p&gt;有这样一段程序，fun会对整数数组A进行求值，其中Floor表示向下取整：&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;fun(A)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    sum = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; to A.length&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; j = i+&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; to A.length&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            sum = sum + Floor((A[i]+A[j])/(A[i]*A[j])) &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; sum&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;给出数组A，由你来计算fun(A)的结果。例如：A = {1, 4, 1}，fun(A) = [5/4] + [2/1] + [5/4] = 1 + 2 + 1 = 4。&lt;br&gt;
     
     </summary>
     
