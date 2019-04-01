@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.wayneshao.com/"/>
-  <updated>2019-03-20T07:41:31.491Z</updated>
+  <updated>2019-03-30T15:13:03.015Z</updated>
   <id>https://blog.wayneshao.com/</id>
   
   <author>
@@ -17,19 +17,113 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>编写高质量C#程序的建议（6-10）</title>
+    <link href="https://blog.wayneshao.com/%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FCx%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%BB%BA%E8%AE%AE%EF%BC%886-10%EF%BC%89.html"/>
+    <id>https://blog.wayneshao.com/编写高质量Cx程序的建议（6-10）.html</id>
+    <published>2019-03-30T14:36:51.000Z</published>
+    <updated>2019-03-30T15:13:03.015Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Sat Mar 30 2019 23:13:58 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;a href=&quot;#%E5%BB%BA%E8%AE%AE%E5%85%AD%EF%BC%9A%E5%8C%BA%E5%88%AB-readonly-%E5%92%8C-const-%E7%9A%84%E5%8C%BA%E5%88%AB&quot;&gt;建议六：区别 readonly 和 const 的区别&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;#%E5%BB%BA%E8%AE%AE%E4%B8%83%EF%BC%9A%E5%B0%86-0-%E4%BD%9C%E4%B8%BA%E6%9E%9A%E4%B8%BE%E7%9A%84%E9%BB%98%E8%AE%A4%E5%80%BC&quot;&gt;建议七：将 0 作为枚举的默认值&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;#%E5%BB%BA%E8%AE%AE%E5%85%AB%EF%BC%9A%E9%81%BF%E5%85%8D%E7%BB%99%E6%9E%9A%E4%B8%BE%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%85%83%E7%B4%A0%E6%8F%90%E4%BE%9B%E6%98%BE%E5%BC%8F%E7%9A%84%E5%80%BC&quot;&gt;建议八：避免给枚举类型的元素提供显式的值&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;#%E5%BB%BA%E8%AE%AE%E4%B9%9D%EF%BC%9A%E4%B9%A0%E6%83%AF%E9%87%8D%E8%BD%BD%E8%BF%90%E7%AE%97%E7%AC%A6&quot;&gt;建议九：习惯重载运算符&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;#%E5%BB%BA%E8%AE%AE%E5%8D%81%EF%BC%9A%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E6%97%B6%E9%9C%80%E8%A6%81%E8%80%83%E8%99%91%E6%98%AF%E5%90%A6%E5%AE%9E%E7%8E%B0%E6%AF%94%E8%BE%83%E5%99%A8&quot;&gt;建议十：创建对象时需要考虑是否实现比较器&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="https://blog.wayneshao.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="C#" scheme="https://blog.wayneshao.com/tags/C/"/>
+    
+      <category term="高质量代码" scheme="https://blog.wayneshao.com/tags/%E9%AB%98%E8%B4%A8%E9%87%8F%E4%BB%A3%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ListBox 扩展方法-获取所有Item构成的集合</title>
+    <link href="https://blog.wayneshao.com/ListBox-%E6%89%A9%E5%B1%95%E6%96%B9%E6%B3%95-%E8%8E%B7%E5%8F%96%E6%89%80%E6%9C%89Item%E6%9E%84%E6%88%90%E7%9A%84%E9%9B%86%E5%90%88.html"/>
+    <id>https://blog.wayneshao.com/ListBox-扩展方法-获取所有Item构成的集合.html</id>
+    <published>2019-03-29T15:12:07.000Z</published>
+    <updated>2019-04-01T07:13:27.750Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Mon Apr 01 2019 15:18:13 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;今天在实现一个小功能 “插入更新 ListBox 中的 Item ”时，发现 &lt;code&gt;ListBox.Items&lt;/code&gt; 的类型 &lt;code&gt;ListBox.ObjectCollection&lt;/code&gt; 实现了 &lt;code&gt;IList&lt;/code&gt;, &lt;code&gt;ICollection&lt;/code&gt;, &lt;code&gt;IEnumerable&lt;/code&gt;三个接口，整体的方法已经非常接近一个数组，但是方便程度跟数据确实差距较大，Linq 也完全不能使用，故封装一个扩展方法实现直接获取 &lt;code&gt;ListBox.Items&lt;/code&gt;中所储存的数据的集合。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="踩坑笔记" scheme="https://blog.wayneshao.com/categories/%E8%B8%A9%E5%9D%91%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="C#" scheme="https://blog.wayneshao.com/tags/C/"/>
+    
+      <category term="WinForm" scheme="https://blog.wayneshao.com/tags/WinForm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>编写高质量C#程序的建议（1-5）</title>
+    <link href="https://blog.wayneshao.com/%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FCx%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%BB%BA%E8%AE%AE%EF%BC%88%E4%B8%80%EF%BC%89.html"/>
+    <id>https://blog.wayneshao.com/编写高质量Cx程序的建议（一）.html</id>
+    <published>2019-03-28T13:40:55.000Z</published>
+    <updated>2019-03-28T14:39:23.733Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- build time:Sat Mar 30 2019 23:13:58 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;最近开始阅读&lt;span class=&quot;exturl&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="https://blog.wayneshao.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="C#" scheme="https://blog.wayneshao.com/tags/C/"/>
+    
+      <category term="高质量代码" scheme="https://blog.wayneshao.com/tags/%E9%AB%98%E8%B4%A8%E9%87%8F%E4%BB%A3%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于租房到期离职纠结</title>
+    <link href="https://blog.wayneshao.com/%E5%85%B3%E4%BA%8E%E7%A7%9F%E6%88%BF%E5%88%B0%E6%9C%9F%E5%BC%95%E5%8F%91%E7%9A%84%E4%B8%80%E7%B3%BB%E5%88%97%E9%97%AE%E9%A2%98.html"/>
+    <id>https://blog.wayneshao.com/关于租房到期引发的一系列问题.html</id>
+    <published>2019-03-24T04:11:22.000Z</published>
+    <updated>2019-04-01T07:14:09.557Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Mon Apr 01 2019 15:18:13 GMT+0800 (GMT+08:00) --&gt;&lt;h2 id=&quot;缘起&quot;&gt;&lt;a href=&quot;#缘起&quot; class=&quot;headerlink&quot; title=&quot;缘起&quot;&gt;&lt;/a&gt;缘起&lt;/h2&gt;&lt;p&gt;去年4月8日换工作时租的 Loft 公寓即将到期，而决定续租与否或是租在哪里的最重要的因素无疑就是要不要换工作，遂写一篇博客辅助分析。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="闹着玩儿" scheme="https://blog.wayneshao.com/categories/%E9%97%B9%E7%9D%80%E7%8E%A9%E5%84%BF/"/>
+    
+    
+      <category term="租房" scheme="https://blog.wayneshao.com/tags/%E7%A7%9F%E6%88%BF/"/>
+    
+      <category term="离职" scheme="https://blog.wayneshao.com/tags/%E7%A6%BB%E8%81%8C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何判定一个类型支不支持 await 异步等待(代码)</title>
     <link href="https://blog.wayneshao.com/%E5%A6%82%E4%BD%95%E5%88%A4%E5%AE%9A%E4%B8%80%E4%B8%AA%E6%96%B9%E6%B3%95%E6%94%AF%E4%B8%8D%E6%94%AF%E6%8C%81%E5%BC%82%E6%AD%A5.html"/>
     <id>https://blog.wayneshao.com/如何判定一个方法支不支持异步.html</id>
     <published>2019-03-19T15:21:40.000Z</published>
-    <updated>2019-03-20T07:41:31.491Z</updated>
+    <updated>2019-04-01T07:13:27.779Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Wed Mar 20 2019 15:43:16 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;最近由于一些业务上的需求,需要在 OnActionExcutionAsync 和 OnActionExcuted 中判断当前请求的接口是否是异步的接口，刚好前几天看过&lt;a href=&quot;https://walterlv.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;吕毅大佬&lt;/a&gt;的文章《&lt;a href=&quot;https://walterlv.com/post/what-is-an-awaiter.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;.NET 中什么样的类是可使用 await 异步等待的？&lt;/a&gt;》，遂封装实现一下判断类型是否为可等待类型的方法。&lt;br&gt;
+      &lt;!-- build time:Mon Apr 01 2019 15:18:13 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;最近由于一些业务上的需求,需要在 OnActionExcutionAsync 和 OnActionExcuted 中判断当前请求的接口是否是异步的接口，刚好前几天看过&lt;a href=&quot;https://walterlv.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;吕毅大佬&lt;/a&gt;的文章《&lt;a href=&quot;https://walterlv.com/post/what-is-an-awaiter.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;.NET 中什么样的类是可使用 await 异步等待的？&lt;/a&gt;》，遂封装实现一下判断类型是否为可等待类型的方法。&lt;br&gt;
     
     </summary>
     
-      <category term="经验之谈" scheme="https://blog.wayneshao.com/categories/%E7%BB%8F%E9%AA%8C%E4%B9%8B%E8%B0%88/"/>
+      <category term="踩坑笔记" scheme="https://blog.wayneshao.com/categories/%E8%B8%A9%E5%9D%91%E7%AC%94%E8%AE%B0/"/>
     
     
       <category term="反射" scheme="https://blog.wayneshao.com/tags/%E5%8F%8D%E5%B0%84/"/>
@@ -47,11 +141,11 @@
     <link href="https://blog.wayneshao.com/%E8%81%9A%E4%BC%9A%E5%90%88%E7%A7%9F%E9%80%89%E7%82%B9%EF%BC%9A%E8%AE%A1%E7%AE%97%E8%B7%9D%E7%A6%BB%E5%A4%9A%E4%B8%AA%E5%9C%B0%E7%82%B9%E7%BB%BC%E5%90%88%E6%97%B6%E9%97%B4%E6%9C%80%E5%B0%91%E7%9A%84%E8%81%9A%E4%BC%9A%E5%9C%B0%E7%82%B9.html"/>
     <id>https://blog.wayneshao.com/聚会合租选点：计算距离多个地点综合时间最少的聚会地点.html</id>
     <published>2019-03-17T14:17:00.000Z</published>
-    <updated>2019-03-17T15:47:04.000Z</updated>
+    <updated>2019-03-17T15:47:04.807Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Mar 18 2019 19:46:48 GMT+0800 (GMT+08:00) --&gt;&lt;h2 id=&quot;缘起&quot;&gt;&lt;a href=&quot;#缘起&quot; class=&quot;headerlink&quot; title=&quot;缘起&quot;&gt;&lt;/a&gt;缘起&lt;/h2&gt;&lt;p&gt;五人小组的聚会由于最初不知为何定在了体育中心、体育西一带，之后一直延续这个传统，鉴于前几次的聚会高度重复，&lt;a href=&quot;https://blog.chcaty.cn/2019/02/24/%E8%81%9A%E4%BC%9A%E9%9A%8F%E6%83%B3/#%E5%85%B3%E4%BA%8E%E8%81%9A%E4%BC%9A&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;聚会体验越来越差&lt;/a&gt;，便起了一个想法：&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;为什么不做一个小工具来计算相对几位参与人居住地点最划算的聚会地点呢？&lt;/p&gt;&lt;/blockquote&gt;
+      &lt;!-- build time:Sat Mar 30 2019 23:13:58 GMT+0800 (GMT+08:00) --&gt;&lt;h2 id=&quot;缘起&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#缘起&quot;&gt;&lt;/a&gt; 缘起&lt;/h2&gt;&lt;p&gt;五人小组的聚会由于最初不知为何定在了体育中心、体育西一带，之后一直延续这个传统，鉴于前几次的聚会高度重复，&lt;a href=&quot;https://blog.chcaty.cn/2019/02/24/%E8%81%9A%E4%BC%9A%E9%9A%8F%E6%83%B3/#%E5%85%B3%E4%BA%8E%E8%81%9A%E4%BC%9A&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;聚会体验越来越差&lt;/a&gt;，便起了一个想法：&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;为什么不做一个小工具来计算相对几位参与人居住地点最划算的聚会地点呢？&lt;/p&gt;&lt;/blockquote&gt;
     
     </summary>
     
@@ -73,11 +167,11 @@
     <link href="https://blog.wayneshao.com/%E4%BD%BF%E7%94%A8%E4%B8%8D%E5%AE%89%E5%85%A8%E4%BB%A3%E7%A0%81%E4%BF%AE%E6%94%B9-String.Empty-%E7%9A%84%E5%80%BC.html"/>
     <id>https://blog.wayneshao.com/使用不安全代码修改-String.Empty-的值.html</id>
     <published>2019-03-11T12:42:10.000Z</published>
-    <updated>2019-03-11T16:03:40.000Z</updated>
+    <updated>2019-03-11T16:03:40.234Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Mar 18 2019 19:46:48 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;前几天的时候看到了 &lt;a href=&quot;https://mvp.microsoft.com/en-us/PublicProfile/5003225&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;吕毅&lt;/a&gt; 大佬写的博客&lt;br&gt;&lt;a href=&quot;https://blog.walterlv.com/post/why-string-empty-is-a-readonly-field-but-not-a-constant.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;为什么 C# 的 string.Empty 是一个静态只读字段，而不是一个常量呢？&lt;/a&gt;，&lt;br&gt;非常感谢吕毅大佬的分享，在文章的末尾大佬提到了通过反射修改 String.Empty 的可能，于是我打算自己实践一下。&lt;br&gt;&lt;img src=&quot;http://qiniucdn.wayneshao.com/使用不安全代码修改-String.Empty-的值/20190311084845629.png&quot; alt&gt;&lt;/p&gt;
+      &lt;!-- build time:Sat Mar 30 2019 23:13:58 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;前几天的时候看到了 &lt;a href=&quot;https://mvp.microsoft.com/en-us/PublicProfile/5003225&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;吕毅&lt;/a&gt; 大佬写的博客&lt;br&gt;&lt;a href=&quot;https://blog.walterlv.com/post/why-string-empty-is-a-readonly-field-but-not-a-constant.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;为什么 C# 的 string.Empty 是一个静态只读字段，而不是一个常量呢？&lt;/a&gt;，&lt;br&gt;非常感谢吕毅大佬的分享，在文章的末尾大佬提到了通过反射修改 String.Empty 的可能，于是我打算自己实践一下。&lt;br&gt;&lt;img src=&quot;http://qiniucdn.wayneshao.com/%E4%BD%BF%E7%94%A8%E4%B8%8D%E5%AE%89%E5%85%A8%E4%BB%A3%E7%A0%81%E4%BF%AE%E6%94%B9-String.Empty-%E7%9A%84%E5%80%BC/20190311084845629.png&quot; alt&gt;&lt;/p&gt;
     
     </summary>
     
@@ -95,15 +189,37 @@
   </entry>
   
   <entry>
+    <title></title>
+    <link href="https://blog.wayneshao.com/x%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%AD%A6%E4%B9%A0xPolly%EF%BC%9A%E7%86%94%E6%96%AD%E9%99%8D%E7%BA%A7%E7%BB%84%E4%BB%B6.html"/>
+    <id>https://blog.wayneshao.com/x微服务学习xPolly：熔断降级组件.html</id>
+    <published>2019-03-11T02:18:30.959Z</published>
+    <updated>2019-04-01T07:00:25.100Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- build time:Mon Apr 01 2019 15:18:13 GMT+0800 (GMT+08:00) --&gt;&lt;!-- rebuild by neat
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>记一次失败平衡车破解提速之旅</title>
     <link href="https://blog.wayneshao.com/%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%AE%89%E5%8D%93%E9%80%86%E5%90%91%E4%B9%8B%E6%97%85.html"/>
     <id>https://blog.wayneshao.com/记一次失败的安卓逆向之旅.html</id>
     <published>2019-03-09T15:43:02.000Z</published>
-    <updated>2019-03-12T12:01:28.241Z</updated>
+    <updated>2019-03-12T12:01:28.000Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Mar 18 2019 19:46:48 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;记录为期一天的失败破解之旅．&lt;/p&gt;&lt;h2 id=&quot;缘起&quot;&gt;&lt;a href=&quot;#缘起&quot; class=&quot;headerlink&quot; title=&quot;缘起&quot;&gt;&lt;/a&gt;缘起&lt;/h2&gt;&lt;p&gt;最近突然觉得手头的 Ninebot 平衡车速度是确实有几分慢了，想起了刚买到手的时候似乎在论坛看到过一篇帖子是讲如何破解速度上限的，拼着几丝印象找到了当时的帖子：&lt;a href=&quot;http://bbs.ninebot.cn/thread-197301-1-1.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;传送门&lt;/a&gt;&lt;br&gt;
+      &lt;!-- build time:Sat Mar 30 2019 23:13:58 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;记录为期一天的失败破解之旅．&lt;/p&gt;&lt;h2 id=&quot;缘起&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#缘起&quot;&gt;&lt;/a&gt; 缘起&lt;/h2&gt;&lt;p&gt;最近突然觉得手头的 Ninebot 平衡车速度是确实有几分慢了，想起了刚买到手的时候似乎在论坛看到过一篇帖子是讲如何破解速度上限的，拼着几丝印象找到了当时的帖子：&lt;a href=&quot;http://bbs.ninebot.cn/thread-197301-1-1.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;传送门&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
@@ -129,7 +245,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Mar 18 2019 19:46:48 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;今天在使用 bash 脚本发布程序时，发生了这样的错误&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;xxx.sh: Syntax error: &lt;span class=&quot;string&quot;&gt;&quot;else&quot;&lt;/span&gt; unexpected (expecting &lt;span class=&quot;string&quot;&gt;&quot;then&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;到处搜索资料尝试无果之后想到会不会是编码问题导致，&lt;br&gt;dos2unix 处理后测试果然可以&lt;br&gt;
+      &lt;!-- build time:Sat Mar 30 2019 23:13:58 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;今天在使用 bash 脚本发布程序时，发生了这样的错误&lt;/p&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;xxx.sh: Syntax error: &lt;span class=&quot;string&quot;&gt;&quot;else&quot;&lt;/span&gt; unexpected (expecting &lt;span class=&quot;string&quot;&gt;&quot;then&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;到处搜索资料尝试无果之后想到会不会是编码问题导致，&lt;br&gt;dos2unix 处理后测试果然可以&lt;/p&gt;
     
     </summary>
     
@@ -145,37 +261,11 @@
   </entry>
   
   <entry>
-    <title>【微服务学习】Polly：熔断降级组件</title>
-    <link href="https://blog.wayneshao.com/x%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%AD%A6%E4%B9%A0xPolly%EF%BC%9A%E7%86%94%E6%96%AD%E9%99%8D%E7%BA%A7%E7%BB%84%E4%BB%B6.html"/>
-    <id>https://blog.wayneshao.com/x微服务学习xPolly：熔断降级组件.html</id>
-    <published>2019-03-04T15:31:24.000Z</published>
-    <updated>2019-03-05T17:32:46.134Z</updated>
-    
-    <summary type="html">
-    
-      &lt;!-- build time:Mon Mar 18 2019 19:46:49 GMT+0800 (GMT+08:00) --&gt;&lt;h2 id=&quot;何为熔断降级&quot;&gt;&lt;a href=&quot;#何为熔断降级&quot; class=&quot;headerlink&quot; title=&quot;何为熔断降级&quot;&gt;&lt;/a&gt;何为熔断降级&lt;/h2&gt;&lt;p&gt;“熔断器如同电力过载保护器。它可以实现快速失败，如果它在一段时间内侦测到许多类似的错误，会强迫其以后的多个调用快速失败，不再访问远程服务器，从而防止应用程序不断地尝试执行可能会失败的操作，使得应用程序继续执行而不用等待修正错误，或者浪费时间去等到长时间的超时产生。”&lt;br&gt;降级的目的是当某个服务提供者发生故障的时候，向调用方返回一个替代响应。&lt;br&gt;简单一句话概括，降级就是在调用的下游服务A出现问题（常见超时），提供PLAN-B，返回的效果可能没有服务A好，但是聊胜于无。而熔断器的存在就是要保障何时走到降级方法，何时恢复，以什么样的策略恢复。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="学习笔记" scheme="https://blog.wayneshao.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term=".NET Core" scheme="https://blog.wayneshao.com/tags/NET-Core/"/>
-    
-      <category term="Polly" scheme="https://blog.wayneshao.com/tags/Polly/"/>
-    
-      <category term="熔断降级" scheme="https://blog.wayneshao.com/tags/%E7%86%94%E6%96%AD%E9%99%8D%E7%BA%A7/"/>
-    
-      <category term="微服务" scheme="https://blog.wayneshao.com/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【微服务学习】Consul 服务治理发现</title>
     <link href="https://blog.wayneshao.com/Consul-%E6%9C%8D%E5%8A%A1%E6%B2%BB%E7%90%86%E5%8F%91%E7%8E%B0.html"/>
     <id>https://blog.wayneshao.com/Consul-服务治理发现.html</id>
     <published>2019-02-21T15:11:56.000Z</published>
-    <updated>2019-03-05T17:20:52.701Z</updated>
+    <updated>2019-04-01T07:03:34.451Z</updated>
     
     <summary type="html">
     
@@ -183,7 +273,7 @@
       
         
         
-          &lt;!-- build time:Mon Mar 18 2019 19:46:49 GMT+0800 (GMT+08:00) --&gt;&lt;h2 id=&quot;Consul-服务治理发现&quot;&gt;&lt;a href=&quot;#Consul-服务治理发现&quot; class=&quot;headerlink&quot;
+          &lt;!-- build time:Mon Apr 01 2019 15:18:13 GMT+0800 (GMT+08:00) --&gt;&lt;h2 id=&quot;Consul-服务治理发现&quot;&gt;&lt;a href=&quot;#Consul-服务治理发现&quot; class=&quot;headerlink&quot;
         
       
     
@@ -192,13 +282,9 @@
       <category term="学习笔记" scheme="https://blog.wayneshao.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="Consul" scheme="https://blog.wayneshao.com/tags/Consul/"/>
-    
-      <category term="HashiCorp" scheme="https://blog.wayneshao.com/tags/HashiCorp/"/>
+      <category term=".NET" scheme="https://blog.wayneshao.com/tags/NET/"/>
     
       <category term="服务治理发现" scheme="https://blog.wayneshao.com/tags/%E6%9C%8D%E5%8A%A1%E6%B2%BB%E7%90%86%E5%8F%91%E7%8E%B0/"/>
-    
-      <category term=".NET Core" scheme="https://blog.wayneshao.com/tags/NET-Core/"/>
     
   </entry>
   
@@ -207,11 +293,11 @@
     <link href="https://blog.wayneshao.com/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9-.NET-Core.html"/>
     <id>https://blog.wayneshao.com/如何修改-.NET-Core.html</id>
     <published>2019-02-19T15:11:40.000Z</published>
-    <updated>2019-02-19T16:49:55.797Z</updated>
+    <updated>2019-03-24T05:46:46.539Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Mar 18 2019 19:46:48 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;今天在尝试 Consul 的时候需要动态改变 .NET Core Kestrel 下的端口以方便测试，故而查了查，发现原来除了最常使用的 UseUrls 之外，还有许多其他方法，故而总结一下。&lt;br&gt;
+      &lt;!-- build time:Sat Mar 30 2019 23:13:58 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;今天在尝试 Consul 的时候需要动态改变 .NET Core Kestrel 下的端口以方便测试，故而查了查，发现原来除了最常使用的 UseUrls 之外，还有许多其他方法，故而总结一下。&lt;/p&gt;
     
     </summary>
     
@@ -237,7 +323,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Mar 18 2019 19:46:48 GMT+0800 (GMT+08:00) --&gt;&lt;h2 id=&quot;瀑布开发模式&quot;&gt;&lt;a href=&quot;#瀑布开发模式&quot; class=&quot;headerlink&quot; title=&quot;瀑布开发模式&quot;&gt;&lt;/a&gt;瀑布开发模式&lt;/h2&gt;&lt;p&gt;瀑布模式是一种前几年在国内各大项目中比较流行的开发模式，特点是分阶段进行，每个阶段都很清晰，只有阶段对应的人员才会参与当前阶段的开发，每个阶段必须有产出物才可以开始下个阶段，整个周期较长，早期需求分析和设计的时间消耗较多，整个流程会尽量避免需求的改动，更适用于B端产品的开发。&lt;br&gt;&lt;img src=&quot;http://qiniucdn.wayneshao.com/两种软件开发模式：瀑布与敏捷/20181101031030742.png&quot; alt&gt;&lt;br&gt;
+      &lt;!-- build time:Sat Mar 30 2019 23:13:58 GMT+0800 (GMT+08:00) --&gt;&lt;h2 id=&quot;瀑布开发模式&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#瀑布开发模式&quot;&gt;&lt;/a&gt; 瀑布开发模式&lt;/h2&gt;&lt;p&gt;瀑布模式是一种前几年在国内各大项目中比较流行的开发模式，特点是分阶段进行，每个阶段都很清晰，只有阶段对应的人员才会参与当前阶段的开发，每个阶段必须有产出物才可以开始下个阶段，整个周期较长，早期需求分析和设计的时间消耗较多，整个流程会尽量避免需求的改动，更适用于B端产品的开发。&lt;br&gt;&lt;img src=&quot;http://qiniucdn.wayneshao.com/%E4%B8%A4%E7%A7%8D%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E6%A8%A1%E5%BC%8F%EF%BC%9A%E7%80%91%E5%B8%83%E4%B8%8E%E6%95%8F%E6%8D%B7/20181101031030742.png&quot; alt&gt;&lt;/p&gt;
     
     </summary>
     
@@ -261,7 +347,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Mar 18 2019 19:46:48 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;最简可行产品：&quot;&gt;&lt;a href=&quot;#最简可行产品：&quot; class=&quot;headerlink&quot; title=&quot;最简可行产品：&quot;&gt;&lt;/a&gt;最简可行产品：&lt;/h1&gt;&lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://zh.wikipedia.org/zh-cn/%E6%9C%80%E7%B0%A1%E5%8F%AF%E8%A1%8C%E7%94%A2%E5%93%81&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;最简可行产品&lt;/strong&gt;&lt;/a&gt;（&lt;strong&gt;&lt;em&gt;minimum viable product&lt;/em&gt;&lt;/strong&gt;，简称&lt;strong&gt;MVP&lt;/strong&gt;）是&lt;strong&gt;新产品开发&lt;/strong&gt;中的名词，是指有部分机能，恰好可以让设计者表达其&lt;strong&gt;核心设计概念&lt;/strong&gt;的产品。&lt;br&gt;设计者可以进行&lt;strong&gt;验证式学习&lt;/strong&gt;，根据使用者的&lt;strong&gt;回馈&lt;/strong&gt;，进一步&lt;strong&gt;了解使用情形&lt;/strong&gt;，并且&lt;strong&gt;继续开发&lt;/strong&gt;此产品 。&lt;br&gt;由最简可行产品来搜集相关想法常常会比开发有更多机能的产品要&lt;strong&gt;便宜&lt;/strong&gt;。开发更多机能产品的的费用较高，也会有产品失败的风险（例如产品基本假设有误的情形）。&lt;br&gt;最简可行产品一词是由&lt;strong&gt;法兰克·罗宾生&lt;/strong&gt;（&lt;strong&gt;&lt;em&gt;Frank Robinson&lt;/em&gt;&lt;/strong&gt;）创建，因&lt;strong&gt;史蒂夫·布兰克&lt;/strong&gt;及&lt;strong&gt;埃里克·莱斯&lt;/strong&gt;的使用而流行。&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;“要贩售愿景及提供最简可行产品给有远见的人，不是给所有的人。”&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;——&lt;strong&gt;史蒂夫·布兰克&lt;/strong&gt;&lt;br&gt;
+      &lt;!-- build time:Sat Mar 30 2019 23:13:58 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;最简可行产品&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#最简可行产品&quot;&gt;&lt;/a&gt; 最简可行产品：&lt;/h1&gt;&lt;h2 id=&quot;概念&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#概念&quot;&gt;&lt;/a&gt; 概念&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://zh.wikipedia.org/zh-cn/%E6%9C%80%E7%B0%A1%E5%8F%AF%E8%A1%8C%E7%94%A2%E5%93%81&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;最简可行产品&lt;/strong&gt;&lt;/a&gt;（&lt;em&gt;&lt;strong&gt;minimum viable product&lt;/strong&gt;&lt;/em&gt;，简称&lt;strong&gt;MVP&lt;/strong&gt;）是&lt;strong&gt;新产品开发&lt;/strong&gt;中的名词，是指有部分机能，恰好可以让设计者表达其&lt;strong&gt;核心设计概念&lt;/strong&gt;的产品。&lt;br&gt;设计者可以进行&lt;strong&gt;验证式学习&lt;/strong&gt;，根据使用者的&lt;strong&gt;回馈&lt;/strong&gt;，进一步&lt;strong&gt;了解使用情形&lt;/strong&gt;，并且&lt;strong&gt;继续开发&lt;/strong&gt;此产品 。&lt;br&gt;由最简可行产品来搜集相关想法常常会比开发有更多机能的产品要&lt;strong&gt;便宜&lt;/strong&gt;。开发更多机能产品的的费用较高，也会有产品失败的风险（例如产品基本假设有误的情形）。&lt;br&gt;最简可行产品一词是由&lt;strong&gt;法兰克·罗宾生&lt;/strong&gt;（&lt;em&gt;&lt;strong&gt;Frank Robinson&lt;/strong&gt;&lt;/em&gt;）创建，因&lt;strong&gt;史蒂夫·布兰克&lt;/strong&gt;及&lt;strong&gt;埃里克·莱斯&lt;/strong&gt;的使用而流行。&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;“要贩售愿景及提供最简可行产品给有远见的人，不是给所有的人。”&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;——&lt;strong&gt;史蒂夫·布兰克&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
     
     </summary>
     
@@ -283,15 +369,15 @@
     <link href="https://blog.wayneshao.com/Selenium-PhantomJS-%E5%B7%A7%E5%A6%99%E8%BF%87%E6%B8%A1%E5%88%B0-Firefox-Chrome.html"/>
     <id>https://blog.wayneshao.com/Selenium-PhantomJS-巧妙过渡到-Firefox-Chrome.html</id>
     <published>2018-07-11T12:19:29.000Z</published>
-    <updated>2018-10-25T03:46:18.177Z</updated>
+    <updated>2019-04-01T07:13:27.753Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Mar 18 2019 19:46:49 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;PhantomJS-Obsolete&quot;&gt;&lt;a href=&quot;#PhantomJS-Obsolete&quot; class=&quot;headerlink&quot; title=&quot;PhantomJS Obsolete&quot;&gt;&lt;/a&gt;PhantomJS Obsolete&lt;/h1&gt;&lt;h2 id=&quot;Origin&quot;&gt;&lt;a href=&quot;#Origin&quot; class=&quot;headerlink&quot; title=&quot;Origin&quot;&gt;&lt;/a&gt;Origin&lt;/h2&gt;&lt;p&gt;前段时间因为一些个人爱好，想要对某网站的数据进行整站采集，其中需要对某些页面的一些区块进行截图采集，整个采集任务中还涉及一些验证码识别之类的工作。学艺不精，我当前掌握的 Scrapy 知识很难完成这样一个爬虫，就使用了 Selenium + PhantomJS 制作了一个模拟浏览器访问来爬取数据的小爬虫，完成了整套抓取任务。&lt;br&gt;&lt;img src=&quot;http://qiniucdn.wayneshao.com/20180711045204672.gif&quot; alt&gt;&lt;br&gt;
+      &lt;!-- build time:Mon Apr 01 2019 15:18:13 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;PhantomJS-Obsolete&quot;&gt;&lt;a href=&quot;#PhantomJS-Obsolete&quot; class=&quot;headerlink&quot; title=&quot;PhantomJS Obsolete&quot;&gt;&lt;/a&gt;PhantomJS Obsolete&lt;/h1&gt;&lt;h2 id=&quot;Origin&quot;&gt;&lt;a href=&quot;#Origin&quot; class=&quot;headerlink&quot; title=&quot;Origin&quot;&gt;&lt;/a&gt;Origin&lt;/h2&gt;&lt;p&gt;前段时间因为一些个人爱好，想要对某网站的数据进行整站采集，其中需要对某些页面的一些区块进行截图采集，整个采集任务中还涉及一些验证码识别之类的工作。学艺不精，我当前掌握的 Scrapy 知识很难完成这样一个爬虫，就使用了 Selenium + PhantomJS 制作了一个模拟浏览器访问来爬取数据的小爬虫，完成了整套抓取任务。&lt;br&gt;&lt;img src=&quot;http://qiniucdn.wayneshao.com/20180711045204672.gif&quot; alt&gt;&lt;br&gt;
     
     </summary>
     
-      <category term="经验之谈" scheme="https://blog.wayneshao.com/categories/%E7%BB%8F%E9%AA%8C%E4%B9%8B%E8%B0%88/"/>
+      <category term="踩坑笔记" scheme="https://blog.wayneshao.com/categories/%E8%B8%A9%E5%9D%91%E7%AC%94%E8%AE%B0/"/>
     
     
       <category term="C#" scheme="https://blog.wayneshao.com/tags/C/"/>
@@ -309,15 +395,15 @@
     <link href="https://blog.wayneshao.com/Net-Core-2-0-EFCore-MySQL-System-TypeLoadException-occurred-%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3.html"/>
     <id>https://blog.wayneshao.com/Net-Core-2-0-EFCore-MySQL-System-TypeLoadException-occurred-问题解决.html</id>
     <published>2018-04-09T11:02:00.000Z</published>
-    <updated>2019-03-12T11:58:37.278Z</updated>
+    <updated>2019-04-01T07:13:27.751Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Mar 18 2019 19:46:48 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;今天在使用 EFCore + MySQL 搭一个小Demo的时候,在 Migration 环节遇到了这样一个问题。&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;System.TypeLoadException occurred&lt;br&gt;HResult=0x80131522&lt;br&gt;Message=Method ‘Clone’ in type ‘MySQL.Data.EntityFrameworkCore.Infraestructure.Internal.MySQLOptionsExtension’ from assembly ‘MySql.Data.EntityFrameworkCore, Version=8.0.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d’ does not have an implementation.&lt;/p&gt;&lt;/blockquote&gt;
+      &lt;!-- build time:Mon Apr 01 2019 15:18:13 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;今天在使用 EFCore + MySQL 搭一个小Demo的时候,在 Migration 环节遇到了这样一个问题。&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;System.TypeLoadException occurred&lt;br&gt;HResult=0x80131522&lt;br&gt;Message=Method ‘Clone’ in type ‘MySQL.Data.EntityFrameworkCore.Infraestructure.Internal.MySQLOptionsExtension’ from assembly ‘MySql.Data.EntityFrameworkCore, Version=8.0.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d’ does not have an implementation.&lt;/p&gt;&lt;/blockquote&gt;
     
     </summary>
     
-      <category term="经验之谈" scheme="https://blog.wayneshao.com/categories/%E7%BB%8F%E9%AA%8C%E4%B9%8B%E8%B0%88/"/>
+      <category term="踩坑笔记" scheme="https://blog.wayneshao.com/categories/%E8%B8%A9%E5%9D%91%E7%AC%94%E8%AE%B0/"/>
     
     
       <category term="EFCore" scheme="https://blog.wayneshao.com/tags/EFCore/"/>
@@ -331,11 +417,11 @@
     <link href="https://blog.wayneshao.com/%E5%85%B3%E4%BA%8E20180313.html"/>
     <id>https://blog.wayneshao.com/关于20180313.html</id>
     <published>2018-03-11T14:46:44.000Z</published>
-    <updated>2019-03-12T12:00:16.351Z</updated>
+    <updated>2019-04-01T07:01:41.859Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Mar 18 2019 19:46:49 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;关于2018年3月9日面试某公司网站后台开发工程师的一些总结。&lt;br&gt;
+      &lt;!-- build time:Mon Apr 01 2019 15:18:13 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;关于2018年3月9日面试某公司网站后台开发工程师的一些总结。&lt;br&gt;
     
     </summary>
     
@@ -343,8 +429,6 @@
     
     
       <category term="面试" scheme="https://blog.wayneshao.com/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-      <category term="网站后台开发工程师" scheme="https://blog.wayneshao.com/tags/%E7%BD%91%E7%AB%99%E5%90%8E%E5%8F%B0%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/"/>
     
       <category term="总结" scheme="https://blog.wayneshao.com/tags/%E6%80%BB%E7%BB%93/"/>
     
@@ -355,15 +439,15 @@
     <link href="https://blog.wayneshao.com/x51NOD%E5%88%B7%E9%A2%98x1182-%E5%AE%8C%E7%BE%8E%E5%AD%97%E7%AC%A6%E4%B8%B2.html"/>
     <id>https://blog.wayneshao.com/x51NOD刷题x1182-完美字符串.html</id>
     <published>2018-03-08T12:12:46.000Z</published>
-    <updated>2019-03-12T11:53:42.575Z</updated>
+    <updated>2019-04-01T06:59:48.250Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Mar 18 2019 19:46:48 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;a href=&quot;http://www.51nod.com/onlineJudge/questionCode.html#!problemId=1182&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;1182 完美字符串&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;题目来源： Facebook Hacker Cup选拔&lt;br&gt;基准时间限制：1 秒 空间限制：131072 KB 分值: 5 难度：1级算法题&lt;/p&gt;&lt;p&gt;约翰认为字符串的完美度等于它里面所有字母的完美度之和。每个字母的完美度可以由你来分配，不同字母的完美度不同，分别对应一个1-26之间的整数。&lt;br&gt;约翰不在乎字母大小写。（也就是说字母F和f）的完美度相同。给定一个字符串，输出它的最大可能的完美度。例如：dad，你可以将26分配给d，25分配给a，这样整个字符串完美度为77。&lt;/p&gt;
+      &lt;!-- build time:Mon Apr 01 2019 15:18:13 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;a href=&quot;http://www.51nod.com/onlineJudge/questionCode.html#!problemId=1182&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;1182 完美字符串&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;题目来源： Facebook Hacker Cup选拔&lt;br&gt;基准时间限制：1 秒 空间限制：131072 KB 分值: 5 难度：1级算法题&lt;/p&gt;&lt;p&gt;约翰认为字符串的完美度等于它里面所有字母的完美度之和。每个字母的完美度可以由你来分配，不同字母的完美度不同，分别对应一个1-26之间的整数。&lt;br&gt;约翰不在乎字母大小写。（也就是说字母F和f）的完美度相同。给定一个字符串，输出它的最大可能的完美度。例如：dad，你可以将26分配给d，25分配给a，这样整个字符串完美度为77。&lt;/p&gt;
     
     </summary>
     
-      <category term="51NOD刷题" scheme="https://blog.wayneshao.com/categories/51NOD%E5%88%B7%E9%A2%98/"/>
+      <category term="算法刷题" scheme="https://blog.wayneshao.com/categories/%E7%AE%97%E6%B3%95%E5%88%B7%E9%A2%98/"/>
     
     
       <category term="51NOD" scheme="https://blog.wayneshao.com/tags/51NOD/"/>
@@ -379,11 +463,11 @@
     <link href="https://blog.wayneshao.com/Cx%E8%B0%83%E7%94%A8%E8%BF%85%E9%9B%B7%E3%80%81IDM%E4%B8%8B%E8%BD%BD%E6%96%B9%E6%B3%95%E6%B1%87%E6%80%BB.html"/>
     <id>https://blog.wayneshao.com/Cx调用迅雷、IDM下载方法汇总.html</id>
     <published>2018-03-07T01:36:14.000Z</published>
-    <updated>2019-03-12T11:57:47.243Z</updated>
+    <updated>2019-03-12T11:57:47.000Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Mar 18 2019 19:46:48 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;在开发桌面软件时常常有下载文件的需求，小文件、少文件可以自己做相应的网络请求，但是当文件的大小或者数量达到一定规模时，自己封装网络请求就不是很划算的事情了，这时我们可以采取调用迅雷或者IDM、aria2c之类的专业下载软件来进行下载。&lt;br&gt;
+      &lt;!-- build time:Sat Mar 30 2019 23:13:58 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;在开发桌面软件时常常有下载文件的需求，小文件、少文件可以自己做相应的网络请求，但是当文件的大小或者数量达到一定规模时，自己封装网络请求就不是很划算的事情了，这时我们可以采取调用迅雷或者IDM、aria2c之类的专业下载软件来进行下载。&lt;/p&gt;
     
     </summary>
     
@@ -403,126 +487,24 @@
   </entry>
   
   <entry>
-    <title>如何在IIS中托管.Net Core应用</title>
+    <title>如何在IIS中托管.NET Core应用</title>
     <link href="https://blog.wayneshao.com/%E5%A6%82%E4%BD%95%E5%9C%A8IIS%E4%B8%AD%E6%89%98%E7%AE%A1Asp.Net-Core%E5%BA%94%E7%94%A8.html"/>
     <id>https://blog.wayneshao.com/如何在IIS中托管Asp.Net-Core应用.html</id>
     <published>2018-03-04T17:36:13.000Z</published>
-    <updated>2019-03-12T12:00:42.000Z</updated>
+    <updated>2019-04-01T07:00:30.802Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Mar 18 2019 19:46:48 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;Asp.Net Core 应用如果需要托管在IIS下，需要为IIS&lt;a href=&quot;https://www.microsoft.com/net/download/all&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;下载&lt;/a&gt;安装 AspNetCoreModule 模块。&lt;/p&gt;
+      &lt;!-- build time:Mon Apr 01 2019 15:18:13 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;Asp.NET Core 应用如果需要托管在IIS下，需要为IIS&lt;a href=&quot;https://www.microsoft.com/net/download/all&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;下载&lt;/a&gt;安装 AspNetCoreModule 模块。&lt;/p&gt;
     
     </summary>
     
       <category term="踩坑笔记" scheme="https://blog.wayneshao.com/categories/%E8%B8%A9%E5%9D%91%E7%AC%94%E8%AE%B0/"/>
     
-    
-      <category term=".Net Core" scheme="https://blog.wayneshao.com/tags/Net-Core/"/>
     
       <category term="IIS" scheme="https://blog.wayneshao.com/tags/IIS/"/>
     
-  </entry>
-  
-  <entry>
-    <title>【51NOD刷题】1283 最小周长</title>
-    <link href="https://blog.wayneshao.com/1283-%E6%9C%80%E5%B0%8F%E5%91%A8%E9%95%BF.html"/>
-    <id>https://blog.wayneshao.com/1283-最小周长.html</id>
-    <published>2018-03-04T15:22:22.000Z</published>
-    <updated>2019-03-12T11:56:35.228Z</updated>
-    
-    <summary type="html">
-    
-      &lt;!-- build time:Mon Mar 18 2019 19:46:48 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;a href=&quot;http://www.51nod.com/onlineJudge/questionCode.html#!problemId=1283&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;1283 最小周长&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;题目来源： Codility&lt;br&gt;基准时间限制：1 秒 空间限制：131072 KB 分值: 5 难度：1级算法题&lt;br&gt;一个矩形的面积为S，已知该矩形的边长都是整数，求所有满足条件的矩形中，周长的最小值。例如：S = 24，那么有{1 24} {2 12} {3 8} {4 6}这4种矩形，其中{4 6}的周长最小，为20。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="51NOD刷题" scheme="https://blog.wayneshao.com/categories/51NOD%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="51NOD" scheme="https://blog.wayneshao.com/tags/51NOD/"/>
-    
-      <category term="刷题" scheme="https://blog.wayneshao.com/tags/%E5%88%B7%E9%A2%98/"/>
-    
-      <category term="C#" scheme="https://blog.wayneshao.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>.Net 讯飞语音识别Demo</title>
-    <link href="https://blog.wayneshao.com/%E8%AE%AF%E9%A3%9E%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%ABDemo.html"/>
-    <id>https://blog.wayneshao.com/讯飞语音识别Demo.html</id>
-    <published>2018-03-02T03:35:00.000Z</published>
-    <updated>2019-03-12T12:04:19.899Z</updated>
-    
-    <summary type="html">
-    
-      &lt;!-- build time:Mon Mar 18 2019 19:46:48 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;a href=&quot;http://www.xfyun.cn/services/voicedictation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;讯飞语音识别&lt;/a&gt;官方号称具有以下六个优势：&lt;/p&gt;&lt;ol&gt;&lt;li&gt;超过95%的准确率&lt;/li&gt;&lt;li&gt;支持多种语种和方言&lt;/li&gt;&lt;li&gt;方便快捷的信息沟通&lt;/li&gt;&lt;li&gt;个性的语音识别&lt;/li&gt;&lt;li&gt;中文标点智能预测&lt;/li&gt;&lt;li&gt;支持垂直领域和应用级听写&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;img src=&quot;http://qiniucdn.wayneshao.com/20180302113535116/20180302114420073.png&quot; alt&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="踩坑笔记" scheme="https://blog.wayneshao.com/categories/%E8%B8%A9%E5%9D%91%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="ASR" scheme="https://blog.wayneshao.com/tags/ASR/"/>
-    
-      <category term="TTS" scheme="https://blog.wayneshao.com/tags/TTS/"/>
-    
-      <category term="NAudio" scheme="https://blog.wayneshao.com/tags/NAudio/"/>
-    
-      <category term="讯飞语音识别" scheme="https://blog.wayneshao.com/tags/%E8%AE%AF%E9%A3%9E%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【算法复习】贪心算法之最小生成树Prim算法</title>
-    <link href="https://blog.wayneshao.com/Prim%E7%AE%97%E6%B3%95.html"/>
-    <id>https://blog.wayneshao.com/Prim算法.html</id>
-    <published>2018-02-28T13:16:20.000Z</published>
-    <updated>2019-03-12T11:58:48.832Z</updated>
-    
-    <summary type="html">
-    
-      &lt;!-- build time:Mon Mar 18 2019 19:46:48 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;最小生成树的Prim算法也是贪心算法的一大经典应用。Prim算法的特点是时刻维护一棵树，算法不断加边，加的过程始终是一棵树。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="算法笔记" scheme="https://blog.wayneshao.com/categories/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="51NOD" scheme="https://blog.wayneshao.com/tags/51NOD/"/>
-    
-      <category term="刷题" scheme="https://blog.wayneshao.com/tags/%E5%88%B7%E9%A2%98/"/>
-    
-      <category term="C#" scheme="https://blog.wayneshao.com/tags/C/"/>
-    
-      <category term="Prim" scheme="https://blog.wayneshao.com/tags/Prim/"/>
-    
-      <category term="贪心" scheme="https://blog.wayneshao.com/tags/%E8%B4%AA%E5%BF%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【51NOD刷题】1284 2 3 5 7的倍数</title>
-    <link href="https://blog.wayneshao.com/x51NOD%E5%88%B7%E9%A2%98x1284-2-3-5-7%E7%9A%84%E5%80%8D%E6%95%B0.html"/>
-    <id>https://blog.wayneshao.com/x51NOD刷题x1284-2-3-5-7的倍数.html</id>
-    <published>2018-02-27T01:30:32.000Z</published>
-    <updated>2019-03-12T11:53:42.522Z</updated>
-    
-    <summary type="html">
-    
-      &lt;!-- build time:Mon Mar 18 2019 19:46:48 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;a href=&quot;http://www.51nod.com/onlineJudge/questionCode.html#!problemId=1284&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;1284 2 3 5 7的倍数&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;基准时间限制：1 秒 空间限制：131072 KB 分值: 5 难度：1级算法题&lt;/p&gt;&lt;p&gt;给出一个数N，求1至N中，有多少个数不是2 3 5 7的倍数。 例如N = 10，只有1不是2 3 5 7的倍数。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="51NOD刷题" scheme="https://blog.wayneshao.com/categories/51NOD%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="51NOD" scheme="https://blog.wayneshao.com/tags/51NOD/"/>
-    
-      <category term="刷题" scheme="https://blog.wayneshao.com/tags/%E5%88%B7%E9%A2%98/"/>
-    
-      <category term="C#" scheme="https://blog.wayneshao.com/tags/C/"/>
+      <category term=".NET" scheme="https://blog.wayneshao.com/tags/NET/"/>
     
   </entry>
   
