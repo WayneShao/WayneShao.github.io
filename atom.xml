@@ -213,28 +213,6 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://blog.wayneshao.com/x%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%AD%A6%E4%B9%A0xPolly%EF%BC%9A%E7%86%94%E6%96%AD%E9%99%8D%E7%BA%A7%E7%BB%84%E4%BB%B6.html"/>
-    <id>https://blog.wayneshao.com/x微服务学习xPolly：熔断降级组件.html</id>
-    <published>2019-03-11T02:18:30.959Z</published>
-    <updated>2019-04-01T07:00:25.100Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- build time:Wed Apr 03 2019 20:03:47 GMT+0800 (GMT+08:00) --&gt;&lt;!-- rebuild by neat
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>记一次失败平衡车破解提速之旅</title>
     <link href="https://blog.wayneshao.com/%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%AE%89%E5%8D%93%E9%80%86%E5%90%91%E4%B9%8B%E6%97%85.html"/>
     <id>https://blog.wayneshao.com/记一次失败的安卓逆向之旅.html</id>
@@ -281,6 +259,32 @@
       <category term="编码" scheme="https://blog.wayneshao.com/tags/%E7%BC%96%E7%A0%81/"/>
     
       <category term="dos2unix" scheme="https://blog.wayneshao.com/tags/dos2unix/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【微服务学习】Polly：熔断降级组件</title>
+    <link href="https://blog.wayneshao.com/x%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%AD%A6%E4%B9%A0xPolly%EF%BC%9A%E7%86%94%E6%96%AD%E9%99%8D%E7%BA%A7%E7%BB%84%E4%BB%B6.html"/>
+    <id>https://blog.wayneshao.com/x微服务学习xPolly：熔断降级组件.html</id>
+    <published>2019-03-04T15:31:24.000Z</published>
+    <updated>2019-04-03T12:23:45.820Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Wed Apr 03 2019 20:24:43 GMT+0800 (GMT+08:00) --&gt;&lt;h2 id=&quot;何为熔断降级&quot;&gt;&lt;a href=&quot;#何为熔断降级&quot; class=&quot;headerlink&quot; title=&quot;何为熔断降级&quot;&gt;&lt;/a&gt;何为熔断降级&lt;/h2&gt;&lt;p&gt;“熔断器如同电力过载保护器。它可以实现快速失败，如果它在一段时间内侦测到许多类似的错误，会强迫其以后的多个调用快速失败，不再访问远程服务器，从而防止应用程序不断地尝试执行可能会失败的操作，使得应用程序继续执行而不用等待修正错误，或者浪费时间去等到长时间的超时产生。”&lt;br&gt;降级的目的是当某个服务提供者发生故障的时候，向调用方返回一个替代响应。&lt;br&gt;简单一句话概括，降级就是在调用的下游服务A出现问题（常见超时），提供PLAN-B，返回的效果可能没有服务A好，但是聊胜于无。而熔断器的存在就是要保障何时走到降级方法，何时恢复，以什么样的策略恢复。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="https://blog.wayneshao.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term=".NET" scheme="https://blog.wayneshao.com/tags/NET/"/>
+    
+      <category term="Polly" scheme="https://blog.wayneshao.com/tags/Polly/"/>
+    
+      <category term="熔断降级" scheme="https://blog.wayneshao.com/tags/%E7%86%94%E6%96%AD%E9%99%8D%E7%BA%A7/"/>
+    
+      <category term="微服务" scheme="https://blog.wayneshao.com/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
     
   </entry>
   
