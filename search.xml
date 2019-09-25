@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[离职总结及未来一段时间的计划]]></title>
+    <url>%2F%E7%A6%BB%E8%81%8C%E6%80%BB%E7%BB%93%E5%8F%8A%E6%9C%AA%E6%9D%A5%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E7%9A%84%E8%AE%A1%E5%88%92.html</url>
+    <content type="text"><![CDATA[2019 年 9 月 20 日 15 时 58 分，我签下了离职证明和放行条，为我在广州多益网络股份有限公司 530 天的工作画上了句号。离职说实话，到现在我自己都还没有想清楚离职的准确原因，或许是因为察觉到自己在过去一年的反复又繁复的业务中并没有很大的长进却又不得不囿于加班文化，也没有足够的自学时间，或许是因为明明意识到系统架构的系统性问题，整体结构很需要重新划分，模块需要使用更合适的技术重构，却又在各种急促繁复的需求压迫下不得不无限妥协的无奈，或许是因为今年年中连续几个月平均加班到十一点的加班，或许是因为我和身边同事相比缩水一半的工资，也或许是前半年我跟领导提出了工资倒挂的情况希望能调整工资，却在几个月后，已经处于离职的边缘时才告诉我保证留下来才可以加薪，总之，我在听到加薪消息的隔天（2019 年 8 月 21 日 17 时 58 分）按下了辞职信的发送键，为这场旅途画下了句号。回顾过去的一年半，非常感谢廖总和蔡总能给我机会，让我这个后端门外汉以1.5年经验（实习一年 + 工作半年）的流媒体开发攻城师菜鸟的身份成功入职多益网络信息技术中心的 Web 后端开发一职，在多益的一年半里，我从一个后端菜鸟成功晋级为一个熟练码农，从原本一手全包的开发模式晋升到了前后端分离的团队开发模式，又从一个只管实现需求的人偶码农晋升为了能推敲需求，和策划为了我认为不合理的需求吵得脸红脖子粗的主程序员。我负责公司内部培训系统 “多益大学” 的后端开发工作，前半段和组里的同事一起完成了系统几个大模块的重构和新模块的开发，并于今年开始成功进一步接手多益大学全部后端工作后主导系统的开发，而后完成了统一考试、训练营重构、职级晋升等模块的开发，在职级晋升模块成功上限使用之后提出了离职，经历了半个月的继续开发之后交接离开。总结这段经历，总体来讲还是觉得受益匪浅，当初因为喜欢后端开发，喜欢比较新的技术，遂从上家公司的“流媒体/Windows桌面开发”岗位辞职，转而从事后端开发。说实话当时面试表现得确实比较差，非常感谢面试官能给我这个机会，也非常欣喜能在公司学习并实践喜欢的技术，总结离开的原因，同样也是因为较长的工作时间下没有足够的时间学习新的技术，急促反复的需求下也没有空间实践新的技能，我对此非常遗憾，但是也并不会感到后悔。接下来的计划接下来我打算先修整一段时间，预计 1-2 个月，然后对已有技能进行整合，结合就业市场需求的方向对一些新技术进行学习实践，经过深思熟虑之后再寻找新的就业机会。技能微服务读完《CLR via C#》、《C# 7.0 本质论》参与 NCC 的开源项目习惯按时进行睡眠洗漱等习惯的养成指定奖惩规则，记录执行情况减肥控制脂肪、糖类的摄入记录每天摄入的卡路里自己做完每天完成一定时长的健身理财记账理论学习读书列书单，记录读书情况大约保持每天半小时到一小时的阅读时长]]></content>
+      <categories>
+        <category>有所得</category>
+      </categories>
+      <tags>
+        <tag>离职总结</tag>
+        <tag>计划</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[汇总一下 Visual Studio 各个版本的 Key]]></title>
     <url>%2F%E6%B1%87%E6%80%BB%E4%B8%80%E4%B8%8B-Visual-Studio-%E5%90%84%E4%B8%AA%E7%89%88%E6%9C%AC%E7%9A%84-Key.html</url>
     <content type="text"><![CDATA[方便日后查用，汇总一下 Visual Studio 各个版本的 Key。如果侵犯了您或您公司的权益，请联系我删除。Visual Studio 2010Visual Studio 2010 Ultimate:1YCFHQ-9DWCY-DKV88-T2TMH-G7BHPVisual Studio 2012Visual Studio 2012 Ultimate:1RBCXF-CVBGR-382MK-DFHJ4-C69G8Visual Studio 2012 Professional:14D974-9QX42-9Y43G-YJ7JG-JDYBPVisual Studio 2012 Premium:1MH2FR-BC9R2-84433-47M63-KQVWCVisual Studio 2013Visual Studio 2013 Ultimate:12BWG7X-J98B3-W34RT-33B3R-JVYW987DQC-G8CYR-CRPJ4-QX9K8-RFV2BVisual Studio 2013 Team Foundation Server:16T3MC-YX8XF-7CWXW-462TQ-8G2B4Visual Studio 2013 Premium:1FBJVC-3CMTX-D8DVP-RTQCT-92494Visual Studio 2013 Professional:1KCQWK-Q43V3-M3F2T-83VGV-Y6VTXVisual Studio 2013 Test Professional:1TTDB9-9YPYH-7FBVY-X2CTQ-D8F2HVisual Studio 2013 Premium &amp; Express:1P27TG-XXX2W-XK8TK-QD9FK-V36W4Visual Studio 2015Visual Studio 2015 Enterprise:12XNFG-KFHR8-QV3CP-3W6HT-683CHVisual Studio 2015 Professional:1HMGNV-WCYXV-X7G9W-YCX63-B98R2Visual Studio 2017Visual Studio 2017 Professional:123456KBJFW-NXHK6-W4WJM-CRMQB-G3CDHHMGNV-WCYXV-X7G9W-YCX63-B98R2HFDVM-KS3K9-OKYN1-N1ZS7-PVSQ896OLO-CXFRC-16CKR-Y1933-04MX67VMX9-TI69C-NXRG0-S4T89-9ABS470I9S-MIZ6L-RPH8Q-Q9C70-XQPRTVisual Studio 2017 Enterprise:123456NJVYC-BMHX2-G77MM-4XJMR-6Q8QFIOX0M-LAVBL-FPHQY-N0ROK-9K3MD4SB42-1Q0ZT-CMBDT-TN2XI-FIET17Z16L-372ES-M15YD-O8QM7-V6C25EBVI7-26CXQ-3CQD4-ZS3IR-6Q3K57BHBQ-3NNHM-I4ROB-R7L02-ZOSFMVisual Studio 2017 Enterprise:123456NJVYC-BMHX2-G77MM-4XJMR-6Q8QFCXP3Q-XKCIN-GXDTX-O369X-ALFPKAF7CS-PO8AZ-YL4GI-C95BV-9QXCN643OA-ACK9A-8N2NH-6YB8R-1OM0X328DP-Y1I77-DXNCM-L3XVT-7M89BBNZLP-XK60H-MT0SG-2L790-Q87Z7Visual Studio 2019Visual Studio 2019 Enterprise:1BF8Y8-GN2QH-T84XB-QVY3B-RC4DFVisual Studio 2019 Professional:1NYWVH-HT4XC-R2WYW-9Y3CM-X4V3Y]]></content>
@@ -69,8 +81,8 @@
         <category>踩坑笔记</category>
       </categories>
       <tags>
-        <tag>反射</tag>
         <tag>.NET</tag>
+        <tag>反射</tag>
         <tag>await</tag>
         <tag>异步等待</tag>
       </tags>
@@ -145,6 +157,20 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[【微服务学习】Polly：熔断降级组件]]></title>
+    <url>%2Fx%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%AD%A6%E4%B9%A0xPolly%EF%BC%9A%E7%86%94%E6%96%AD%E9%99%8D%E7%BA%A7%E7%BB%84%E4%BB%B6-cnblog.html</url>
+    <content type="text"><![CDATA[何为熔断降级“熔断器如同电力过载保护器。它可以实现快速失败，如果它在一段时间内侦测到许多类似的错误，会强迫其以后的多个调用快速失败，不再访问远程服务器，从而防止应用程序不断地尝试执行可能会失败的操作，使得应用程序继续执行而不用等待修正错误，或者浪费时间去等到长时间的超时产生。”降级的目的是当某个服务提供者发生故障的时候，向调用方返回一个替代响应。简单一句话概括，降级就是在调用的下游服务A出现问题（常见超时），提供PLAN-B，返回的效果可能没有服务A好，但是聊胜于无。而熔断器的存在就是要保障何时走到降级方法，何时恢复，以什么样的策略恢复。.NET Core 熔断降级实践简介Polly是一种.NET弹性和瞬态故障处理库，允许我们以非常顺畅和线程安全的方式来执诸如行重试，断路，超时，故障恢复等策略。Polly当前版本可以工作在 .NET Standard 1.1 (包括: .NET Framework 4.5-4.6.1, .NET Core 1.0, Mono, Xamarin, UWP, WP8.1+) 和 .NET Standard 2.0+ (包括: .NET Framework 4.6.1, .NET Core 2.0+, 新版本的 Mono, Xamarin and UWP targets).上，同时也为旧版本的.NET Framework提供了一些可用的旧版本，具体版本对应如下：目标框架最低适配版本最高适配版本.NET&nbsp;Standard&nbsp;2.1for use with IHttpClientFactory6.0.1Current.NET&nbsp;Standard&nbsp;2.0 (dedicated&nbsp;target)6.0.1Current.NET&nbsp;Standard&nbsp;2.05.0.3 via .Net&nbsp;Standard&nbsp;1.0 (upward compatible)Current.NET&nbsp;Standard&nbsp;1.15.0.3 via .Net&nbsp;Standard&nbsp;1.0 (upward compatible)Current.NET&nbsp;Standard&nbsp;1.05.0.35.1.0.NET&nbsp;Framework&nbsp;4.51.0.0Current&nbsp;(via&nbsp;.Net&nbsp;Standard);5.9.0&nbsp;(as&nbsp;dedicated&nbsp;target).NET&nbsp;Framework&nbsp;4.0with Async support4.2.25.9.0.NET&nbsp;Framework&nbsp;4.01.0.05.9.0.NET&nbsp;Framework&nbsp;3.51.0.04.3.0Various PCL targets2.0.0Current&nbsp;(via&nbsp;.Net&nbsp;Standard);4.3.0&nbsp;(as&nbsp;dedicated&nbsp;PCL&nbsp;target)该项目作者现已成为.NET基金会一员，项目一直在不停迭代和更新，项目地址【https://github.com/App-vNext/Polly】。七种恢复策略策略前置条件例此策略解决什么问题?重试策略（Retry）(policy family)(快速开始&nbsp;;&nbsp;深入学习)重试策略针对的前置条件是短暂的故障延迟且在短暂的延迟之后能够自我纠正。“也许这只是昙花一现”允许我们做的是能够自动配置重试机制。断路器（Circuit-breaker）(policy family)(快速开始&nbsp;;&nbsp;深入学习)断路器策略针对的前置条件是当系统繁忙时，快速响应失败总比让用户一直等待更好。保护系统故障免受过载，Polly可以帮其恢复。“痛了，自然就会放下”“让它歇一下”当故障超过某个预先配置的阈值时, 中断电路 (块执行) 一段时间。超时（Timeout）(快速开始&nbsp;;&nbsp;深入学习)超时策略针对的前置条件是超过一定的等待时间，想要得到成功的结果是不可能的。“你不必等待，她不会再来”保证调用者不必等待太长时间。隔板隔离（Bulkhead Isolation）(快速开始&nbsp;;&nbsp;深入学习)隔板隔离针对的前置条件是当进程出现故障时，多个失败一直在主机中对资源（例如线程/ CPU）一直占用。下游系统故障也可能导致上游失败。这两个风险都将造成严重的后果。“一颗老鼠屎坏了一锅汤”将受管制的操作限制在固定的资源池中，避免其他资源受其影响。缓存（Cache）(快速开始&nbsp;;&nbsp;深入学习)数据不会很频繁的进行更新，相同请求的响应是相似的。“听说你还会再来我翘首以盼”首次加载数据时将响应数据进行缓存，请求时若缓存中存在则直接从缓存中读取。回退（Fallback）(快速开始&nbsp;;&nbsp;深入学习)操作将仍然失败 - 但是你可以实现准备好失败后要做的补救措施。“你若安好，我备胎到老。”定义失败时要返回 (或要执行的操作) 的替代值。.策略包装（PolicyWrap）(快速开始&nbsp;;&nbsp;深入学习)不同的故障需要不同的策略，也就意味着弹性灵活使用组合。“谋定而后动”允许灵活地组合上述任何策略。实践故障处理（被动策略）故障处理策略处理通过策略执行的代码所引发的特定的异常或返回结果。第一步：指定希望处理的异常（可选-指定要处理的返回结果）指定希望处理的异常：12345678910111213141516171819202122// 单一异常种类Policy .Handle&lt;HttpRequestException&gt;()// 带条件判断的单一异常Policy .Handle&lt;SqlException&gt;(ex =&gt; ex.Number == 1205)// 多种异常Policy .Handle&lt;HttpRequestException&gt;() .Or&lt;OperationCanceledException&gt;()// 带条件判断的多种异常Policy .Handle&lt;SqlException&gt;(ex =&gt; ex.Number == 1205) .Or&lt;ArgumentException&gt;(ex =&gt; ex.ParamName == "example")// 普通异常或聚合异常的内部异常, 可以带有条件Policy .HandleInner&lt;HttpRequestException&gt;() .OrInner&lt;OperationCanceledException&gt;(ex =&gt; ex.CancellationToken != myToken)指定要处理的返回结果从Polly v4.3.0起，包含返回TResult的调用的策略也可以处理TResult返回值123456789101112131415161718192021222324252627// 带条件判断的单种返回值处理Policy .HandleResult&lt;HttpResponseMessage&gt;(r =&gt; r.StatusCode == HttpStatusCode.NotFound)// 带条件判断的多种返回值处理Policy .HandleResult&lt;HttpResponseMessage&gt;(r =&gt; r.StatusCode == HttpStatusCode.InternalServerError) .OrResult(r =&gt; r.StatusCode == HttpStatusCode.BadGateway)// 原始返回值处理 (隐式调用 .Equals())Policy .HandleResult&lt;HttpStatusCode&gt;(HttpStatusCode.InternalServerError) .OrResult(HttpStatusCode.BadGateway) // 在一个策略中同时处理异常和返回值HttpStatusCode[] httpStatusCodesWorthRetrying = &#123; HttpStatusCode.RequestTimeout, // 408 HttpStatusCode.InternalServerError, // 500 HttpStatusCode.BadGateway, // 502 HttpStatusCode.ServiceUnavailable, // 503 HttpStatusCode.GatewayTimeout // 504&#125;; HttpResponseMessage result = await Policy .Handle&lt;HttpRequestException&gt;() .OrResult&lt;HttpResponseMessage&gt;(r =&gt; httpStatusCodesWorthRetrying.Contains(r.StatusCode)) .RetryAsync(...) .ExecuteAsync( /* Func&lt;Task&lt;HttpResponseMessage&gt;&gt; */ )第二步：指定策略应如何处理这些错误重试（Retry）12345678910111213141516171819202122232425// 重试一次Policy .Handle&lt;SomeExceptionType&gt;() .Retry()// 重试多次Policy .Handle&lt;SomeExceptionType&gt;() .Retry(3)// 重试多次，每次重试触发事件（参数为此次异常和当前重试次数）Policy .Handle&lt;SomeExceptionType&gt;() .Retry(3, onRetry: (exception, retryCount) =&gt; &#123; // do something &#125;);// 重试多次，每次重试触发事件（参数为此次异常、当前重试次数和当前执行的上下文）Policy .Handle&lt;SomeExceptionType&gt;() .Retry(3, onRetry: (exception, retryCount, context) =&gt; &#123; // do something &#125;);不断重试直到成功（Retry forever until succeeds）1234567891011121314151617181920// 不断重试Policy .Handle&lt;SomeExceptionType&gt;() .RetryForever()// 不断重试，每次重试触发事件（参数为此次异常） Policy .Handle&lt;SomeExceptionType&gt;() .RetryForever(onRetry: exception =&gt; &#123; // do something &#125;);// 不断重试，每次重试触发事件（参数为此次异常和当前执行的上下文）Policy .Handle&lt;SomeExceptionType&gt;() .RetryForever(onRetry: (exception, context) =&gt; &#123; // do something &#125;);等待并重试（Wait and retry）WaitAndRetry策略处理HTTP状态代码429的重试后状态1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980// 重试多次, 每次重试之间等待指定的持续时间。(失败之后触发等待, 然后再进行下一次尝试。)Policy .Handle&lt;SomeExceptionType&gt;() .WaitAndRetry(new[] &#123; TimeSpan.FromSeconds(1), TimeSpan.FromSeconds(2), TimeSpan.FromSeconds(3) &#125;);// 重试并触发事件多次, 每次重试之间等待指定的持续时间。（事件参数为当前异常和时间间隔）Policy .Handle&lt;SomeExceptionType&gt;() .WaitAndRetry(new[] &#123; TimeSpan.FromSeconds(1), TimeSpan.FromSeconds(2), TimeSpan.FromSeconds(3) &#125;, (exception, timeSpan) =&gt; &#123; // do something &#125;); // 重试并触发事件多次, 每次重试之间等待指定的持续时间。（事件参数为当前异常、时间间隔和当前执行的上下文）Policy .Handle&lt;SomeExceptionType&gt;() .WaitAndRetry(new[] &#123; TimeSpan.FromSeconds(1), TimeSpan.FromSeconds(2), TimeSpan.FromSeconds(3) &#125;, (exception, timeSpan, context) =&gt; &#123; // do something &#125;);// 重试并触发事件多次, 每次重试之间等待指定的持续时间。（事件参数为当前异常、时间间隔、当前重试次数和当前执行的上下文）Policy .Handle&lt;SomeExceptionType&gt;() .WaitAndRetry(new[] &#123; TimeSpan.FromSeconds(1), TimeSpan.FromSeconds(2), TimeSpan.FromSeconds(3) &#125;, (exception, timeSpan, retryCount, context) =&gt; &#123; // do something &#125;);// 重试指定的次数, 根据当前重试次数计算等待时间 (允许指数回退)// 当前这种情况下, 等待时间为:// 2 ^ 1 = 2 s// 2 ^ 2 = 4 s// 2 ^ 3 = 8 s// 2 ^ 4 = 16 s// 2 ^ 5 = 32 sPolicy .Handle&lt;SomeExceptionType&gt;() .WaitAndRetry(5, retryAttempt =&gt; TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)) );// 重试指定的次数，每次重试时触发事件，根据当前重试次数计算等待时间。（事件参数为当前异常、时间间隔和当前执行的上下文）Policy .Handle&lt;SomeExceptionType&gt;() .WaitAndRetry( 5, retryAttempt =&gt; TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)), (exception, timeSpan, context) =&gt; &#123; // do something &#125; );// 重试指定的次数，每次重试时触发事件，根据当前重试次数计算等待时间。（事件参数为当前异常、时间间隔、当前重试次数和当前执行的上下文）Policy .Handle&lt;SomeExceptionType&gt;() .WaitAndRetry( 5, retryAttempt =&gt; TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)), (exception, timeSpan, retryCount, context) =&gt; &#123; // do something &#125; );不断等待并重试直到成功（Wait and retry forever until succeeds）如果所有重试都失败, 重试策略将重新引发最后一个异常返回到调用代码。123456789101112131415161718192021222324252627// 不断等待并重试Policy .Handle&lt;SomeExceptionType&gt;() .WaitAndRetryForever(retryAttempt =&gt; TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)) );// 不断等待并重试，每次重试时触发事件。（事件参数为当前异常、时间间隔）Policy .Handle&lt;SomeExceptionType&gt;() .WaitAndRetryForever( retryAttempt =&gt; TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)), (exception, timespan) =&gt; &#123; // do something &#125;);// 不断等待并重试，每次重试时触发事件。（事件参数为当前异常、时间间隔和当前执行的上下文）Policy .Handle&lt;SomeExceptionType&gt;() .WaitAndRetryForever( retryAttempt =&gt; TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)), (exception, timespan, context) =&gt; &#123; // do something &#125;);断路器（Circuit-breaker）断路器策略通过在程序出错时抛出BrokenCircuitException来屏蔽其他异常。文档请注意, 断路器策略将重新引发所有异常, 甚至是已处理的异常。所以使用时通常会将重试策略和断路器策略组合使用。12345678910111213141516171819202122232425262728293031323334// 在指定数量的连续异常后断开程序执行并在之后的一段时间内保持程序执行断开。Policy .Handle&lt;SomeExceptionType&gt;() .CircuitBreaker(2, TimeSpan.FromMinutes(1));// 在指定数量的连续异常后断开程序执行并在之后的一段时间内保持程序执行断开。当程序执行断开或者重新启用时触发事件。（程序执行断开事件参数为当前异常和间隔时间，重新启用事件无参数）Action&lt;Exception, TimeSpan&gt; onBreak = (exception, timespan) =&gt; &#123; ... &#125;;Action onReset = () =&gt; &#123; ... &#125;;CircuitBreakerPolicy breaker = Policy .Handle&lt;SomeExceptionType&gt;() .CircuitBreaker(2, TimeSpan.FromMinutes(1), onBreak, onReset);// 在指定数量的连续异常后断开程序执行并在之后的一段时间内保持程序执行断开。当程序执行断开或者重新启用时触发事件。（程序执行断开事件参数为当前异常、间隔时间和当前执行上下文，重新启用事件参数为当前执行上下文）Action&lt;Exception, TimeSpan, Context&gt; onBreak = (exception, timespan, context) =&gt; &#123; ... &#125;;Action&lt;Context&gt; onReset = context =&gt; &#123; ... &#125;;CircuitBreakerPolicy breaker = Policy .Handle&lt;SomeExceptionType&gt;() .CircuitBreaker(2, TimeSpan.FromMinutes(1), onBreak, onReset);// 程序运行状态, 运行状况。CircuitState state = breaker.CircuitState;/*CircuitState.Closed - 断路器未触发，允许操作执行。CircuitState.Open - 断路器开启，阻止操作执行。CircuitState.HalfOpen - 断路器开启指定时间后重新关闭，此状态允许操作执行，之后的开启或关闭取决于继续执行的结果。CircuitState.Isolated - 断路器被主动开启，阻止操作执行。*/// 手动打开 (并保持打开) 断路器（例如需要主动隔离下游服务时）breaker.Isolate(); // 重置断路器为关闭状态, 再次开始允许操作执行。breaker.Reset(); `高级断路器（Advanced Circuit Breaker）1234567891011121314// 在采样持续时间内, 如果已处理异常的操作的比例超过故障阈值且该时间段内通过请求操作数达到最小吞吐量，主动启动断路器。Policy .Handle&lt;SomeExceptionType&gt;() .AdvancedCircuitBreaker( failureThreshold: 0.5, // 当&gt;=50%的操作会导致已处理的异常时中断程序。 samplingDuration: TimeSpan.FromSeconds(10), // 采样时间区间为10秒 minimumThroughput: 8, // ... 在采样时间区间内进行了至少8次操作。 durationOfBreak: TimeSpan.FromSeconds(30) // 断路30秒. );// 采用状态更改委托的配置重载同样可用于高级断路器。// 电路状态监控和手动控制同样也可用于高级断路器。更多相关资料请参考: 文档有关断路器模式的更多信息, 请参见：改造 Netflix API 增加接口弹性断路器浅谈 (马丁·福勒)断路器模式 (Microsoft)原始断路器链回退策略（Fallback）1234567891011121314151617// 执行错误时提供替代值。Policy .Handle&lt;Whatever&gt;() .Fallback&lt;UserAvatar&gt;(UserAvatar.Blank)// 执行错误时使用回调函数提供替代值。Policy .Handle&lt;Whatever&gt;() .Fallback&lt;UserAvatar&gt;(() =&gt; UserAvatar.GetRandomAvatar()) // where: public UserAvatar GetRandomAvatar() &#123; ... &#125;// 执行错误时提供替代值的同时触发事件。（事件参数为当前异常信息和当前运行上下文）Policy .Handle&lt;Whatever&gt;() .Fallback&lt;UserAvatar&gt;(UserAvatar.Blank, onFallback: (exception, context) =&gt; &#123; // do something &#125;);第三步：执行策略123456789101112131415161718192021222324252627282930313233343536373839404142434445464748// 执行操作var policy = Policy .Handle&lt;SomeExceptionType&gt;() .Retry();policy.Execute(() =&gt; DoSomething());// 执行传递任意上下文数据的操作var policy = Policy .Handle&lt;SomeExceptionType&gt;() .Retry(3, (exception, retryCount, context) =&gt; &#123; var methodThatRaisedException = context["methodName"]; Log(exception, methodThatRaisedException); &#125;);policy.Execute( () =&gt; DoSomething(), new Dictionary&lt;string, object&gt;() &#123;&#123; "methodName", "some method" &#125;&#125;);// 执行返回结果的函数var policy = Policy .Handle&lt;SomeExceptionType&gt;() .Retry();var result = policy.Execute(() =&gt; DoSomething());// 执行传递任意上下文数据且返回结果的操作var policy = Policy .Handle&lt;SomeExceptionType&gt;() .Retry(3, (exception, retryCount, context) =&gt; &#123; object methodThatRaisedException = context["methodName"]; Log(exception, methodThatRaisedException) &#125;);var result = policy.Execute( () =&gt; DoSomething(), new Dictionary&lt;string, object&gt;() &#123;&#123; "methodName", "some method" &#125;&#125;);// 综合使用Policy .Handle&lt;SqlException&gt;(ex =&gt; ex.Number == 1205) .Or&lt;ArgumentException&gt;(ex =&gt; ex.ParamName == "example") .Retry() .Execute(() =&gt; DoSomething());为了简单起见, 上面的示例显示了策略定义, 然后是策略执行。但是在代码库和应用程序生命周期中, 策略定义和执行可能同样经常被分离。例如, 可以选择在启动时定义策略, 然后通过依赖注入将其提供给使用点。故障处理（主动策略）主动策略添加了不基于当策略被引发或返回时才处理错误的弹性策略。第一步：配置超时（Timeout）乐观超时（Optimistic timeout）乐观超时通过 CancellationToken 运行, 并假定您执行支持合作取消的委托。您必须使用 Execute/Async(...) 重载以获取 CancellationToken, 并且执行的委托必须遵守该 CancellationToken。12345678910111213141516171819202122232425262728293031323334// 如果执行的委托尚未完成，在调用30秒后超时并返回 。 乐观超时: 委托应采取并遵守 CancellationToken。Policy .Timeout(30)// 使用 TimeSpan 配置超时。Policy .Timeout(TimeSpan.FromMilliseconds(2500))// 通过方法提供可变的超时。Policy .Timeout(() =&gt; myTimeoutProvider)) // Func&lt;TimeSpan&gt; myTimeoutProvider// 超时后触发事件。（事件参数为当前执行上下文、执行间隔、当前执行的TASK）Policy .Timeout(30, onTimeout: (context, timespan, task) =&gt; &#123; // do something &#125;);// 示例：在超时后记录日志Policy .Timeout(30, onTimeout: (context, timespan, task) =&gt; &#123; logger.Warn($"&#123;context.PolicyKey&#125; at &#123;context.ExecutionKey&#125;: execution timed out after &#123;timespan.TotalSeconds&#125; seconds."); &#125;);// 示例：在超时任务完成时捕获该任务中的任何异常Policy .Timeout(30, onTimeout: (context, timespan, task) =&gt; &#123; task.ContinueWith(t =&gt; &#123; if (t.IsFaulted) logger.Error($"&#123;context.PolicyKey&#125; at &#123;context.ExecutionKey&#125;: execution timed out after &#123;timespan.TotalSeconds&#125; seconds, with: &#123;t.Exception&#125;."); &#125;); &#125;);示例执行:123456Policy timeoutPolicy = Policy.TimeoutAsync(30);HttpResponseMessage httpResponse = await timeoutPolicy .ExecuteAsync( async ct =&gt; await httpClient.GetAsync(endpoint, ct), // 执行一个有参数且响应 CancellationToken 的委托。 CancellationToken.None // 在这种情况下, CancellationToken.None 将被传递到执行中, 这表明您没有将期望的令牌控制通过超时策略添加。 自定义 CancellationToken 也可以通过，详情请参阅 wiki 中的例子。 );悲观超时（Pessimistic timeout）悲观超时允许调用代码 “离开” 等待执行完成的委托, 即使它不支持取消。在同步执行中, 这是以牺牲一个额外的线程为代价的。有关更多细节, 请参见文档。示例执行:12345Policy timeoutPolicy = Policy.TimeoutAsync(30, TimeoutStrategy.Pessimistic);var response = await timeoutPolicy .ExecuteAsync( async () =&gt; await FooNotHonoringCancellationAsync(), // 执行不接受取消令牌且不响应取消的委托。 );超时策略在发生超时时引发 TimeoutRejectedException。更多详情参见文档。隔板（Bulkhead）1234567891011121314151617181920// 通过该策略将执行限制为最多12个并发操作。Policy .Bulkhead(12)// 将通过策略执行的操作限制为最多12个并发操作, 如果插槽都被占满, 最多可以有两个操作被等待执行。Policy .Bulkhead(12, 2)// 限制并发执行, 如果执行被拒绝, 则调用触发事件。（事件参数为当前执行上下文）Policy .Bulkhead(12, context =&gt; &#123; // do something &#125;);// 查看隔板可用容量, 例如健康负荷。var bulkhead = Policy.Bulkhead(12, 2);// ...int freeExecutionSlots = bulkhead.BulkheadAvailableCount;int freeQueueSlots = bulkhead.QueueAvailableCount;当隔板策略的插槽全部被正在执行的操作占满是，会引发 BulkheadRejectedException。更多详情参见文档。缓存(Cache)12345678910111213141516171819202122232425var memoryCache = new MemoryCache(new MemoryCacheOptions());var memoryCacheProvider = new MemoryCacheProvider(memoryCache);var cachePolicy = Policy.Cache(memoryCacheProvider, TimeSpan.FromMinutes(5));// .NET Core CacheProviders DI 示例 请参照以下文章 https://github.com/App-vNext/Polly/wiki/Cache#working-with-cacheproviders :// - https://github.com/App-vNext/Polly.Caching.MemoryCache// - https://github.com/App-vNext/Polly.Caching.IDistributedCache // 定义每天午夜绝对过期的缓存策略。var cachePolicy = Policy.Cache(memoryCacheProvider, new AbsoluteTtl(DateTimeOffset.Now.Date.AddDays(1));// 定义超时过期的缓存策略: 每次使用缓存项时, 项目的有效期为5分钟。var cachePolicy = Policy.Cache(memoryCacheProvider, new SlidingTtl(TimeSpan.FromMinutes(5));// 定义缓存策略, 并捕获任何缓存提供程序错误以进行日志记录。var cachePolicy = Policy.Cache(myCacheProvider, TimeSpan.FromMinutes(5), (context, key, ex) =&gt; &#123; logger.Error($"Cache provider, for key &#123;key&#125;, threw exception: &#123;ex&#125;."); // (for example) &#125;);// 以直通缓存的身份执行缓存: 首先检查缓存;如果未找到, 请执行基础委托并将结果存储在缓存中。 // 用于特定执行的缓存的键是通过在传递给执行的上下文实例上设置操作键 (v6 之前: 执行键) 来指定的。使用下面显示的窗体的重载 (或包含相同元素的更丰富的重载)。// 示例: "fookey" 是将在下面的执行中使用的缓存密钥。TResult result = cachePolicy.Execute(context =&gt; getFoo(), new Context("FooKey"));有关使用其他缓存提供程序的更丰富的选项和详细信息, 请参阅:文档策略包装（PolicyWrap）12345678910111213141516171819202122// 定义由以前定义的策略构建的组合策略。var policyWrap = Policy .Wrap(fallback, cache, retry, breaker, timeout, bulkhead);// (包装策略执行任何被包装的策略: fallback outermost ... bulkhead innermost)policyWrap.Execute(...)// 定义标准的弹性策略PolicyWrap commonResilience = Policy.Wrap(retry, breaker, timeout);// ... 然后包装在额外的策略特定于一个请求类型:Avatar avatar = Policy .Handle&lt;Whatever&gt;() .Fallback&lt;Avatar&gt;(Avatar.Blank) .Wrap(commonResilience) .Execute(() =&gt; &#123; /* get avatar */ &#125;);// 共享通用弹性, 但将不同的策略包装在另一个请求类型中:Reputation reps = Policy .Handle&lt;Whatever&gt;() .Fallback&lt;Reputation&gt;(Reputation.NotAvailable) .Wrap(commonResilience) .Execute(() =&gt; &#123; /* get reputation */ &#125;);更多详情参见文档无策略(NoOp)123// 定义一个策略, 该策略将简单地导致传递给执行的委托 "按原样" 执行。// 适用于在单元测试中或在应用程序中可能需要策略, 但您只是希望在没有策略干预的情况下通过执行的应用程序。NoOpPolicy noOp = Policy.NoOp();更多详情参见文档第二步：执行策略同上执行后：捕获结果或任何最终异常使用 ExecuteAndCapture(…) 方法可以捕获执行的结果: 这些方法返回一个执行结果实例, 该实例描述的是成功执行还是错误。12345678910var policyResult = await Policy .Handle&lt;HttpRequestException&gt;() .RetryAsync() .ExecuteAndCaptureAsync(() =&gt; DoSomethingAsync());/* policyResult.Outcome - 调用是成功还是失败 policyResult.FinalException - 最后一个异常。如果调用成功, 则捕获的最后一个异常将为 nullpolicyResult.ExceptionType - 定义为要处理的策略的最后一个异常 (如上面的 HttpRequestException) 或未处理的异常 (如 Exception). 如果调用成功, 则为 null。policyResult.Result - 如果执行 func, 调用成功则返回执行结果, 否则为类型的默认值*/处理返回值和 Policy&lt;TResult&gt;如步骤1b 所述, 从 polly v4.3.0 开始, 策略可以组合处理返回值和异常:12345678910111213// 在一个策略中处理异常和返回值HttpStatusCode[] httpStatusCodesWorthRetrying = &#123; HttpStatusCode.RequestTimeout, // 408 HttpStatusCode.InternalServerError, // 500 HttpStatusCode.BadGateway, // 502 HttpStatusCode.ServiceUnavailable, // 503 HttpStatusCode.GatewayTimeout // 504&#125;; HttpResponseMessage result = await Policy .Handle&lt;HttpRequestException&gt;() .OrResult&lt;HttpResponseMessage&gt;(r =&gt; httpStatusCodesWorthRetrying.Contains(r.StatusCode)) .RetryAsync(...) .ExecuteAsync( /* some Func&lt;Task&lt;HttpResponseMessage&gt;&gt; */ )要处理的异常和返回结果可以以任意顺序流畅的表达。强类型 Policy&lt;TResult&gt;配置策略 .HandleResult&lt;TResult&gt;(...) 或.OrResult&lt;TResult&gt;(...) 生成特定强类型策略 Policy&lt;TResult&gt;，例如 Retry&lt;TResult&gt;, AdvancedCircuitBreaker&lt;TResult&gt;。这些策略必须用于执行返回 TResult 的委托, 即:Execute(Func&lt;TResult&gt;) (and related overloads)ExecuteAsync(Func&lt;CancellationToken, Task&lt;TResult&gt;&gt;) (and related overloads)ExecuteAndCapture&lt;TResult&gt;().ExecuteAndCapture(…) 在非泛型策略上返回具有属性的 PolicyResult：1234policyResult.Outcome - 调用是成功还是失败 policyResult.FinalException - 最后一个异常。如果调用成功, 则捕获的最后一个异常将为 nullpolicyResult.ExceptionType - 定义为要处理的策略的最后一个异常 (如上面的 HttpRequestException) 或未处理的异常 (如 Exception). 如果调用成功, 则为 null。policyResult.Result - 如果执行 func, 调用成功则返回执行结果, 否则为类型的默认值.ExecuteAndCapture&lt;TResult&gt;(Func&lt;TResult&gt;)在强类型策略上添加了两个属性:12policyResult.FaultType - 最终的故障是处理异常还是由策略处理的结果？如果委托执行成功, 则为 null。policyResult.FinalHandledResult - 处理的最终故障结果;如果调用成功将为空或类型的默认值。Policy&lt;TResult&gt;策略的状态更改事件在仅处理异常的非泛型策略中, 状态更改事件 (如 onRetry 和 onBreak ) 提供 Exception 参数。在处理 TResult 返回值的通用性策略中, 状态更改委托是相同的, 除非它们采用 DelegateResult参数代替异常。DelegateResult具有两个属性:Exception // 如果策略正在处理异常则为则刚刚引发异常(否则为空),Result // 如果策略正在处理结果则为刚刚引发的 TResult (否则为 default(TResult))BrokenCircuitException&lt;TResult&gt;非通用的循环断路器策略在断路时抛出一个BrokenCircuitException。此 BrokenCircuitException 包含最后一个异常 (导致中断的异常) 作为 InnerException。关于 CircuitBreakerPolicy&lt;TResult&gt; 策略:由于异常而中断将引发一个 BrokenCircuitException, 并将 InnerException 设置为触发中断的异常 (如以前一样)。由于处理结果而中断会引发 ‘BrokenCircuitException&lt;TResult&gt;‘, 其 Result 属性设置为导致电路中断的结果.Policy Keys 与 Context data123456789101112131415161718192021222324252627282930// 用扩展方法 WithPolicyKey() 使用 PolicyKey 识别策略, // (例如, 对于日志或指标中的相关性)var policy = Policy .Handle&lt;DataAccessException&gt;() .Retry(3, onRetry: (exception, retryCount, context) =&gt; &#123; logger.Error($"Retry &#123;retryCount&#125; of &#123;context.PolicyKey&#125; at &#123;context.ExecutionKey&#125;, due to: &#123;exception&#125;."); &#125;) .WithPolicyKey("MyDataAccessPolicy");// 在上下文中传递 ExecutionKey , 并使用 ExecutionKey 标识呼叫站点var customerDetails = policy.Execute(myDelegate, new Context("GetCustomerDetails"));// "MyDataAccessPolicy" -&gt; context.PolicyKey // "GetCustomerDetails -&gt; context.ExecutionKey// 将其他自定义信息从调用站点传递到执行上下文中 var policy = Policy .Handle&lt;DataAccessException&gt;() .Retry(3, onRetry: (exception, retryCount, context) =&gt; &#123; logger.Error($"Retry &#123;retryCount&#125; of &#123;context.PolicyKey&#125; at &#123;context.ExecutionKey&#125;, getting &#123;context["Type"]&#125; of id &#123;context["Id"]&#125;, due to: &#123;exception&#125;."); &#125;) .WithPolicyKey("MyDataAccessPolicy");int id = ... // 客户idvar customerDetails = policy.Execute(context =&gt; GetCustomer(id), new Context("GetCustomerDetails", new Dictionary&lt;string, object&gt;() &#123;&#123;"Type","Customer"&#125;,&#123;"Id",id&#125;&#125;更多资料参考文档PolicyRegistry123456789101112131415161718192021// 创建策略注册表 (例如在应用程序启动时) PolicyRegistry registry = new PolicyRegistry();// 使用策略填充注册表registry.Add("StandardHttpResilience", myStandardHttpResiliencePolicy);// 或者:registry["StandardHttpResilience"] = myStandardHttpResiliencePolicy;// 通过 DI 将注册表实例传递给使用站点public class MyServiceGateway &#123; public void MyServiceGateway(..., IReadOnlyPolicyRegistry&lt;string&gt; registry, ...) &#123; ... &#125; &#125;// (或者, 如果您更喜欢环境上下文模式, 请使用线程安全的单例)// 使用注册表中的策略registry.Get&lt;IAsyncPolicy&lt;HttpResponseMessage&gt;&gt;("StandardHttpResilience") .ExecuteAsync&lt;HttpResponseMessage&gt;(...)策略注册表具有一系列进一步的类似字典的语义, 例如 .ContainsKey(…), .TryGet(…), .Count, .Clear(), 和 Remove(…)，适用于 v5.2.0 以上版本有关详细信息, 请参阅: 文档.NET Core 使用Polly重试机制12345678910111213141516171819202122public class PollyController : ApiController&#123; public readonly RetryPolicy&lt;HttpResponseMessage&gt; _httpRequestPolicy; public PollyController() &#123; _httpRequestPolicy = Policy.HandleResult&lt;HttpResponseMessage&gt;( r =&gt; r.StatusCode == HttpStatusCode.InternalServerError) .WaitAndRetryAsync(3, retryAttempt =&gt; TimeSpan.FromSeconds(retryAttempt)); &#125; public async Task&lt;IHttpActionResult&gt; Get() &#123; var httpClient = new HttpClient(); var requestEndpoint = "http://www.baidu.com"; HttpResponseMessage httpResponse = await _httpRequestPolicy.ExecuteAsync(() =&gt; httpClient.GetAsync(requestEndpoint)); IEnumerable&lt;string&gt; numbers = await httpResponse.Content.ReadAsAsync&lt;IEnumerable&lt;string&gt;&gt;(); return Ok(numbers); &#125;&#125;]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>.NET</tag>
+        <tag>Polly</tag>
+        <tag>熔断降级</tag>
+        <tag>微服务</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[【微服务学习】Consul 服务治理发现]]></title>
     <url>%2FConsul-%E6%9C%8D%E5%8A%A1%E6%B2%BB%E7%90%86%E5%8F%91%E7%8E%B0.html</url>
     <content type="text"><![CDATA[Consul 服务治理发现简介Consul 是 HashiCorp 公司推出的开源工具，用于实现分布式系统的服务发现与配置。与其他分布式服务注册与发现的方案，Consul的方案更“一站式”，内置了服务注册与发现框架、分布一致性协议实现、健康检查、Key/Value存储、多数据中心方案，不再需要依赖其他工具（比如ZooKeeper等）。使用起来也较为简单。Consul使用Go语言编写，因此具有天然可移植性(支持Linux、windows和Mac OS X)；安装包仅包含一个可执行文件，方便部署，与Docker等轻量级容器可无缝配合 。service discovery：consul通过DNS或者HTTP接口使服务注册和服务发现变的很容易，一些外部服务，例如saas提供的也可以一样注册。health checking：健康检测使consul可以快速的告警在集群中的操作。和服务发现的集成，可以防止服务转发到故障的服务上面。key/value storage：一个用来存储动态配置的系统。提供简单的HTTP接口，可以在任何地方操作。*multi-datacenter：无需复杂的配置，即可支持任意数量的区域。Consul 是注册中心，服务提供者、服务消费者等都要注册到 Consul 中，这样就可以实现服务提供者、服务消费者的隔离。除了 Consul 之外，还有 Eureka、Zookeeper、Etcd 等类似服务发现框架。Consul 相关概念CLIENTCLIENT表示consul的client模式，就是客户端模式。是consul节点的一种模式，这种模式下，所有注册到当前节点的服务会被转发到SERVER，本身是不持久化这些信息。SERVERSERVER表示consul的server模式，表明这个consul是个server，这种模式下，功能和CLIENT都一样，唯一不同的是，它会把所有的信息持久化的本地，这样遇到故障，信息是可以被保留的。SERVER-LEADER中间那个SERVER下面有LEADER的字眼，表明这个SERVER是它们的老大，它和其它SERVER不一样的一点是，它需要负责同步注册的信息给其它的SERVER，同时也要负责各个节点的健康监测。其它信息其它信息包括它们之间的通信方式，还有一些协议信息，算法。它们是用于保证节点之间的数据同步，实时性要求等等一系列集群问题的解决。这些有兴趣的自己看看官方文档。我的理解Consul 的整体功能其实就类似于互联网中的 DNS 服务器，Consul 服务端根据客户端传入的服务名，返回所有提供该服务的地址，整个流程跟 DNS 服务器将域名转化为 IP 地址有异曲同工之妙。Consul 在 .NET Core 下的实践我是用的开发平台是 Windows 64bit，鉴于 Windows 使用 Docker 的繁琐和诸多问题，以下流程直接下载运行 Consul 而不使用 Docker。下载安装运行从Consul 下载页面下载对应平台的最新版本的 Consul 程序并解压。运行 consul.exe agent -dev （使用开发模式进行测试，如需生产环境集群使用，只要需要一台 Server，多台 Agent）访问自带的 Web 后台查看即时信息.NET Core 下的 Consul 实践Install-Package Consul程序与 Consul 的交互主要有三种：服务注册服务查询服务健康检查服务注册与反注册随机获取一个可用端口123456789101112131415161718192021222324252627282930313233343536using System;using System.Linq;using System.Net.NetworkInformation;namespace ConsulDemo.Extensions&#123; public static class PortHelper &#123; /// &lt;summary&gt; /// 产生一个随机可用端口 /// &lt;/summary&gt; /// &lt;param name="minPort"&gt;&lt;/param&gt; /// &lt;param name="maxPort"&gt;&lt;/param&gt; /// &lt;returns&gt;&lt;/returns&gt; public static int GetRandAvailablePort(int minPort = 1024, int maxPort = 65535) &#123; var rand = new Random(); while (true) &#123; var port = rand.Next(minPort, maxPort); if (!IsPortInUsed(port)) return port; &#125; &#125; /// &lt;summary&gt; /// 判断端口是否在使用中 /// &lt;/summary&gt; /// &lt;param name="port"&gt;&lt;/param&gt; /// &lt;returns&gt;&lt;/returns&gt; public static bool IsPortInUsed(int port) =&gt; IPGlobalProperties.GetIPGlobalProperties().GetActiveTcpListeners().Any(p =&gt; p.Port == port) || IPGlobalProperties.GetIPGlobalProperties().GetActiveUdpListeners().Any(p =&gt; p.Port == port) || IPGlobalProperties.GetIPGlobalProperties().GetActiveTcpConnections().Any(conn =&gt; conn.LocalEndPoint.Port == port); &#125;&#125;Program 增加属性 CurrentPort12345678910111213141516171819202122public static IWebHostBuilder using ConsulDemo.Extensions;using Microsoft.AspNetCore;using Microsoft.AspNetCore.Hosting;using Microsoft.Extensions.Configuration;namespace ConsulDemo&#123; public class Program &#123; public static void Main(string[] args) &#123; CreateWebHostBuilder(args).Build().Run(); &#125; public static int CurrentPort &#123; get; set; &#125; public static IWebHostBuilder CreateWebHostBuilder(string[] args) =&gt; WebHost.CreateDefaultBuilder(args) .UseStartup&lt;Startup&gt;() .UseUrls($"http://*:&#123;CurrentPort = PortHelper.GetRandAvailablePort()&#125;"); &#125;&#125;将注册与反注册的方法绑定到生命周期的开始和结束123456789101112131415161718192021222324252627282930313233343536373839404142434445464748public void Configure(IApplicationBuilder app, IHostingEnvironment env, IApplicationLifetime lifetime)&#123; if (env.IsDevelopment()) app.UseDeveloperExceptionPage(); app.UseMvc(); const string ip = "127.0.0.1"; var port = Program.CurrentPort; var serviceID = $"ConsulDemo_&#123;Environment.TickCount&#125;"; //Consul 客户端 var client = new ConsulClient((obj) =&gt; &#123; obj.Address = new Uri("http://127.0.0.1:8500"); obj.Datacenter = "dc1"; &#125;); // 在生命周期开始时注册服务 lifetime.ApplicationStarted.Register(() =&gt; &#123; var result = client.Agent.ServiceRegister(new AgentServiceRegistration &#123; ID = serviceID, Name = "ConsulDemo", Address = ip, Port = port, Check = new AgentServiceCheck &#123; DeregisterCriticalServiceAfter = TimeSpan.FromSeconds(5), Interval = TimeSpan.FromSeconds(5), HTTP = $"http://&#123;ip&#125;:&#123;port&#125;/api/values/0", Timeout = TimeSpan.FromSeconds(5) &#125; &#125;); Console.WriteLine($"Consul-ServiceRegister:&#123;result.Result.StatusCode&#125; - &#123;result.Result.RequestTime&#125;"); &#125;); // 在生命周期结束时反注册服务 lifetime.ApplicationStopping.Register(() =&gt; &#123; var result = client.Agent.ServiceDeregister(serviceID); Console.WriteLine($"Consul-ServiceDeregister:&#123;result.Result.StatusCode&#125; - &#123;result.Result.RequestTime&#125;"); &#125;);&#125;结果视图启动五个服务提供程序，图中可以看得到连接成功后的打印以及 Consul 健康检查得请求日志。从 Consul 的后台可以清楚的看到已经成功注册了五个 ConsulDemo 服务提供程序。服务消费程序首先我们新建一个 RestTemplateRestTemplate（模仿 Spring Cloud 中的）12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788using Consul;using Newtonsoft.Json;using System;using System.Linq;using System.Net;using System.Net.Http;using System.Net.Http.Headers;using System.Threading.Tasks;namespace ConsulTemplate&#123; public class RestTemplate &#123; private readonly string _consulServerUrl; public RestTemplate(string consulServerUrl = "http://127.0.0.1:8500") &#123; _consulServerUrl = consulServerUrl; &#125; /// &lt;summary&gt; /// 获取服务的第一个实现地址 /// &lt;/summary&gt; /// &lt;param name="serviceName"&gt;&lt;/param&gt; /// &lt;returns&gt;&lt;/returns&gt; private async Task&lt;string&gt; ResolveRootUrlAsync(string serviceName) &#123; using (var consulClient = new ConsulClient(c =&gt; c.Address = new Uri(_consulServerUrl))) &#123; var services = (await consulClient.Agent.Services()).Response; Console.WriteLine("当前所有服务"); foreach (var service in services) Console.WriteLine($"Service:&#123;service.Value.Service&#125;Address:&#123;service.Value.Address&#125;Port:&#123;service.Value.Port&#125;"); var agentServices = services.Where(s =&gt; s.Value.Service.Equals(serviceName, StringComparison.CurrentCultureIgnoreCase)).Select(s =&gt; s.Value).ToArray(); //根据当前TickCount对服务器个数取模，“随机”取一个机器出来，避免“轮询”的负载均衡策略需要计数加锁问题 var agentService = agentServices.ElementAt(Environment.TickCount % agentServices.Length); Console.WriteLine($"随机选取 Service:&#123;agentService.Service&#125;Address:&#123;agentService.Address&#125;Port:&#123;agentService.Port&#125;"); return agentService.Address + ":" + agentService.Port; &#125; &#125; /// &lt;summary&gt; /// 转化到实际接口地址 /// &lt;/summary&gt; /// &lt;param name="url"&gt;&lt;/param&gt; /// &lt;returns&gt;&lt;/returns&gt; private async Task&lt;string&gt; ResolveUrlAsync(string url) &#123; var uri = new Uri(url); var serviceName = uri.Host; var realRootUrl = await ResolveRootUrlAsync(serviceName); return uri.Scheme + "://" + realRootUrl + uri.PathAndQuery; &#125; public async Task&lt;ResponseEntity&lt;T&gt;&gt; GetForEntityAsync&lt;T&gt;(string url, HttpRequestHeaders requestHeaders = null) &#123; using (var httpClient = new HttpClient()) &#123; var requestMsg = new HttpRequestMessage(); if (requestHeaders != null) foreach (var header in requestHeaders) requestHeaders.Add(header.Key, header.Value); requestMsg.Method = HttpMethod.Get; requestMsg.RequestUri = new Uri(await ResolveUrlAsync(url)); var result = await httpClient.SendAsync(requestMsg); var respEntity = new ResponseEntity&lt;T&gt; &#123; StatusCode = result.StatusCode &#125;; var bodyStr = await result.Content.ReadAsStringAsync(); respEntity.Body = JsonConvert.DeserializeObject&lt;T&gt;(bodyStr); respEntity.Headers = respEntity.Headers; return respEntity; &#125; &#125; &#125;&#125;public class ResponseEntity&lt;T&gt;&#123; public HttpStatusCode StatusCode &#123; get; set; &#125; public T Body &#123; get; set; &#125;//返回的json反序列化出来的对象 public HttpResponseHeaders Headers &#123; get; set; &#125;//响应的报文头&#125;调用代码12345678910111213static void Main(string[] args)&#123; while (true) &#123; Console.WriteLine("请求开始"); var rest = new RestTemplate(); var data = rest.GetForEntityAsync&lt;DateTime&gt;("http://ConsulDemo/api/Values").Result; Console.WriteLine(data.StatusCode); Console.WriteLine(string.Join(",", data.Body)); Console.WriteLine("请求结束\r\n\r\n"); Console.ReadKey(); &#125;&#125;手动关掉一个服务端关掉的程序成功消失(反注册)资源管理器杀掉一个程序源码 ConsulDemo.7z]]></content>
@@ -152,8 +178,8 @@
         <category>学习笔记</category>
       </categories>
       <tags>
-        <tag>.NET</tag>
         <tag>服务治理发现</tag>
+        <tag>.NET</tag>
       </tags>
   </entry>
   <entry>
@@ -243,9 +269,9 @@
         <category>算法刷题</category>
       </categories>
       <tags>
+        <tag>C#</tag>
         <tag>51NOD</tag>
         <tag>刷题</tag>
-        <tag>C#</tag>
       </tags>
   </entry>
   <entry>
@@ -283,9 +309,9 @@
         <category>算法刷题</category>
       </categories>
       <tags>
+        <tag>C#</tag>
         <tag>51NOD</tag>
         <tag>刷题</tag>
-        <tag>C#</tag>
       </tags>
   </entry>
   <entry>
@@ -296,10 +322,10 @@
         <category>踩坑笔记</category>
       </categories>
       <tags>
+        <tag>语音识别</tag>
         <tag>ASR</tag>
         <tag>TTS</tag>
         <tag>NAudio</tag>
-        <tag>语音识别</tag>
       </tags>
   </entry>
   <entry>
@@ -310,9 +336,9 @@
         <category>算法笔记</category>
       </categories>
       <tags>
+        <tag>C#</tag>
         <tag>51NOD</tag>
         <tag>刷题</tag>
-        <tag>C#</tag>
         <tag>Prim</tag>
         <tag>贪心</tag>
       </tags>
@@ -325,9 +351,9 @@
         <category>算法刷题</category>
       </categories>
       <tags>
+        <tag>C#</tag>
         <tag>51NOD</tag>
         <tag>刷题</tag>
-        <tag>C#</tag>
       </tags>
   </entry>
   <entry>
@@ -338,9 +364,9 @@
         <category>算法刷题</category>
       </categories>
       <tags>
+        <tag>C#</tag>
         <tag>51NOD</tag>
         <tag>刷题</tag>
-        <tag>C#</tag>
       </tags>
   </entry>
   <entry>
@@ -351,9 +377,9 @@
         <category>算法刷题</category>
       </categories>
       <tags>
+        <tag>C#</tag>
         <tag>51NOD</tag>
         <tag>刷题</tag>
-        <tag>C#</tag>
       </tags>
   </entry>
   <entry>
@@ -364,9 +390,9 @@
         <category>算法刷题</category>
       </categories>
       <tags>
+        <tag>C#</tag>
         <tag>51NOD</tag>
         <tag>刷题</tag>
-        <tag>C#</tag>
         <tag>贪心算法</tag>
       </tags>
   </entry>
@@ -378,9 +404,9 @@
         <category>算法刷题</category>
       </categories>
       <tags>
+        <tag>C#</tag>
         <tag>51NOD</tag>
         <tag>刷题</tag>
-        <tag>C#</tag>
         <tag>概率</tag>
       </tags>
   </entry>
@@ -392,9 +418,9 @@
         <category>算法刷题</category>
       </categories>
       <tags>
+        <tag>C#</tag>
         <tag>51NOD</tag>
         <tag>刷题</tag>
-        <tag>C#</tag>
       </tags>
   </entry>
   <entry>
@@ -405,9 +431,9 @@
         <category>算法刷题</category>
       </categories>
       <tags>
+        <tag>C#</tag>
         <tag>51NOD</tag>
         <tag>刷题</tag>
-        <tag>C#</tag>
       </tags>
   </entry>
   <entry>
@@ -418,10 +444,10 @@
         <category>踩坑笔记</category>
       </categories>
       <tags>
+        <tag>语音识别</tag>
         <tag>ASR</tag>
         <tag>TTS</tag>
         <tag>NAudio</tag>
-        <tag>语音识别</tag>
       </tags>
   </entry>
   <entry>
@@ -433,8 +459,8 @@
       </categories>
       <tags>
         <tag>.NET</tag>
-        <tag>IP</tag>
         <tag>GeoIP2</tag>
+        <tag>IP</tag>
       </tags>
   </entry>
   <entry>
@@ -446,8 +472,8 @@
       </categories>
       <tags>
         <tag>爬虫</tag>
-        <tag>软件心得</tag>
         <tag>IP</tag>
+        <tag>软件心得</tag>
       </tags>
   </entry>
   <entry>
@@ -562,8 +588,8 @@
       </categories>
       <tags>
         <tag>Java</tag>
-        <tag>beanUtils</tag>
         <tag>javabean</tag>
+        <tag>beanUtils</tag>
       </tags>
   </entry>
   <entry>
@@ -575,8 +601,8 @@
       </categories>
       <tags>
         <tag>Java</tag>
-        <tag>javabean</tag>
         <tag>Introspector</tag>
+        <tag>javabean</tag>
       </tags>
   </entry>
   <entry>

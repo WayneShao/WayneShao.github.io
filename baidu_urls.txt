@@ -1,6 +1,6 @@
+https://blog.wayneshao.com/离职总结及未来一段时间的计划.html
 https://blog.wayneshao.com/汇总一下-Visual-Studio-各个版本的-Key.html
 https://blog.wayneshao.com/编写高质量Cx程序的建议（6-10）.html
 https://blog.wayneshao.com/ListBox-扩展方法-获取所有Item构成的集合.html
 https://blog.wayneshao.com/编写高质量Cx程序的建议（一）.html
 https://blog.wayneshao.com/关于租房到期引发的一系列问题.html
-https://blog.wayneshao.com/如何判定一个方法支不支持异步.html
