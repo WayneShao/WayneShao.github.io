@@ -8,9 +8,9 @@
         <category>踩坑笔记</category>
       </categories>
       <tags>
+        <tag>踩坑</tag>
         <tag>DockerCE</tag>
         <tag>K8s</tag>
-        <tag>踩坑</tag>
       </tags>
   </entry>
   <entry>
@@ -495,8 +495,8 @@
         <category>踩坑笔记</category>
       </categories>
       <tags>
-        <tag>C#</tag>
         <tag>Winform</tag>
+        <tag>C#</tag>
         <tag>单例</tag>
       </tags>
   </entry>
