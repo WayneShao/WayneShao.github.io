@@ -20,9 +20,9 @@
         <category>踩坑笔记</category>
       </categories>
       <tags>
-        <tag>踩坑</tag>
         <tag>DockerCE</tag>
         <tag>K8s</tag>
+        <tag>踩坑</tag>
       </tags>
   </entry>
   <entry>
@@ -599,8 +599,8 @@
       </categories>
       <tags>
         <tag>Java</tag>
-        <tag>javabean</tag>
         <tag>beanUtils</tag>
+        <tag>javabean</tag>
       </tags>
   </entry>
   <entry>
@@ -612,8 +612,8 @@
       </categories>
       <tags>
         <tag>Java</tag>
-        <tag>Introspector</tag>
         <tag>javabean</tag>
+        <tag>Introspector</tag>
       </tags>
   </entry>
   <entry>
