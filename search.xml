@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[var str = new string(string)问题]]></title>
+    <url>%2Fnew_string%E9%97%AE%E9%A2%98.html</url>
+    <content type="text"><![CDATA[前几日，广州群有小伙伴遇到了这样一道面试题1var s = new string("abc");关于以上语句到底创建了几个对象呢？由于印象里这种使用 string 来初始化 string 的操作并不常见，推测以下，应该是类似于 copy 的操作产生一个新的对象，所以我先盲猜，不考虑有上下文，只针对这一句语句，应该是2个。下面来试验： 定义string 属于引用类型，所以我们把单个 string 定义为堆中的对象，两个或多个引用类型变量引用同一个对象时，依然认为只有一个对象。 分析 文档分析首先，事实证明了不是我对 string 了解太少，而是被公司从策划 diss 了几次的升级计划导致我常用的 .NET Core 版本一直是 1.1 ，而用 string 初始化 string 的用法只有在 .NET Core 2.1 及以上版本才有，确切的说，只有 .NET Core 2.1、.NET Core 2.2、.NET Core 3.0 三个版本才有，以上结论来自官方文档并经过实际测试，文档如下：** .NET Core 2.0 String Constructors**** .NET Core 2.1 String Constructors**由官方文档可知，.NET Core 从 2.0 升级为 2.1 时，增加了一个构造函数String(ReadOnlySpan&lt;Char&gt;)题目中的 new(“qqq”)使用的正式这一构造函数，入参为 ReadOnlySpan&lt;Char&gt;结构体泛型，而这一类型也正是从 .NET Core 2.1 版本才新引入的。故，这一题目在 .NET Core 2.1 - .NET Core 3.0 版本成立，其余.NET 版本中均无法编译通过。 源码分析下面开始直接代码寻找答案，查看 String.cs 源码1234567891011121314151617181920...[MethodImpl(MethodImplOptions.InternalCall)]public extern String(ReadOnlySpan&lt;char&gt; value);#if !CORECLRstatic#endifprivate unsafe string Ctor(ReadOnlySpan&lt;char&gt; value)&#123; if (value.Length == 0) return Empty; string result = FastAllocateString(value.Length); Buffer.Memmove(ref result._firstChar, ref MemoryMarshal.GetReference(value), (uint)value.Length); return result;&#125;...[MethodImpl(MethodImplOptions.AggressiveInlining)]public static implicit operator ReadOnlySpan&lt;char&gt;(string? value) =&gt; value != null ? new ReadOnlySpan&lt;char&gt;(ref value.GetRawStringData(), value.Length) : default;由官方源码可知，当入参为 string 时，首先会调用隐式转换方法将入参转换为ReadOnlySpan&lt;char&gt;类型，而后再使用转换后的值调用构造函数String(ReadOnlySpan&lt;char&gt; value)，构造函数中，重新分配了新的内存空间给新字符串，将入参的值 Copy 到新字符串后返回，所以该构造函数会产生一个全新的字符串值。 测试 测试代码以下是试验代码：1234567891011121314151617181920212223242526using System;using System.Runtime.InteropServices;namespace ConsoleApp1&#123; class Program &#123; static void Main(string[] args) &#123; string str0 = null; var str1 = new string("123"); var str2 = "123"; var str3 = str2; var str4 = "123"; Console.WriteLine($"&#123;GetMemoryAddress(str0)&#125; - &#123;GetMemoryAddress(str1)&#125; - &#123;GetMemoryAddress(str2)&#125; - &#123;GetMemoryAddress(str3)&#125; - &#123;GetMemoryAddress(str4)&#125;"); Console.WriteLine($"&#123;object.ReferenceEquals(str0,str1)&#125; - &#123;object.ReferenceEquals(str1,str2)&#125; - &#123;object.ReferenceEquals(str2,str3)&#125; - &#123;object.ReferenceEquals(str3,str4)&#125;"); Console.ReadKey(); &#125; private static string GetMemoryAddress(object o) =&gt; $"0x&#123;GCHandle.Alloc(o, GCHandleType.Pinned).AddrOfPinnedObject().ToString("X")&#125;"; &#125;&#125;输出结果为： IL代码由 IL 代码可知，的确是先调用了隐式转换函数，而后再使用转换后的值调用构造函数String(ReadOnlySpan&lt;char&gt; value)。 结论这一题目在 .NET Core 2.1 - .NET Core 3.0 版本成立，其余.NET 版本中均无法编译通过。如果传入的字符串已在字符串常量池中，那么该语句只会产生一个新的 string 对象。如果传入的字符串未在字符串常量池中，那么该语句会产生两个新的string对象。]]></content>
+      <categories>
+        <category>面试笔记</category>
+      </categories>
+      <tags>
+        <tag>string</tag>
+        <tag>面试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[多益大学技术简单总结]]></title>
     <url>%2F%E5%A4%9A%E7%9B%8A%E5%A4%A7%E5%AD%A6%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93.html</url>
     <content type="text"><![CDATA[距离离职也有了大半个月，决定对整个大学项目开发的方方面面做一个简要总结。架构图总结大学的整体结构采用单体架构，整套架构是从传统三层架构+MVC扩展演进而来的，目前大部分页面都已经完成了前后端分离，目前大部分的业务代码都集中在BLL层。待解决的问题前后端分离不彻底描述系统已经做了前后端分离，现在的情况是，所有的模块都是SPA，但是SPA本身还是通过 MVC 渲染模式，Router由后端完成， View 进行渲染。拟解决把所有的单页整合到一个更大的单页里，把所有交互跳转都交给前端来做。将整个前端代码分离到另一个库，前端的发版交由前端自行完成，不再由后端统一维护。后端服务层耦合严重描述系统经历了两年，多代程序员的维护，业务层各个Service中代码耦合严重，导致维护难度很大，也几乎不可能直接向微服务架构迁移。拟解决把各个Service里的引用收束到服务实体本身，所有需要跟其他业务实体交互的部分，部封装一层聚合服务来解决，将整个程序的架构演进到“面向微服务的单体应用架构”。（截止到离职前用户部分已经完成）Wait…]]></content>
@@ -20,9 +32,9 @@
         <category>踩坑笔记</category>
       </categories>
       <tags>
+        <tag>踩坑</tag>
         <tag>DockerCE</tag>
         <tag>K8s</tag>
-        <tag>踩坑</tag>
       </tags>
   </entry>
   <entry>
@@ -599,8 +611,8 @@
       </categories>
       <tags>
         <tag>Java</tag>
-        <tag>beanUtils</tag>
         <tag>javabean</tag>
+        <tag>beanUtils</tag>
       </tags>
   </entry>
   <entry>
@@ -612,8 +624,8 @@
       </categories>
       <tags>
         <tag>Java</tag>
-        <tag>javabean</tag>
         <tag>Introspector</tag>
+        <tag>javabean</tag>
       </tags>
   </entry>
   <entry>

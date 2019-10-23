@@ -1,6 +1,6 @@
+https://blog.wayneshao.com/new_string问题.html
 https://blog.wayneshao.com/多益大学技术总结.html
 https://blog.wayneshao.com/Windows下DockerCE启用K8s踩坑笔记.html
 https://blog.wayneshao.com/离职总结及未来一段时间的计划.html
 https://blog.wayneshao.com/汇总一下-Visual-Studio-各个版本的-Key.html
 https://blog.wayneshao.com/编写高质量Cx程序的建议（6-10）.html
-https://blog.wayneshao.com/ListBox-扩展方法-获取所有Item构成的集合.html
