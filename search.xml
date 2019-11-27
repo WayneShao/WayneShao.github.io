@@ -519,8 +519,8 @@
         <category>踩坑笔记</category>
       </categories>
       <tags>
-        <tag>C#</tag>
         <tag>Winform</tag>
+        <tag>C#</tag>
         <tag>单例</tag>
       </tags>
   </entry>
@@ -611,8 +611,8 @@
       </categories>
       <tags>
         <tag>Java</tag>
-        <tag>beanUtils</tag>
         <tag>javabean</tag>
+        <tag>beanUtils</tag>
       </tags>
   </entry>
   <entry>
@@ -624,8 +624,8 @@
       </categories>
       <tags>
         <tag>Java</tag>
-        <tag>javabean</tag>
         <tag>Introspector</tag>
+        <tag>javabean</tag>
       </tags>
   </entry>
   <entry>
