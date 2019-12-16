@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[CentOS7 使用 Docker 部署 GitLab-CE-CN]]></title>
+    <url>%2FCentOS7-%E4%BD%BF%E7%94%A8-Docker-%E9%83%A8%E7%BD%B2-GitLab-CE-CN.html</url>
+    <content type="text"><![CDATA[最近需要在公司的CentOS7服务器上部署一套GitLab服务，打算采用Docker来完成，记录一下部署过程。安装 Docker 与 Docker Compose安装 Docker卸载旧版本(新机可忽略)12345678sudo yum remove docker \ docker-client \ docker-client-latest \ docker-common \ docker-latest \ docker-latest-logrotate \ docker-logrotate \ docker-engine安装所需包123sudo yum install -y yum-utils \ device-mapper-persistent-data \ lvm2配置仓库123sudo yum-config-manager \ --add-repo \ https://download.docker.com/linux/centos/docker-ce.repo安装 Docker Engine Community安装最新版本的 Docker Engine-Community 和 containerd123sudo yum install docker-ce \ docker-ce-cli \ containerd.io如果提示接受 GPG 密钥，选yes。启动 Docker1sudo systemctl start docker验证安装12sudo docker -vsudo docker run hello-world正确输出如下安装 Docker Compose安装企业Linux的额外软件包1sudo yum install epel-release安装 python3-pip1sudo yum install -y python3-pip安装 Docker Compose1sudo pip3 install docker-compose验证安装1docker-compose version正确输出如下安装 Redis 和 GitLabNetwork我这边预计会复用Redis，所以要创建单独的Redis镜像，那么在创建之前，需要先见一个 network 用于将多个镜像放置在同一网络环境下。1sudo docker network create net_defaultRedis下面创建 Redis，我这里使用 Docker Compose 来完成。新建一个文件夹并将其重命名为 Redis，在 Redis 文件夹中创建 config 文件夹，而后在 config 文件夹中创建 Redis 的配置文件 redis.conf1234#redis的databases数量databases 32#redis密码requirepass qm4Cqd3srYK0MHTPEZmf在 Redis 目录中新建 docker-compose.yml 脚本:1234567891011121314151617version: '3'services: redis: image: redis:4.0.8-alpine container_name: db-redis restart: always ports: - 6379:6379 networks: - net_default volumes: - ./config:/docker/config - ./data:/data command: redis-server /docker/config/redis.confnetworks: net_default: external: true然后在 docker-compose.yml 所在目录下接下来，在 docker-compose.yml 所在目录运行 docker-compose:1docker-compose up -dGitLab新建一个文件夹并将其重命名为 GitLab，在 GitLab 文件夹中创建 config 文件夹，在 config 文件夹中创建 ssl 文件夹，而后将我们的 SSL 证书拷贝到 ssl 目录中。而后回到 GitLab 文件夹开始编写我们的 docker-compose.yml123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051version: '3'services: gitlab: image: 'twang2218/gitlab-ce-zh:latest' container_name: gitlab restart: unless-stopped environment: TZ: 'Asia/Shanghai' GITLAB_OMNIBUS_CONFIG: | external_url 'https://gitlab.xxxxxx.com' nginx['redirect_http_to_https'] = true nginx['ssl_certificate'] = "/etc/gitlab/ssl/ssl_certificate.pem" nginx['ssl_certificate_key'] = "/etc/gitlab/ssl/ssl_certificate_key.key" gitlab_rails['time_zone'] = 'Asia/Shanghai' #以下为启用邮件SMTP相关设置，我用的QQ邮箱 gitlab_rails['smtp_enable'] = true gitlab_rails['smtp_address'] = 'smtp.qq.com' gitlab_rails['smtp_port'] = 465 gitlab_rails['smtp_user_name'] = 'xxxxxx@qq.com' gitlab_rails['smtp_password'] = 'ruqajdavfihndcad' gitlab_rails['smtp_domain'] = 'smtp.qq.com' gitlab_rails['smtp_authentication'] = 'login' gitlab_rails['smtp_enable_starttls_auto'] = true gitlab_rails['smtp_tls'] = true gitlab_rails['gitlab_email_enabled'] = true gitlab_rails['gitlab_email_from'] = 'xxxxxx@qq.com' gitlab_rails['gitlab_email_display_name'] = 'GitLab' gitlab_rails['gitlab_email_reply_to'] = '3347611871@qq.com' user["git_user_email"] = 'xxxxxx@163.com' #修改sidekiq的数量，减少内存占用，默认为15，也可以不填 sidekiq['concurrency'] = 10 #使用外部redis所需设置，根据刚刚生成的redis设置修改 gitlab_rails['redis_port'] = 6379 gitlab_rails['redis_host'] = 'db-redis' gitlab_rails['redis_password'] = 'qm4Cqd3srYK0MHTPEZmf' gitlab_rails['redis_database'] = '1' #因为22端口被占用，修改映射的端口号时，同时修改在Gitlab项目中的ssh地址加上端口号 gitlab_rails['gitlab_shell_ssh_port'] = 23 ports: - '80:80' - '443:443' - '23:22' networks: - net_default volumes: - ./config:/etc/gitlab - ./data:/var/opt/gitlab - ./logs:/var/log/gitlabnetworks: net_default: external: true接下来，在 docker-compose.yml 所在目录运行 docker-compose:1docker-compose up -d至此，我们完成了使用 Docker 搭建 GitLab 的全过程，直接访问HTTP对应服务器的80/443端口接口即可：踩坑记录docker端口映射或启动容器时报错Error response from daemon: driver failed programming external connectivity on endpointdocker服务启动时定义的自定义链DOCKER由于某种原因被清掉重启docker服务及可重新生成自定义链DOCKER1systemctl restart dockerSMTP 验证失败163、QQ等邮箱在开启了授权码之后，需要使用授权码做协议登陆。阿里云，启动以后无法通过外部访问首先需要排除防火墙问题，firewall 和 iptables 均需要处理，处理后如果仍然不行，那可能是阿里云自身的安全策略问题，需要在管理后台设置。阿里云，邮件无法发送可能是阿里云对 25 端口做了屏蔽，可以按照我给出的配置，使用 SSL 的 SMTP 端口 465 。]]></content>
+      <categories>
+        <category>踩坑笔记</category>
+      </categories>
+      <tags>
+        <tag>Docker</tag>
+        <tag>Linux</tag>
+        <tag>CentOS</tag>
+        <tag>GitLab</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[var str = new string(string)问题]]></title>
     <url>%2Fnew_string%E9%97%AE%E9%A2%98.html</url>
     <content type="text"><![CDATA[前几日，广州群有小伙伴遇到了这样一道面试题1var s = new string("abc");关于以上语句到底创建了几个对象呢？由于印象里这种使用 string 来初始化 string 的操作并不常见，推测以下，应该是类似于 copy 的操作产生一个新的对象，所以我先盲猜，不考虑有上下文，只针对这一句语句，应该是2个。下面来试验：定义string 属于引用类型，所以我们把单个 string 定义为堆中的对象，两个或多个引用类型变量引用同一个对象时，依然认为只有一个对象。分析文档分析首先，事实证明了不是我对 string 了解太少，而是被公司从策划 diss 了几次的升级计划导致我常用的 .NET Core 版本一直是 1.1 ，而用 string 初始化 string 的用法只有在 .NET Core 2.1 及以上版本才有，确切的说，只有 .NET Core 2.1、.NET Core 2.2、.NET Core 3.0 三个版本才有，以上结论来自官方文档并经过实际测试，文档如下：.NET Core 2.0 String Constructors.NET Core 2.1 String Constructors由官方文档可知，.NET Core 从 2.0 升级为 2.1 时，增加了一个构造函数String(ReadOnlySpan&lt;Char&gt;)题目中的 new(“qqq”)使用的正式这一构造函数，入参为 ReadOnlySpan&lt;Char&gt;结构体泛型，而这一类型也正是从 .NET Core 2.1 版本才新引入的。故，这一题目在 .NET Core 2.1 - .NET Core 3.0 版本成立，其余.NET 版本中均无法编译通过。源码分析下面开始直接代码寻找答案，查看 String.cs 源码1234567891011121314151617181920...[MethodImpl(MethodImplOptions.InternalCall)]public extern String(ReadOnlySpan&lt;char&gt; value);#if !CORECLRstatic#endifprivate unsafe string Ctor(ReadOnlySpan&lt;char&gt; value)&#123; if (value.Length == 0) return Empty; string result = FastAllocateString(value.Length); Buffer.Memmove(ref result._firstChar, ref MemoryMarshal.GetReference(value), (uint)value.Length); return result;&#125;...[MethodImpl(MethodImplOptions.AggressiveInlining)]public static implicit operator ReadOnlySpan&lt;char&gt;(string? value) =&gt; value != null ? new ReadOnlySpan&lt;char&gt;(ref value.GetRawStringData(), value.Length) : default;由官方源码可知，当入参为 string 时，首先会调用隐式转换方法将入参转换为ReadOnlySpan&lt;char&gt;类型，而后再使用转换后的值调用构造函数String(ReadOnlySpan&lt;char&gt; value)，构造函数中，重新分配了新的内存空间给新字符串，将入参的值 Copy 到新字符串后返回，所以该构造函数会产生一个全新的字符串值。测试测试代码以下是试验代码：1234567891011121314151617181920212223242526using System;using System.Runtime.InteropServices;namespace ConsoleApp1&#123; class Program &#123; static void Main(string[] args) &#123; string str0 = null; var str1 = new string("123"); var str2 = "123"; var str3 = str2; var str4 = "123"; Console.WriteLine($"&#123;GetMemoryAddress(str0)&#125; - &#123;GetMemoryAddress(str1)&#125; - &#123;GetMemoryAddress(str2)&#125; - &#123;GetMemoryAddress(str3)&#125; - &#123;GetMemoryAddress(str4)&#125;"); Console.WriteLine($"&#123;object.ReferenceEquals(str0,str1)&#125; - &#123;object.ReferenceEquals(str1,str2)&#125; - &#123;object.ReferenceEquals(str2,str3)&#125; - &#123;object.ReferenceEquals(str3,str4)&#125;"); Console.ReadKey(); &#125; private static string GetMemoryAddress(object o) =&gt; $"0x&#123;GCHandle.Alloc(o, GCHandleType.Pinned).AddrOfPinnedObject().ToString("X")&#125;"; &#125;&#125;输出结果为：IL代码由 IL 代码可知，的确是先调用了隐式转换函数，而后再使用转换后的值调用构造函数String(ReadOnlySpan&lt;char&gt; value)。结论这一题目在 .NET Core 2.1 - .NET Core 3.0 版本成立，其余.NET 版本中均无法编译通过。如果传入的字符串已在字符串常量池中，那么该语句只会产生一个新的 string 对象。如果传入的字符串未在字符串常量池中，那么该语句会产生两个新的string对象。]]></content>
@@ -482,8 +496,8 @@
       </categories>
       <tags>
         <tag>.NET</tag>
-        <tag>GeoIP2</tag>
         <tag>IP</tag>
+        <tag>GeoIP2</tag>
       </tags>
   </entry>
   <entry>
@@ -495,8 +509,8 @@
       </categories>
       <tags>
         <tag>爬虫</tag>
-        <tag>IP</tag>
         <tag>软件心得</tag>
+        <tag>IP</tag>
       </tags>
   </entry>
   <entry>
