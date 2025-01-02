@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.wayneshao.com/posts/15145.html</loc>
+    
+    <lastmod>2025-01-02</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.wayneshao.com/posts/46318.html</loc>
     
     <lastmod>2022-06-08</lastmod>
@@ -1769,6 +1776,13 @@
   
   <url>
     <loc>https://blog.wayneshao.com/tags/%E9%98%BF%E9%93%BA%E7%A7%91%E6%8A%80/</loc>
+    <lastmod>2025-01-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.wayneshao.com/tags/%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/</loc>
     <lastmod>2025-01-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
