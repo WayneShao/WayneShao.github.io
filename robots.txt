@@ -4,6 +4,10 @@ User-agent: *
 Allow: /
 Allow: /archives/
 
+
+Disallow: /resume.html
+Disallow: /resume_en.html
+
 Disallow: /vendors/
 Disallow: /js/
 Disallow: /css/
