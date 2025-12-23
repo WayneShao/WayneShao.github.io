@@ -6,7 +6,7 @@
   <link href="https://blog.wayneshao.com/atom.xml" rel="self"/>
   
   <link href="https://blog.wayneshao.com/"/>
-  <updated>2025-11-20T03:27:25.968Z</updated>
+  <updated>2025-12-23T06:31:05.986Z</updated>
   <id>https://blog.wayneshao.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2025-12-22快手直播涉黄刷屏事件：初步分析（基于公开信息 + 笔者推演）</title>
+    <link href="https://blog.wayneshao.com/posts/46190.html"/>
+    <id>https://blog.wayneshao.com/posts/46190.html</id>
+    <published>2025-12-23T06:20:09.000Z</published>
+    <updated>2025-12-23T06:31:05.986Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;说明：截至目前快手未公开完整事故报告/技术复盘。本文依据公开报道中可交叉验证的时间线与处置动作，并结合笔者事故处理经验，对业内常见的几种猜测做“可能性评估”，最后给出一条更自洽的链路推演。文中涉及根因的部分均为推测，不代表事实结论。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="偶有所得" scheme="https://blog.wayneshao.com/categories/%E5%81%B6%E6%9C%89%E6%89%80%E5%BE%97/"/>
+    
+    
+    <category term="高可用" scheme="https://blog.wayneshao.com/tags/%E9%AB%98%E5%8F%AF%E7%94%A8/"/>
+    
+    <category term="快手" scheme="https://blog.wayneshao.com/tags/%E5%BF%AB%E6%89%8B/"/>
+    
+    <category term="攻击" scheme="https://blog.wayneshao.com/tags/%E6%94%BB%E5%87%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>Cloudflare 2025-11-18 宕机事件分析与“白嫖玩家”的灾备方案设计</title>
@@ -452,35 +477,6 @@
     <category term="Git" scheme="https://blog.wayneshao.com/tags/Git/"/>
     
     <category term="GitFlow" scheme="https://blog.wayneshao.com/tags/GitFlow/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GitLab 非 Docker .NET Core CI/CD搭建</title>
-    <link href="https://blog.wayneshao.com/posts/33677.html"/>
-    <id>https://blog.wayneshao.com/posts/33677.html</id>
-    <published>2019-12-17T11:26:52.000Z</published>
-    <updated>2022-06-08T01:28:50.145Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;公司的 GitLab 服务部署完了，但是领导出于性能方面的考虑，希望测试和生产环境不用 Docker 来部署，遂搭建了一套不基于Docker 的 GitLab CI/CD 负载均衡测试环境。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="踩坑笔记" scheme="https://blog.wayneshao.com/categories/%E8%B8%A9%E5%9D%91%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="Docker" scheme="https://blog.wayneshao.com/tags/Docker/"/>
-    
-    <category term="Linux" scheme="https://blog.wayneshao.com/tags/Linux/"/>
-    
-    <category term="CentOS" scheme="https://blog.wayneshao.com/tags/CentOS/"/>
-    
-    <category term="GitLab" scheme="https://blog.wayneshao.com/tags/GitLab/"/>
-    
-    <category term="CI/CD" scheme="https://blog.wayneshao.com/tags/CI-CD/"/>
-    
-    <category term="负载均衡" scheme="https://blog.wayneshao.com/tags/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/"/>
     
   </entry>
   
