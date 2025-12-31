@@ -6,7 +6,7 @@
   <link href="https://blog.wayneshao.com/atom.xml" rel="self"/>
   
   <link href="https://blog.wayneshao.com/"/>
-  <updated>2025-01-02T08:00:11.262Z</updated>
+  <updated>2025-12-31T14:14:39.727Z</updated>
   <id>https://blog.wayneshao.com/</id>
   
   <author>
@@ -17,6 +17,77 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>2025 年度总结：我这一年学会的，是“别再硬推”</title>
+    <link href="https://blog.wayneshao.com/posts/46191.html"/>
+    <id>https://blog.wayneshao.com/posts/46191.html</id>
+    <published>2025-12-31T13:38:39.000Z</published>
+    <updated>2025-12-31T14:14:39.727Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;2025-年度总结：从骨折到慢下来&quot;&gt;&lt;a href=&quot;#2025-年度总结：从骨折到慢下来&quot; class=&quot;headerlink&quot; title=&quot;2025 年度总结：从骨折到慢下来&quot;&gt;&lt;/a&gt;2025 年度总结：从骨折到慢下来&lt;/h1&gt;&lt;p&gt;今天是 &lt;strong&gt;2025 年 12 月 31 日&lt;/strong&gt;，这一年就要结束了。&lt;br&gt; 从年初的摔跤开始，到年末的姐姐家里添了个新生命，回顾这一年，最明显的变化是：&lt;strong&gt;我学会了，慢一点也没关系&lt;/strong&gt;。&lt;br&gt; &lt;img src=&quot;https://qiniucdn.wayneshao.com/b117b2fb326e07c2c8ccff8869d70786.jpg&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="年度终结" scheme="https://blog.wayneshao.com/categories/%E5%B9%B4%E5%BA%A6%E7%BB%88%E7%BB%93/"/>
+    
+    
+    <category term="年度总结" scheme="https://blog.wayneshao.com/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
+    
+    <category term="2025" scheme="https://blog.wayneshao.com/tags/2025/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2025-12-22快手直播涉黄刷屏事件：初步分析（基于公开信息 + 笔者推演）</title>
+    <link href="https://blog.wayneshao.com/posts/46190.html"/>
+    <id>https://blog.wayneshao.com/posts/46190.html</id>
+    <published>2025-12-23T06:20:09.000Z</published>
+    <updated>2025-12-31T13:34:13.288Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;说明：截至目前快手未公开完整事故报告/技术复盘。本文依据公开报道中可交叉验证的时间线与处置动作，并结合笔者事故处理经验，对业内常见的几种猜测做“可能性评估”，最后给出一条更自洽的链路推演。文中涉及根因的部分均为推测，不代表事实结论。  &lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="偶有所得" scheme="https://blog.wayneshao.com/categories/%E5%81%B6%E6%9C%89%E6%89%80%E5%BE%97/"/>
+    
+    
+    <category term="高可用" scheme="https://blog.wayneshao.com/tags/%E9%AB%98%E5%8F%AF%E7%94%A8/"/>
+    
+    <category term="快手" scheme="https://blog.wayneshao.com/tags/%E5%BF%AB%E6%89%8B/"/>
+    
+    <category term="攻击" scheme="https://blog.wayneshao.com/tags/%E6%94%BB%E5%87%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cloudflare 2025-11-18 宕机事件分析与“白嫖玩家”的灾备方案设计</title>
+    <link href="https://blog.wayneshao.com/posts/46189.html"/>
+    <id>https://blog.wayneshao.com/posts/46189.html</id>
+    <published>2025-11-19T11:37:16.000Z</published>
+    <updated>2025-12-31T13:34:13.278Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;本文内容主要基于 &lt;a href=&quot;https://blog.cloudflare.com/18-november-2025-outage/&quot;&gt;Cloudflare 官方事故报告&lt;/a&gt;和个人推演，仅代表个人观点，时间线以北京时间为准，如有错漏，欢迎指正。&lt;br&gt;方案有一个前提条件：&lt;strong&gt;域名注册商不能是 Cloudflare 自身&lt;/strong&gt;，否则你无法通过第三方注册商的 NS 切换实现真正意义上的“脱离 CF”。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="偶有所得" scheme="https://blog.wayneshao.com/categories/%E5%81%B6%E6%9C%89%E6%89%80%E5%BE%97/"/>
+    
+    
+    <category term="Cloudflare" scheme="https://blog.wayneshao.com/tags/Cloudflare/"/>
+    
+    <category term="宕机" scheme="https://blog.wayneshao.com/tags/%E5%AE%95%E6%9C%BA/"/>
+    
+    <category term="高可用" scheme="https://blog.wayneshao.com/tags/%E9%AB%98%E5%8F%AF%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【群友笔记】int[] 如何强转为 byte[]</title>
     <link href="https://blog.wayneshao.com/posts/15145.html"/>
     <id>https://blog.wayneshao.com/posts/15145.html</id>
@@ -24,8 +95,7 @@
     <updated>2025-01-02T08:00:11.262Z</updated>
     
     
-    <summary type="html">&lt;p&gt;今天群友提出了以下问题&lt;br /&gt;
-&lt;img src=&quot;/images/20250102151052013/20250102034128988.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;今天群友提出了以下问题&lt;br&gt;&lt;img src=&quot;/images/20250102151052013/20250102034128988.png&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -41,7 +111,7 @@
     <link href="https://blog.wayneshao.com/posts/46320.html"/>
     <id>https://blog.wayneshao.com/posts/46320.html</id>
     <published>2022-02-22T09:01:59.000Z</published>
-    <updated>2022-06-08T01:28:50.136Z</updated>
+    <updated>2025-12-31T13:34:13.274Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文是从&lt;a href=&quot;https://docs.microsoft.com/zh-cn/dotnet/csharp/whats-new/csharp-version-history&quot;&gt;官方文档&lt;/a&gt;加以摘录和修改而来，在语言版本的节点加入了对应框架版本的主要特征，主要用作记录以备作者自己查阅。&lt;br&gt;本页介绍了 C# 语言每个主要版本的发展历史。 C# 团队将继续创新，以添加新功能。 可以在 GitHub 上的 &lt;a href=&quot;https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md&quot;&gt;dotnet/roslyn 存储库&lt;/a&gt;上找到详细的语言功能状态，包括考虑在即将发布的版本中添加的功能。&lt;/p&gt;</summary>
@@ -62,7 +132,7 @@
     <link href="https://blog.wayneshao.com/posts/46319.html"/>
     <id>https://blog.wayneshao.com/posts/46319.html</id>
     <published>2022-02-15T06:18:09.000Z</published>
-    <updated>2022-06-08T01:28:50.183Z</updated>
+    <updated>2025-12-31T13:34:13.339Z</updated>
     
     
     <summary type="html">&lt;p&gt;这是一道来自前同事腾讯一面的面试题，题面如下：&lt;br&gt;有一个 Excel 文档，只有一个 Sheet，只有一列，这一列的内容是 QQ 号，一共 40 亿行。&lt;/p&gt;
@@ -85,7 +155,7 @@
     <link href="https://blog.wayneshao.com/posts/46318.html"/>
     <id>https://blog.wayneshao.com/posts/46318.html</id>
     <published>2022-01-03T02:42:46.000Z</published>
-    <updated>2022-06-08T01:28:50.185Z</updated>
+    <updated>2025-12-31T13:34:13.342Z</updated>
     
     
     <summary type="html">&lt;p&gt;2021 年 10 月 30 日 17 时 42 分，我签下了交接证明和离职证明，为我在深圳市阿铺科技有限公司 690 天的工作画上了句号。&lt;br&gt;如今距离离职已经两月有余，今日为这段经历做一个注脚。&lt;/p&gt;</summary>
@@ -106,7 +176,7 @@
     <link href="https://blog.wayneshao.com/posts/46317.html"/>
     <id>https://blog.wayneshao.com/posts/46317.html</id>
     <published>2021-10-01T11:03:51.000Z</published>
-    <updated>2022-06-08T01:28:50.142Z</updated>
+    <updated>2025-12-31T13:34:13.281Z</updated>
     
     
     <summary type="html">&lt;p&gt;　　上一篇，我们主要分析了 Docker 沙盒机制的实现原理。但是光有沙盒还不够，Docker 为了实现“一致性”，引入了 Docker 镜像这一项伟大的创举，使得容器的传递和迁移更加简单，这一篇我们来用一个扒一扒 Docker 镜像的具体原理。&lt;/p&gt;</summary>
@@ -116,9 +186,9 @@
     <category term="云原生" scheme="https://blog.wayneshao.com/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/"/>
     
     
-    <category term="云原生" scheme="https://blog.wayneshao.com/tags/%E4%BA%91%E5%8E%9F%E7%94%9F/"/>
-    
     <category term="Docker" scheme="https://blog.wayneshao.com/tags/Docker/"/>
+    
+    <category term="云原生" scheme="https://blog.wayneshao.com/tags/%E4%BA%91%E5%8E%9F%E7%94%9F/"/>
     
   </entry>
   
@@ -127,7 +197,7 @@
     <link href="https://blog.wayneshao.com/posts/46316.html"/>
     <id>https://blog.wayneshao.com/posts/46316.html</id>
     <published>2021-09-26T11:03:51.000Z</published>
-    <updated>2022-06-08T01:28:50.142Z</updated>
+    <updated>2025-12-31T13:34:13.280Z</updated>
     
     
     <summary type="html">&lt;p&gt;　　上一篇，顺着云计算的发展史，我们看到了兴起于 PaaS 技术普及的容器技术，看到了容器技术通过容器镜像彻底解决了打包问题，按照连续思维，其实接下来应该讲讲 Docker 出现之后有哪些竞争对手，为什么 Docker 可以胜出，连带着让 Docker 几乎等同于容器技术本身，容器编排竞争中 Swarm 为什么输给了 Kubernetes，不过出于个人对整个云原生知识网络的感受，我觉得可以在这次开个分支，先不谈历史，讲一下 Docker 的实现原理。&lt;/p&gt;
@@ -142,9 +212,9 @@
     <category term="云原生" scheme="https://blog.wayneshao.com/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/"/>
     
     
-    <category term="云原生" scheme="https://blog.wayneshao.com/tags/%E4%BA%91%E5%8E%9F%E7%94%9F/"/>
-    
     <category term="Docker" scheme="https://blog.wayneshao.com/tags/Docker/"/>
+    
+    <category term="云原生" scheme="https://blog.wayneshao.com/tags/%E4%BA%91%E5%8E%9F%E7%94%9F/"/>
     
   </entry>
   
@@ -153,7 +223,7 @@
     <link href="https://blog.wayneshao.com/posts/46315.html"/>
     <id>https://blog.wayneshao.com/posts/46315.html</id>
     <published>2021-09-22T12:41:45.000Z</published>
-    <updated>2022-06-08T01:28:50.144Z</updated>
+    <updated>2025-12-31T13:34:13.281Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;strong&gt;是时代选择了 Docker？还是 Docker 选择了时代？&lt;/strong&gt;&lt;/p&gt;
@@ -164,9 +234,9 @@
     <category term="云原生" scheme="https://blog.wayneshao.com/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/"/>
     
     
-    <category term="云原生" scheme="https://blog.wayneshao.com/tags/%E4%BA%91%E5%8E%9F%E7%94%9F/"/>
-    
     <category term="Docker" scheme="https://blog.wayneshao.com/tags/Docker/"/>
+    
+    <category term="云原生" scheme="https://blog.wayneshao.com/tags/%E4%BA%91%E5%8E%9F%E7%94%9F/"/>
     
     <category term="云计算" scheme="https://blog.wayneshao.com/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
     
@@ -177,7 +247,7 @@
     <link href="https://blog.wayneshao.com/posts/46314.html"/>
     <id>https://blog.wayneshao.com/posts/46314.html</id>
     <published>2021-09-20T08:51:08.000Z</published>
-    <updated>2022-06-08T01:28:50.162Z</updated>
+    <updated>2025-12-31T13:34:13.318Z</updated>
     
     
     <summary type="html">&lt;p&gt;　　最近几年，相信大家都越来越多的在各种场合各种平台听到过了“云原生”这个词。&lt;br&gt;　　比如，关于云原生应用的“&lt;a href=&quot;https://12factor.net/&quot;&gt;Twelve-Factor App&lt;/a&gt;”理论，现在已经是基础设施的现象级容器技术，几乎已经等同于容器本身的 Docker，还有容器编排技术 Kubernetes，以及 Kubernetes 背后的 CNCF（云原生计算基金会）。&lt;br&gt;　　那么，什么才是“云原生”呢？什么样的系统架构才能被称为云原生架构呢？&lt;/p&gt;</summary>
@@ -200,7 +270,7 @@
     <link href="https://blog.wayneshao.com/posts/46313.html"/>
     <id>https://blog.wayneshao.com/posts/46313.html</id>
     <published>2021-09-14T09:01:24.000Z</published>
-    <updated>2022-06-08T01:28:50.173Z</updated>
+    <updated>2025-12-31T13:34:13.330Z</updated>
     
     
     <summary type="html">&lt;p&gt;　　本次的描述的主体是指发生在 2021 年 7 月 13 日晚上 23 点左右的，无响应时间持续约半小时左右，完全恢复时间约8小时的宕机事件。&lt;br&gt;　　&lt;strong&gt;本文内容是作者依据网上公开信息和个人在当时的体验综合分析而来，精确的时间线可能存在一定程度的错漏，仅代表作者本人的观点，如有雷同，纯属巧合。&lt;/strong&gt;&lt;br&gt;</summary>
@@ -210,11 +280,11 @@
     <category term="偶有所得" scheme="https://blog.wayneshao.com/categories/%E5%81%B6%E6%9C%89%E6%89%80%E5%BE%97/"/>
     
     
-    <category term="B站" scheme="https://blog.wayneshao.com/tags/B%E7%AB%99/"/>
-    
     <category term="宕机" scheme="https://blog.wayneshao.com/tags/%E5%AE%95%E6%9C%BA/"/>
     
     <category term="高可用" scheme="https://blog.wayneshao.com/tags/%E9%AB%98%E5%8F%AF%E7%94%A8/"/>
+    
+    <category term="B站" scheme="https://blog.wayneshao.com/tags/B%E7%AB%99/"/>
     
   </entry>
   
@@ -223,7 +293,7 @@
     <link href="https://blog.wayneshao.com/posts/46312.html"/>
     <id>https://blog.wayneshao.com/posts/46312.html</id>
     <published>2021-09-08T01:47:17.000Z</published>
-    <updated>2022-06-08T01:28:50.172Z</updated>
+    <updated>2025-12-31T13:34:13.329Z</updated>
     
     
     <summary type="html">&lt;p&gt;　　日常使用 Windows 系统时，如果需要在命令行中直接使用程序，则需要把程序的目录加到环境变量 Path 中，而很多时候，程序目录其实会包含很多程序的依赖文件，或者其他不适合在 Path 中的文件，每当有这种需求的时候都添加一条新的路径到 Path 中也不大友好，那么，如何操作，才能优雅又简单呢？&lt;br&gt;&lt;img src=&quot;https://qiniucdn.wayneshao.com/%E5%B0%86%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6%E5%8A%A0%E5%85%A5%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E6%96%B0%E5%A7%BF%E5%8A%BF%E2%80%94%E2%80%94/20210908101041646.png&quot;&gt;&lt;br&gt;　　下面我借鉴 Windows 平台的老牌包管理工具 &lt;a href=&quot;https://docs.chocolatey.org/en-us/&quot;&gt;Chocolatey&lt;/a&gt; ，使用其内置的工具 &lt;a href=&quot;https://github.com/chocolatey/shimgen&quot;&gt;ShimGen&lt;/a&gt; 来解决这个问题。&lt;/p&gt;</summary>
@@ -244,7 +314,7 @@
     <link href="https://blog.wayneshao.com/posts/46311.html"/>
     <id>https://blog.wayneshao.com/posts/46311.html</id>
     <published>2021-09-02T11:37:16.000Z</published>
-    <updated>2022-06-08T01:28:50.167Z</updated>
+    <updated>2025-12-31T13:34:13.324Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://qiniucdn.wayneshao.com/%E5%85%B3%E4%BA%8E%E5%87%A0%E7%A7%8D%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%9F%A5%E6%89%BE%E7%AE%97%E6%B3%95%E7%9A%84%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/20210902074534094.png&quot;&gt;&lt;br&gt;昨日在新生命团队钉钉群中，看到大石头老师分享了他们实现的 IndexOf 算法，据说可以做到 O(1)，第一反应是几乎不可能，了解之后得知是使用了 Boyer Moore 字符串搜索算法，据说这种算法常用于 IDE 工具的查找，比 KMP 更快，所以有了对各种常用字符串查找算法做一下 Benchmark 的想法。&lt;/p&gt;</summary>
@@ -271,7 +341,7 @@
     <link href="https://blog.wayneshao.com/posts/46310.html"/>
     <id>https://blog.wayneshao.com/posts/46310.html</id>
     <published>2021-08-17T07:23:00.000Z</published>
-    <updated>2022-06-08T01:28:50.148Z</updated>
+    <updated>2025-12-31T13:34:13.286Z</updated>
     
     
     <summary type="html">&lt;p&gt;鉴于 Microsoft 官方并没有提供官方的 CentOS8 的 WSL2 包，甚至 CentOS 的官方也并没有提供对应的包（Ubuntu 是微软和官方都有提供的），联想到 WSL2 和 Docker 在某种意义上是十分类似的，rootfs 都是核心，猜测可能会有方法使用官方提供标准包更广泛的 Docker 包的 rootfs 直接建立 WSL2 应用，经过摸索，发现可以使用 LxRunOffline 搞定，遂记录。&lt;/p&gt;</summary>
@@ -298,7 +368,7 @@
     <link href="https://blog.wayneshao.com/posts/46309.html"/>
     <id>https://blog.wayneshao.com/posts/46309.html</id>
     <published>2021-08-07T01:56:00.000Z</published>
-    <updated>2022-06-08T01:28:50.145Z</updated>
+    <updated>2025-12-31T13:34:13.282Z</updated>
     
     
     <summary type="html">&lt;p&gt;鉴于大部分免费SSL证书都是针对特定二级域名的，而 Let’s Encrypt 提供通配符证书，却需要每三个月续期一次，经过摸索，鼓捣出了一个方案，遂记录。&lt;/p&gt;</summary>
@@ -323,7 +393,7 @@
     <link href="https://blog.wayneshao.com/posts/46308.html"/>
     <id>https://blog.wayneshao.com/posts/46308.html</id>
     <published>2021-07-06T07:15:19.000Z</published>
-    <updated>2022-06-08T01:28:50.149Z</updated>
+    <updated>2025-12-31T13:34:13.287Z</updated>
     
     
     <summary type="html">&lt;p&gt;　　在微软终于对 nodepad.exe 和 mspaint.exe 的界面下手，把这两个系统程序重构为UWP程序后，原有的镜像劫持替换 notepad.exe 的方法就直接失效了，经过研究，找到了亲测可行的替换方法，特此分享。&lt;/p&gt;</summary>
@@ -346,7 +416,7 @@
     <link href="https://blog.wayneshao.com/posts/9412.html"/>
     <id>https://blog.wayneshao.com/posts/9412.html</id>
     <published>2021-07-05T16:24:21.000Z</published>
-    <updated>2022-06-08T01:28:50.164Z</updated>
+    <updated>2025-12-31T13:34:13.320Z</updated>
     
     
     <summary type="html">&lt;p&gt;在今天更新文章的时候，实验性的使用了按照更新时间排序，却发现所有文章的更新时间都是当天，推测是因为读取了文件的更新时间，而文件更新时间由于仓库刚刚新拉取而通通保持了当期时间，所以有了标题所示的需求。&lt;/p&gt;</summary>
@@ -367,7 +437,7 @@
     <link href="https://blog.wayneshao.com/posts/9411.html"/>
     <id>https://blog.wayneshao.com/posts/9411.html</id>
     <published>2021-06-24T08:24:21.000Z</published>
-    <updated>2022-06-08T01:28:50.179Z</updated>
+    <updated>2025-12-31T13:34:13.334Z</updated>
     
     
     <summary type="html">&lt;p&gt;公司目前的整个CI体系都是使用了GitLab的全家桶，基本已经趋于完善，目前最大的问题是每次发版都需要停机处理，用户感知明显，所以多数时候发版的时间都集中在晚上十点以后，故而决定设法解决这个问题。&lt;/p&gt;</summary>
@@ -390,7 +460,7 @@
     <link href="https://blog.wayneshao.com/posts/9410.html"/>
     <id>https://blog.wayneshao.com/posts/9410.html</id>
     <published>2021-02-21T13:24:21.000Z</published>
-    <updated>2021-02-21T14:06:56.682Z</updated>
+    <updated>2025-12-31T13:34:13.301Z</updated>
     
     
     <summary type="html">&lt;p&gt;一个关于将名称在不同命名风格之间转换的帮助类&lt;/p&gt;</summary>
@@ -403,79 +473,6 @@
     <category term="风格转化" scheme="https://blog.wayneshao.com/tags/%E9%A3%8E%E6%A0%BC%E8%BD%AC%E5%8C%96/"/>
     
     <category term="封装" scheme="https://blog.wayneshao.com/tags/%E5%B0%81%E8%A3%85/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用 GitLab CI 进行 hexo 的持续集成</title>
-    <link href="https://blog.wayneshao.com/posts/34874.html"/>
-    <id>https://blog.wayneshao.com/posts/34874.html</id>
-    <published>2019-12-28T11:46:20.000Z</published>
-    <updated>2022-06-08T01:28:50.164Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;其实很早之前我就意识到，把博客的源码不加掩饰的直接托管在 Github 是一件颇为危险的事，配置文件中配置的各种平台的 key 随时有可能被窃取，只是一直懒得动手，今天得闲把整个流程捋顺了，遂记录一下。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="踩坑笔记" scheme="https://blog.wayneshao.com/categories/%E8%B8%A9%E5%9D%91%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="GitLab" scheme="https://blog.wayneshao.com/tags/GitLab/"/>
-    
-    <category term="CI/CD" scheme="https://blog.wayneshao.com/tags/CI-CD/"/>
-    
-    <category term="hexo" scheme="https://blog.wayneshao.com/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git 和 GitFolw 的一些总结</title>
-    <link href="https://blog.wayneshao.com/posts/40738.html"/>
-    <id>https://blog.wayneshao.com/posts/40738.html</id>
-    <published>2019-12-19T11:16:03.000Z</published>
-    <updated>2022-06-08T01:28:50.166Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;总结一下 Git 日常开发使用常用指令，以及一个常见的 GitFlow 实践模型。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="学习笔记" scheme="https://blog.wayneshao.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="Git" scheme="https://blog.wayneshao.com/tags/Git/"/>
-    
-    <category term="GitFlow" scheme="https://blog.wayneshao.com/tags/GitFlow/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GitLab 非 Docker .NET Core CI/CD搭建</title>
-    <link href="https://blog.wayneshao.com/posts/33677.html"/>
-    <id>https://blog.wayneshao.com/posts/33677.html</id>
-    <published>2019-12-17T11:26:52.000Z</published>
-    <updated>2022-06-08T01:28:50.145Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;公司的 GitLab 服务部署完了，但是领导出于性能方面的考虑，希望测试和生产环境不用 Docker 来部署，遂搭建了一套不基于Docker 的 GitLab CI/CD 负载均衡测试环境。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="踩坑笔记" scheme="https://blog.wayneshao.com/categories/%E8%B8%A9%E5%9D%91%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="Docker" scheme="https://blog.wayneshao.com/tags/Docker/"/>
-    
-    <category term="Linux" scheme="https://blog.wayneshao.com/tags/Linux/"/>
-    
-    <category term="CentOS" scheme="https://blog.wayneshao.com/tags/CentOS/"/>
-    
-    <category term="GitLab" scheme="https://blog.wayneshao.com/tags/GitLab/"/>
-    
-    <category term="CI/CD" scheme="https://blog.wayneshao.com/tags/CI-CD/"/>
-    
-    <category term="负载均衡" scheme="https://blog.wayneshao.com/tags/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/"/>
     
   </entry>
   
