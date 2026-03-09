@@ -5824,8 +5824,8 @@ System.out.println(p.getBirthday());
 <p>说明：截至目前，厂商尚未公开完整的技术复盘。本文依据公开可交叉验证的 AOSP 文档、第三方公开 PoC、论坛讨论，以及笔者这几天持续跟进到的玩家侧反馈，对这次“小米 / 高通免拆机解锁 BootLoader”事件做一次阶段性分析。文中涉及根因、传播路径、厂商修补策略与后续影响的部分，均为推测，不代表事实结论。</p>
 </blockquote>
 <span id="more"></span>
-
-<h2 id="1）先说结论：这不是一次普通的“解锁教程流出”"><a href="#1）先说结论：这不是一次普通的“解锁教程流出”" class="headerlink" title="1）先说结论：这不是一次普通的“解锁教程流出”"></a>1）先说结论：这不是一次普通的“解锁教程流出”</h2><p>如果只把这次事件理解成“某个厂商的解锁入口被绕过了”，其实是低估了它。</p>
+<h2 id="1先说结论这不是一次普通的解锁教程流出"><a class="markdownIt-Anchor" href="#1先说结论这不是一次普通的解锁教程流出"></a> 1）先说结论：这不是一次普通的“解锁教程流出”</h2>
+<p>如果只把这次事件理解成“某个厂商的解锁入口被绕过了”，其实是低估了它。</p>
 <p>从目前公开线索看，这件事更像是：</p>
 <ul>
 <li>Android 新一代引导架构里，原本给系统标准化、可更新、可维护而设计的一层能力；</li>
@@ -5836,7 +5836,8 @@ System.out.println(p.getBirthday());
 <p>也就是说，这不是“一个命令”或者“一个脚本”本身厉害，而是 <strong>Android 启动链的某个新边界，第一次被更大规模的玩家群体感知到了</strong>。</p>
 <p>换句话说，这次的冲击，不只是“有人能绕过解锁资格”，而是让很多人第一次意识到：</p>
 <p><strong>在 Android 生态里，BootLoader、Verified Boot、UEFI/GBL、Root、KernelSU，这些过去看起来很分散的东西，正在重新连成一条线。</strong></p>
-<h2 id="2）先列出当前大致能确认的事实"><a href="#2）先列出当前大致能确认的事实" class="headerlink" title="2）先列出当前大致能确认的事实"></a>2）先列出当前大致能确认的事实</h2><p>截至目前，外部能较为明确对上的信息大致有这些：</p>
+<h2 id="2先列出当前大致能确认的事实"><a class="markdownIt-Anchor" href="#2先列出当前大致能确认的事实"></a> 2）先列出当前大致能确认的事实</h2>
+<p>截至目前，外部能较为明确对上的信息大致有这些：</p>
 <ol>
 <li>AOSP 在 2026 年 1 月正式新增了 Generic Bootloader（GBL）总览文档，并明确将其定义为“标准化、可更新的 bootloader 方案”；文档中也写明了 GBL 负责 Android 核心引导逻辑、Fastboot、以及 UEFI protocol handlers 等能力。(<span class="exturl" data-url="aHR0cHM6Ly9zb3VyY2UuYW5kcm9pZC5jb20vZG9jcy9jb3JlL2FyY2hpdGVjdHVyZS9ib290bG9hZGVyL2dlbmVyaWMtYm9vdGxvYWRlcg==">source.android.com<i class="fa fa-external-link-alt"></i></span>)</li>
 <li>AOSP 的 GBL 部署文档要求设备具备 <code>android_esp_a</code> / <code>android_esp_b</code> 两个 FAT 分区，并明确说明 OTA/rollback 依赖这一层；更新 GBL 时，需要更新整个 <code>android_esp_$&#123;SLOT_SUFFIX&#125;</code> 分区。(<span class="exturl" data-url="aHR0cHM6Ly9zb3VyY2UuYW5kcm9pZC5jb20vZG9jcy9jb3JlL2FyY2hpdGVjdHVyZS9ib290bG9hZGVyL2dlbmVyaWMtYm9vdGxvYWRlci9nYmwtZGV2">source.android.com<i class="fa fa-external-link-alt"></i></span>)</li>
@@ -5847,9 +5848,11 @@ System.out.println(p.getBirthday());
 </ol>
 <p>上面这些事实拼在一起，至少能支持一个判断：</p>
 <p><strong>这次事件不是“古早厂商私有接口泄露”那么简单，而是和 AOSP 正在推动的一套新引导架构发生了真实交叉。</strong></p>
-<h2 id="3）这次事件，为什么会让刷机圈这么兴奋？"><a href="#3）这次事件，为什么会让刷机圈这么兴奋？" class="headerlink" title="3）这次事件，为什么会让刷机圈这么兴奋？"></a>3）这次事件，为什么会让刷机圈这么兴奋？</h2><p>表面上看，大家兴奋的是“终于有人能免拆机解锁了”。</p>
+<h2 id="3这次事件为什么会让刷机圈这么兴奋"><a class="markdownIt-Anchor" href="#3这次事件为什么会让刷机圈这么兴奋"></a> 3）这次事件，为什么会让刷机圈这么兴奋？</h2>
+<p>表面上看，大家兴奋的是“终于有人能免拆机解锁了”。</p>
 <p>但再深一层，真正刺激玩家情绪的其实是三件事。</p>
-<h3 id="3-1-它动摇的不是单个厂商政策，而是“解锁门槛的正当性叙事”"><a href="#3-1-它动摇的不是单个厂商政策，而是“解锁门槛的正当性叙事”" class="headerlink" title="3.1 它动摇的不是单个厂商政策，而是“解锁门槛的正当性叙事”"></a>3.1 它动摇的不是单个厂商政策，而是“解锁门槛的正当性叙事”</h3><p>过去几年，很多厂商一边强调“安全”，一边不断把 BootLoader 解锁做成一个越来越高门槛、越来越长链路、越来越像资格审查的过程。</p>
+<h3 id="31-它动摇的不是单个厂商政策而是解锁门槛的正当性叙事"><a class="markdownIt-Anchor" href="#31-它动摇的不是单个厂商政策而是解锁门槛的正当性叙事"></a> 3.1 它动摇的不是单个厂商政策，而是“解锁门槛的正当性叙事”</h3>
+<p>过去几年，很多厂商一边强调“安全”，一边不断把 BootLoader 解锁做成一个越来越高门槛、越来越长链路、越来越像资格审查的过程。</p>
 <p>从厂商视角，这件事当然有合理性：</p>
 <ul>
 <li>要控制售后成本；</li>
@@ -5865,7 +5868,8 @@ System.out.println(p.getBirthday());
 </ul>
 <p>所以这次事件真正点燃情绪的地方，是它把长期以来被压抑的那种感觉重新放了出来：</p>
 <p><strong>用户对自己设备的控制权，到底是“厂商赋予的权限”，还是“设备所有权的自然延伸”？</strong></p>
-<h3 id="3-2-它让“Root”重新从老玩法，变成了新议题"><a href="#3-2-它让“Root”重新从老玩法，变成了新议题" class="headerlink" title="3.2 它让“Root”重新从老玩法，变成了新议题"></a>3.2 它让“Root”重新从老玩法，变成了新议题</h3><p>如果这次事情只是“偷偷帮几台小米开了 BL”，其实影响不会这么大。</p>
+<h3 id="32-它让root重新从老玩法变成了新议题"><a class="markdownIt-Anchor" href="#32-它让root重新从老玩法变成了新议题"></a> 3.2 它让“Root”重新从老玩法，变成了新议题</h3>
+<p>如果这次事情只是“偷偷帮几台小米开了 BL”，其实影响不会这么大。</p>
 <p>真正让它有时代感的，是它和另一条线天然接上了：</p>
 <p><strong>不解锁 BootLoader，是否也可能在某些条件下拿到一种类似 iOS 越狱的控制力？</strong></p>
 <p>这里我很认同维术文章里的一个观察：</p>
@@ -5888,7 +5892,8 @@ System.out.println(p.getBirthday());
 <li>“解锁”和“越狱”这两个词，在 Android 世界里会重新靠近。</li>
 </ul>
 <p>这也是为什么，这次事件在很多老玩家眼里，看起来不像一次单纯的漏洞传播，而更像一个时代隐喻。</p>
-<h3 id="3-3-它还意味着：Android-的“安全边界”正在迁移，而玩家也开始顺着新边界研究"><a href="#3-3-它还意味着：Android-的“安全边界”正在迁移，而玩家也开始顺着新边界研究" class="headerlink" title="3.3 它还意味着：Android 的“安全边界”正在迁移，而玩家也开始顺着新边界研究"></a>3.3 它还意味着：Android 的“安全边界”正在迁移，而玩家也开始顺着新边界研究</h3><p>从 AOSP 近几个月对 GBL 的正式文档化来看，Google 的目标很清晰：</p>
+<h3 id="33-它还意味着android-的安全边界正在迁移而玩家也开始顺着新边界研究"><a class="markdownIt-Anchor" href="#33-它还意味着android-的安全边界正在迁移而玩家也开始顺着新边界研究"></a> 3.3 它还意味着：Android 的“安全边界”正在迁移，而玩家也开始顺着新边界研究</h3>
+<p>从 AOSP 近几个月对 GBL 的正式文档化来看，Google 的目标很清晰：</p>
 <ul>
 <li>减少碎片化 vendor bootloader；</li>
 <li>把 Android boot 逻辑、Fastboot、UEFI handler 等东西收敛成更标准的一层；</li>
@@ -5899,7 +5904,8 @@ System.out.println(p.getBirthday());
 <p><strong>一旦某一层被标准化、公开化、文档化，它就更容易成为新的研究热点。</strong></p>
 <p>过去很多厂商 bootloader 是一团高度私有、难以复用、难以系统研究的黑盒；现在你把其中一层逐渐拉到更统一的 UEFI / GBL / protocol 框架上，研究门槛就会发生变化。</p>
 <p>不是“更不安全”，而是“更容易被系统性研究”。</p>
-<h2 id="4）把问题拆开看：这次事件到底包含哪几层？"><a href="#4）把问题拆开看：这次事件到底包含哪几层？" class="headerlink" title="4）把问题拆开看：这次事件到底包含哪几层？"></a>4）把问题拆开看：这次事件到底包含哪几层？</h2><p>围绕这件事，外部讨论经常把很多层混在一起。实际上，至少应该拆成下面五层：</p>
+<h2 id="4把问题拆开看这次事件到底包含哪几层"><a class="markdownIt-Anchor" href="#4把问题拆开看这次事件到底包含哪几层"></a> 4）把问题拆开看：这次事件到底包含哪几层？</h2>
+<p>围绕这件事，外部讨论经常把很多层混在一起。实际上，至少应该拆成下面五层：</p>
 <table>
 <thead>
 <tr>
@@ -5908,7 +5914,8 @@ System.out.println(p.getBirthday());
 <th>当前判断</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>1. 引导架构层</td>
 <td><code>efisp</code> / GBL / UEFI 这一层是不是正式 boot chain 的一部分？</td>
 <td>是，且 AOSP 已经明确文档化。(<span class="exturl" data-url="aHR0cHM6Ly9zb3VyY2UuYW5kcm9pZC5jb20vZG9jcy9jb3JlL2FyY2hpdGVjdHVyZS9ib290bG9hZGVyL2dlbmVyaWMtYm9vdGxvYWRlcg==">source.android.com<i class="fa fa-external-link-alt"></i></span>)</td>
@@ -5933,7 +5940,8 @@ System.out.println(p.getBirthday());
 <td>它只是一次 BL 绕过，还是会改写 Android Root / 越狱生态？</td>
 <td>我倾向于后者至少已经开始进入讨论区。</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>如果不把这几层拆开，就很容易在讨论里互相错位：</p>
 <ul>
 <li>有人拿“PoC 已公开”去证明“所有机型都能打”；</li>
@@ -5942,8 +5950,10 @@ System.out.println(p.getBirthday());
 <li>也有人拿“没被静默重锁”去证明“后续一定不会有影响”。</li>
 </ul>
 <p>这些推断都太大了。</p>
-<h2 id="5）我更相信的一条传播链路：发现-→-私有变现-→-远程扩散-→-工具化-→-公开化"><a href="#5）我更相信的一条传播链路：发现-→-私有变现-→-远程扩散-→-工具化-→-公开化" class="headerlink" title="5）我更相信的一条传播链路：发现 → 私有变现 → 远程扩散 → 工具化 → 公开化"></a>5）我更相信的一条传播链路：发现 → 私有变现 → 远程扩散 → 工具化 → 公开化</h2><p>在没有官方复盘、也没有“最初发现者完整自述”的前提下，我认为目前最自洽的一条链路大概是这样的：</p>
-<h3 id="5-1-发现期：研究者先从公开架构和代码里闻到了味道"><a href="#5-1-发现期：研究者先从公开架构和代码里闻到了味道" class="headerlink" title="5.1 发现期：研究者先从公开架构和代码里闻到了味道"></a>5.1 发现期：研究者先从公开架构和代码里闻到了味道</h3><p>这一步很可能不是“误打误撞 fuzz 出来”的，而是有人先看懂了：</p>
+<h2 id="5我更相信的一条传播链路发现-私有变现-远程扩散-工具化-公开化"><a class="markdownIt-Anchor" href="#5我更相信的一条传播链路发现-私有变现-远程扩散-工具化-公开化"></a> 5）我更相信的一条传播链路：发现 → 私有变现 → 远程扩散 → 工具化 → 公开化</h2>
+<p>在没有官方复盘、也没有“最初发现者完整自述”的前提下，我认为目前最自洽的一条链路大概是这样的：</p>
+<h3 id="51-发现期研究者先从公开架构和代码里闻到了味道"><a class="markdownIt-Anchor" href="#51-发现期研究者先从公开架构和代码里闻到了味道"></a> 5.1 发现期：研究者先从公开架构和代码里闻到了味道</h3>
+<p>这一步很可能不是“误打误撞 fuzz 出来”的，而是有人先看懂了：</p>
 <ul>
 <li>GBL 在 Android 新架构里的位置；</li>
 <li><code>android_esp_a/b</code> 这类分区的作用；</li>
@@ -5951,7 +5961,8 @@ System.out.println(p.getBirthday());
 <li>再加上具体厂商实现里的某个写入入口或边界条件。</li>
 </ul>
 <p>于是，原本分散的几块知识第一次被人真正串成了一条可利用路径。</p>
-<h3 id="5-2-小圈验证期：先不公开，先确认稳定性、边界和商业价值"><a href="#5-2-小圈验证期：先不公开，先确认稳定性、边界和商业价值" class="headerlink" title="5.2 小圈验证期：先不公开，先确认稳定性、边界和商业价值"></a>5.2 小圈验证期：先不公开，先确认稳定性、边界和商业价值</h3><p>一条链路从“能用一次”到“能给别人做”，中间其实还差很多工程化工作：</p>
+<h3 id="52-小圈验证期先不公开先确认稳定性-边界和商业价值"><a class="markdownIt-Anchor" href="#52-小圈验证期先不公开先确认稳定性-边界和商业价值"></a> 5.2 小圈验证期：先不公开，先确认稳定性、边界和商业价值</h3>
+<p>一条链路从“能用一次”到“能给别人做”，中间其实还差很多工程化工作：</p>
 <ul>
 <li>哪些机型可用；</li>
 <li>哪些版本不可用；</li>
@@ -5960,7 +5971,8 @@ System.out.println(p.getBirthday());
 <li>哪些状态改了以后还会不会回去。</li>
 </ul>
 <p>这一步通常不会公开，因为太早公开既赚不到钱，也容易被厂商快速封死。</p>
-<h3 id="5-3-线下变现期：寄修、不拆机、黑盒服务"><a href="#5-3-线下变现期：寄修、不拆机、黑盒服务" class="headerlink" title="5.3 线下变现期：寄修、不拆机、黑盒服务"></a>5.3 线下变现期：寄修、不拆机、黑盒服务</h3><p>这一步反而非常符合现实。</p>
+<h3 id="53-线下变现期寄修-不拆机-黑盒服务"><a class="markdownIt-Anchor" href="#53-线下变现期寄修-不拆机-黑盒服务"></a> 5.3 线下变现期：寄修、不拆机、黑盒服务</h3>
+<p>这一步反而非常符合现实。</p>
 <p>因为在线下黑盒服务里：</p>
 <ul>
 <li>用户只能看到结果；</li>
@@ -5970,7 +5982,8 @@ System.out.println(p.getBirthday());
 <li>即使失败了，也更容易被包装成“个例”。</li>
 </ul>
 <p>从商业上看，这比一开始做远程要安全得多。</p>
-<h3 id="5-4-远程扩散期：知道的人越来越多，泄露开始不可逆"><a href="#5-4-远程扩散期：知道的人越来越多，泄露开始不可逆" class="headerlink" title="5.4 远程扩散期：知道的人越来越多，泄露开始不可逆"></a>5.4 远程扩散期：知道的人越来越多，泄露开始不可逆</h3><p>一旦方法从“线下掌握”走向“远程操作”，泄露概率会指数上升：</p>
+<h3 id="54-远程扩散期知道的人越来越多泄露开始不可逆"><a class="markdownIt-Anchor" href="#54-远程扩散期知道的人越来越多泄露开始不可逆"></a> 5.4 远程扩散期：知道的人越来越多，泄露开始不可逆</h3>
+<p>一旦方法从“线下掌握”走向“远程操作”，泄露概率会指数上升：</p>
 <ul>
 <li>屏幕共享会暴露工具界面；</li>
 <li>命令执行会暴露文件名；</li>
@@ -5978,7 +5991,8 @@ System.out.println(p.getBirthday());
 <li>用户自己也会开始复盘与传播。</li>
 </ul>
 <p>这时候，原本靠信息差维持的商业护城河就会迅速坍塌。</p>
-<h3 id="5-5-工具化-公开化期：有人开始选择“拿名声”而不是“继续独占”"><a href="#5-5-工具化-公开化期：有人开始选择“拿名声”而不是“继续独占”" class="headerlink" title="5.5 工具化 / 公开化期：有人开始选择“拿名声”而不是“继续独占”"></a>5.5 工具化 / 公开化期：有人开始选择“拿名声”而不是“继续独占”</h3><p>当知道的人足够多、价格足够卷、方法足够分散时，继续垄断它的收益会越来越低。</p>
+<h3 id="55-工具化-公开化期有人开始选择拿名声而不是继续独占"><a class="markdownIt-Anchor" href="#55-工具化-公开化期有人开始选择拿名声而不是继续独占"></a> 5.5 工具化 / 公开化期：有人开始选择“拿名声”而不是“继续独占”</h3>
+<p>当知道的人足够多、价格足够卷、方法足够分散时，继续垄断它的收益会越来越低。</p>
 <p>于是就容易走向两个方向：</p>
 <ul>
 <li>一部分人继续卖；</li>
@@ -5986,13 +6000,15 @@ System.out.println(p.getBirthday());
 </ul>
 <p>所以我更倾向于认为：</p>
 <p><strong>这次的公开爆发，并不是漏洞在这几天才第一次被发现，而是它经过了一段时间的小圈扩散后，终于跨过了“公开化阈值”。</strong></p>
-<h2 id="6）厂商最可能怎么修：不是先“静默重锁”，而是先堵入口、再补链路"><a href="#6）厂商最可能怎么修：不是先“静默重锁”，而是先堵入口、再补链路" class="headerlink" title="6）厂商最可能怎么修：不是先“静默重锁”，而是先堵入口、再补链路"></a>6）厂商最可能怎么修：不是先“静默重锁”，而是先堵入口、再补链路</h2><p>围绕这件事，大家最关心的两个问题其实是：</p>
+<h2 id="6厂商最可能怎么修不是先静默重锁而是先堵入口-再补链路"><a class="markdownIt-Anchor" href="#6厂商最可能怎么修不是先静默重锁而是先堵入口-再补链路"></a> 6）厂商最可能怎么修：不是先“静默重锁”，而是先堵入口、再补链路</h2>
+<p>围绕这件事，大家最关心的两个问题其实是：</p>
 <ol>
 <li>没解锁的人，会不会很快就被堵死？</li>
 <li>已解锁的人，会不会被静默锁回去？</li>
 </ol>
 <p>我的判断是：</p>
-<h3 id="6-1-对没解锁的人：高概率会很快被堵"><a href="#6-1-对没解锁的人：高概率会很快被堵" class="headerlink" title="6.1 对没解锁的人：高概率会很快被堵"></a>6.1 对没解锁的人：高概率会很快被堵</h3><p>因为这对厂商来说是最现实、最稳、成本最低的做法。</p>
+<h3 id="61-对没解锁的人高概率会很快被堵"><a class="markdownIt-Anchor" href="#61-对没解锁的人高概率会很快被堵"></a> 6.1 对没解锁的人：高概率会很快被堵</h3>
+<p>因为这对厂商来说是最现实、最稳、成本最低的做法。</p>
 <p>可能的修法大致有三层，从容易到困难：</p>
 <ol>
 <li><strong>先堵 Android 侧可写入口</strong>：把某个高权限服务、SELinux 策略、块设备写路径先收紧，让公开工具先失效。</li>
@@ -6002,7 +6018,8 @@ System.out.println(p.getBirthday());
 <p>所以“二月补丁影响利用”这类说法，我认为大方向很可能是真的；只是更准确的说法应该是：</p>
 <p><strong>某些带着二月安全补丁标识的厂商 OTA，开始顺手收口这条链了。</strong></p>
 <p>而不是“Google 月度安全公告单独点名修了它”。Google 自己的公告也写得很清楚：并不是所有 partner / device 相关问题都必须体现在 Android Security Bulletin 的 patch level 声明里。(<span class="exturl" data-url="aHR0cHM6Ly9zb3VyY2UuYW5kcm9pZC5jb20vZG9jcy9zZWN1cml0eS9idWxsZXRpbi9hc2Itb3ZlcnZpZXc=">source.android.com<i class="fa fa-external-link-alt"></i></span>)</p>
-<h3 id="6-2-对已解锁的人：我仍然更担心-OTA-收口，而不是云控静默重锁"><a href="#6-2-对已解锁的人：我仍然更担心-OTA-收口，而不是云控静默重锁" class="headerlink" title="6.2 对已解锁的人：我仍然更担心 OTA 收口，而不是云控静默重锁"></a>6.2 对已解锁的人：我仍然更担心 OTA 收口，而不是云控静默重锁</h3><p>我目前仍然没有看到一条足够可靠的公开资料，能证明厂商已经存在一套“云端实时、无感、批量把已解锁设备重新锁回去”的标准机制。</p>
+<h3 id="62-对已解锁的人我仍然更担心-ota-收口而不是云控静默重锁"><a class="markdownIt-Anchor" href="#62-对已解锁的人我仍然更担心-ota-收口而不是云控静默重锁"></a> 6.2 对已解锁的人：我仍然更担心 OTA 收口，而不是云控静默重锁</h3>
+<p>我目前仍然没有看到一条足够可靠的公开资料，能证明厂商已经存在一套“云端实时、无感、批量把已解锁设备重新锁回去”的标准机制。</p>
 <p>反过来，Android 官方文档对 lock / unlock 的标准路径描述得很清楚：</p>
 <ul>
 <li>解锁是 <code>fastboot flashing unlock</code>；</li>
@@ -6021,7 +6038,8 @@ System.out.println(p.getBirthday());
 <li>甚至可能导致设备无法正常启动。</li>
 </ul>
 <p>从工程现实看，<strong>“封洞、阻止新利用、检测异常状态、必要时拒绝某些升级”</strong>，通常比“偷偷把所有人锁回去”更像大厂会先做的事。</p>
-<h2 id="7）维术那篇文章里，有一个我很认同的判断：Android-真的开始有“越狱时代”的影子了"><a href="#7）维术那篇文章里，有一个我很认同的判断：Android-真的开始有“越狱时代”的影子了" class="headerlink" title="7）维术那篇文章里，有一个我很认同的判断：Android 真的开始有“越狱时代”的影子了"></a>7）维术那篇文章里，有一个我很认同的判断：Android 真的开始有“越狱时代”的影子了</h2><p>我觉得“越狱时代”这四个字，未必意味着 Android 以后会像当年 iPhone 那样，周期性出现全民级 jailbreak。</p>
+<h2 id="7维术那篇文章里有一个我很认同的判断android-真的开始有越狱时代的影子了"><a class="markdownIt-Anchor" href="#7维术那篇文章里有一个我很认同的判断android-真的开始有越狱时代的影子了"></a> 7）维术那篇文章里，有一个我很认同的判断：Android 真的开始有“越狱时代”的影子了</h2>
+<p>我觉得“越狱时代”这四个字，未必意味着 Android 以后会像当年 iPhone 那样，周期性出现全民级 jailbreak。</p>
 <p>但它至少说明了一件事：</p>
 <p><strong>过去几年 Android 的改机生态，一直在被收缩；而这次事件第一次让很多人重新看到了另一条路径——不是去申请解锁资格，而是重新研究设备控制边界本身。</strong></p>
 <p>这是两个完全不同的方向。</p>
@@ -6037,28 +6055,34 @@ System.out.println(p.getBirthday());
 <p>它不再只是“刷个类原生”“去个广告”“搞个模块”。</p>
 <p>它重新变回了那个更本质的问题：</p>
 <p><strong>我是否真正拥有我手里的这台设备。</strong></p>
-<h2 id="8）综合推演：最可能的链路是什么"><a href="#8）综合推演：最可能的链路是什么" class="headerlink" title="8）综合推演：最可能的链路是什么"></a>8）综合推演：最可能的链路是什么</h2><p>在缺少厂商正式复盘的情况下，我目前认为最自洽的解释是这条：</p>
+<h2 id="8综合推演最可能的链路是什么"><a class="markdownIt-Anchor" href="#8综合推演最可能的链路是什么"></a> 8）综合推演：最可能的链路是什么</h2>
+<p>在缺少厂商正式复盘的情况下，我目前认为最自洽的解释是这条：</p>
 <pre class="mermaid">flowchart TD
     A[公开架构与实现边界被研究] --> B[小圈验证利用链]
     B --> C[线下寄修与黑盒变现]
     C --> D[远程扩散与工具化]
     D --> E[PoC/脚本/截图公开]
     E --> F[厂商快速收口]</pre>
-
 <p>如果把“技术影响”和“生态影响”合在一起看，它带来的后续大概会是：</p>
-<pre class="mermaid">flowchart TD
-    A[利用链进入公开视野] --> B[短期：入口被堵]
-    A --> C[中期：越狱模式讨论升温]
-    B --> D[未利用用户窗口关闭]
-    C --> E[玩家重新研究设备控制边界]</pre>
+<pre class="mermaid">graph TD
+    A[利用链公开]
+    B[入口收紧]
+    C[讨论升温]
+    D[窗口关闭]
+    E[边界重估]
 
+    A --> B
+    A --> C
+    B --> D
+    C --> E</pre>
 <p>它能同时解释三件事：</p>
 <ol>
 <li>为什么这次事件会比普通“解锁教程”更有冲击力；</li>
 <li>为什么它大概率不是这几天才第一次被发现；</li>
 <li>为什么真正值得关注的，不只是“能不能解锁”，而是 Android 玩家生态是否正在迎来一次重新分层。</li>
 </ol>
-<h2 id="9）最后的判断：这是一次事故，也可能是一个分水岭"><a href="#9）最后的判断：这是一次事故，也可能是一个分水岭" class="headerlink" title="9）最后的判断：这是一次事故，也可能是一个分水岭"></a>9）最后的判断：这是一次事故，也可能是一个分水岭</h2><p>从安全角度看，这当然是事故。</p>
+<h2 id="9最后的判断这是一次事故也可能是一个分水岭"><a class="markdownIt-Anchor" href="#9最后的判断这是一次事故也可能是一个分水岭"></a> 9）最后的判断：这是一次事故，也可能是一个分水岭</h2>
+<p>从安全角度看，这当然是事故。</p>
 <p>因为任何能让启动链、锁状态、设备控制边界被非预期方式改写的路径，对普通用户都不是好消息。厂商快速修补，是正常且必要的。(<span class="exturl" data-url="aHR0cHM6Ly9zb3VyY2UuYW5kcm9pZC5jb20vZG9jcy9zZWN1cml0eS9idWxsZXRpbi9hc2Itb3ZlcnZpZXc=">source.android.com<i class="fa fa-external-link-alt"></i></span>)</p>
 <p>但从玩家生态看，它又不只是事故。</p>
 <p>它像是一根针，扎破了过去几年那层越来越被默认接受的共识：</p>
@@ -6069,11 +6093,13 @@ System.out.println(p.getBirthday());
 <li>设备控制权终究只是一个情怀概念。</li>
 </ul>
 <p>至少在这一刻，这套共识出现了裂缝。</p>
-<p>我不确定这会不会真的开启一个属于 Android 的“越狱时代”。<br>但我基本确定的是：</p>
+<p>我不确定这会不会真的开启一个属于 Android 的“越狱时代”。<br />
+但我基本确定的是：</p>
 <p><strong>它已经让很多人重新开始认真思考，Android 用户和设备之间，到底应该是一种什么关系。</strong></p>
 <p>而这，可能比“又多了一种解锁方法”更重要。</p>
-<hr>
-<h2 id="参考来源（公开信息）"><a href="#参考来源（公开信息）" class="headerlink" title="参考来源（公开信息）"></a>参考来源（公开信息）</h2><ol>
+<hr />
+<h2 id="参考来源公开信息"><a class="markdownIt-Anchor" href="#参考来源公开信息"></a> 参考来源（公开信息）</h2>
+<ol>
 <li>AOSP：Generic Bootloader（GBL）overview。(<span class="exturl" data-url="aHR0cHM6Ly9zb3VyY2UuYW5kcm9pZC5jb20vZG9jcy9jb3JlL2FyY2hpdGVjdHVyZS9ib290bG9hZGVyL2dlbmVyaWMtYm9vdGxvYWRlcg==">source.android.com<i class="fa fa-external-link-alt"></i></span>)</li>
 <li>AOSP：Deploy GBL。(<span class="exturl" data-url="aHR0cHM6Ly9zb3VyY2UuYW5kcm9pZC5jb20vZG9jcy9jb3JlL2FyY2hpdGVjdHVyZS9ib290bG9hZGVyL2dlbmVyaWMtYm9vdGxvYWRlci9nYmwtZGV2">source.android.com<i class="fa fa-external-link-alt"></i></span>)</li>
 <li>AOSP：Lock and unlock the bootloader。(<span class="exturl" data-url="aHR0cHM6Ly9zb3VyY2UuYW5kcm9pZC5jb20vZG9jcy9jb3JlL2FyY2hpdGVjdHVyZS9ib290bG9hZGVyL2xvY2tpbmdfdW5sb2NraW5n">source.android.com<i class="fa fa-external-link-alt"></i></span>)</li>
@@ -6089,6 +6115,131 @@ System.out.println(p.getBirthday());
         <tag>小米</tag>
         <tag>高通</tag>
         <tag>Bootloader</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>番外｜被捅穿的，不只是 8 Gen 5</title>
+    <url>/posts/46192.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
+<p>设备原本承诺给用户的那条安全边界，到底还剩下多少。</p>
+</blockquote>
+<p>上午，我已经写过一篇更偏整体分析的文章：<a href="https://blog.wayneshao.com/posts/46191.html">《2026-03 小米 / 高通 GBL 解锁事件：一次从私有变现走向公开化的漏洞扩散（基于公开信息 + 笔者推演）》</a>。</p>
+<p>但随着下午更多细节被公开，我越来越觉得，这件事还值得再补一篇番外。</p>
+<span id="more"></span>
+<p>因为最开始，很多人对这件事的理解其实很简单：</p>
+<p><strong>“8 Gen 5 被攻破了。”</strong></p>
+<p>这句话不能说错，但已经不够准确了。</p>
+<h2 id="为什么最早大家会把它理解成8-gen-5-事件"><a class="markdownIt-Anchor" href="#为什么最早大家会把它理解成8-gen-5-事件"></a> 为什么最早大家会把它理解成“8 Gen 5 事件”？</h2>
+<p>因为最先引爆舆论的，确实是最有冲击力的那部分：</p>
+<p><strong>通过高通新一代引导链上的漏洞，直接碰到了 BootLoader 的锁状态。</strong></p>
+<p>这和传统意义上的“拿到个临时权限”“刷个补丁”“做个提权”完全不是一个级别。</p>
+<p>对于刷机圈来说，最让人兴奋的从来都不是“系统里有个洞”，而是：</p>
+<p><strong>这个洞能不能真正改写设备控制权。</strong></p>
+<p>所以在最开始，大家的注意力自然都聚焦在这些问题上：</p>
+<ul>
+<li>哪一代芯片中招了？</li>
+<li>哪些机型能直接利用？</li>
+<li>能不能永久解锁 BL？</li>
+<li>后续会不会被重新锁回去？</li>
+</ul>
+<p>在那个阶段，把它理解成一场“8 Gen 5 的解锁狂欢”，其实很正常。</p>
+<p>因为最有节目效果的，恰恰就是这一段。</p>
+<h2 id="但后来为什么越来越多人开始说不只是-8-gen-5"><a class="markdownIt-Anchor" href="#但后来为什么越来越多人开始说不只是-8-gen-5"></a> 但后来，为什么越来越多人开始说：不只是 8 Gen 5？</h2>
+<p>因为大家慢慢发现，真正危险的，未必只是最后那一下“永久解锁”。</p>
+<p>而是这条链中间，还夹着一层更值得警惕的能力：</p>
+<p><strong>小米自己系统里的高权限服务，似乎也存在可被滥用的问题。</strong></p>
+<p>如果把目前社区里流传最广的利用逻辑粗略拆开，大致可以理解成三段：</p>
+<h3 id="第一段高通侧入口"><a class="markdownIt-Anchor" href="#第一段高通侧入口"></a> 第一段：高通侧入口</h3>
+<p>这一段更像是把设备先拉进一个“更容易被利用”的状态。</p>
+<p>比如让原本应该强制执行的安全约束先松动下来。</p>
+<p>最早大家热议的 8 Gen 5，其实就是因为这一步和高通这一代新平台关系更紧，所以才会显得“像是某一代芯片独占的大漏洞”。</p>
+<h3 id="第二段小米侧高权限服务"><a class="markdownIt-Anchor" href="#第二段小米侧高权限服务"></a> 第二段：小米侧高权限服务</h3>
+<p>这一层才是后来让更多人警觉起来的地方。</p>
+<p>因为如果这一步真的能被普通本地环境绕用，那事情的性质就已经不只是“刷机党福利”了。</p>
+<p>它意味着：</p>
+<ul>
+<li>设备在锁定状态下，依然可能被拉起高权限能力</li>
+<li>厂商原本只应该内部使用的服务边界，可能没有守住</li>
+<li>哪怕没走到“永久解 BL”那一步，设备控制边界也已经很难看了</li>
+</ul>
+<p>说得更直白一点：</p>
+<p><strong>如果第二段广泛成立，那么很多机型即使不能永久解 BL，也已经足够被称为“被攻破”。</strong></p>
+<h3 id="第三段把结果固化到-bootloader-层"><a class="markdownIt-Anchor" href="#第三段把结果固化到-bootloader-层"></a> 第三段：把结果固化到 BootLoader 层</h3>
+<p>这一步，才是最早刷机圈最兴奋的部分。</p>
+<p>也就是在前两段的基础上，再进一步把结果下沉到 BootLoader 层，最终实现真正意义上的永久解锁。</p>
+<p>而这，才是最早“8 Gen 5 被攻破”那种说法背后，真正让人热血上头的地方。</p>
+<h2 id="所以其他型号被攻破到底是什么意思"><a class="markdownIt-Anchor" href="#所以其他型号被攻破到底是什么意思"></a> 所以，“其他型号被攻破”到底是什么意思？</h2>
+<p>这里最容易被说混。</p>
+<p><strong>“其他型号被攻破”</strong>，不等于<br />
+<strong>“其他型号也能和 8 Gen 5 一样永久解 BL”。</strong></p>
+<p>这两者都很严重，但不是一回事。</p>
+<p>前者更像是：</p>
+<ul>
+<li>设备本地安全边界被打穿</li>
+<li>可以拿到高权限 shell</li>
+<li>可以拿到真 root，或者极接近真 root 的能力</li>
+</ul>
+<p>后者则是：</p>
+<ul>
+<li>在此基础上</li>
+<li>进一步把结果写进更底层的设备状态</li>
+<li>最终获得长期、稳定、持久的 BootLoader 控制权</li>
+</ul>
+<p>所以如果要更准确地描述这几天事情的演变，我觉得应该这样说：</p>
+<blockquote>
+<p>最早被公开的，是一条 8 Gen 5 风格的“永久解 BL”故事；<br />
+后来进一步扩散开的，则是一场“小米部分机型本地提权能力也出现严重问题”的现实。</p>
+</blockquote>
+<p>这两者有关，但不是同一件事。</p>
+<h2 id="这也是为什么这件事后面越看越不像单纯的刷机圈狂欢"><a class="markdownIt-Anchor" href="#这也是为什么这件事后面越看越不像单纯的刷机圈狂欢"></a> 这也是为什么，这件事后面越看越不像单纯的“刷机圈狂欢”</h2>
+<p>如果只站在玩家视角，大家最直观的感受当然是：</p>
+<p><strong>终于又能折腾了。</strong></p>
+<p>但如果站在安全视角，这件事真正吓人的地方在于，它看起来不是某一个点单独失守，而是几层本来不该同时松动的边界，被串成了一条真正可落地的链。</p>
+<p>包括：</p>
+<ul>
+<li>BootLoader 的锁定边界</li>
+<li>SELinux 的强制访问控制边界</li>
+<li>厂商高权限服务的调用边界</li>
+<li>“锁定设备不该轻易拿到 root”这件事本身</li>
+</ul>
+<p>这些东西任何一层出问题，都已经够麻烦了。</p>
+<p>而这次最让人不安的，是它们看起来并不是彼此孤立，而是被人真正串起来了。</p>
+<p>这就意味着，这件事的性质已经开始变化了。</p>
+<p>最开始，它是刷机圈的自由时刻。<br />
+往后看，它越来越像一场系统安全事故。</p>
+<h2 id="所以真正被捅穿的到底是什么"><a class="markdownIt-Anchor" href="#所以真正被捅穿的到底是什么"></a> 所以，真正被捅穿的到底是什么？</h2>
+<p>如果今天再让我用一句话总结这件事，我不会再说：</p>
+<p><strong>“8 Gen 5 被攻破了。”</strong></p>
+<p>我会说：</p>
+<p><strong>最开始被公开的，是 8 Gen 5 那条最有节目效果的永久解 BL 路径；但随着更多细节扩散，大家才发现，真正危险的可能并不只是最后那一下，而是中间那层本不该被普通用户触碰到的高权限能力。</strong></p>
+<p>从刷机圈角度，这当然是久违的热闹。<br />
+但从安全角度看，这件事越往后看，越不像是一场单纯的技术表演，而更像是一面镜子。</p>
+<p>它照出来的是：</p>
+<p><strong>我们今天手里的 Android 设备，所谓“锁定”和“安全”，到底有多少是真正稳固的，又有多少只是暂时还没人把那条路完整走通。</strong></p>
+<h2 id="最后"><a class="markdownIt-Anchor" href="#最后"></a> 最后</h2>
+<p>所以，这篇番外想补的核心其实只有一句话：</p>
+<p><strong>这次被捅穿的，不只是 8 Gen 5。</strong></p>
+<p>8 Gen 5 只是最早那个最抓眼球、最有戏剧性的爆点。<br />
+而真正值得警惕的，是随着更多利用细节流出，大家开始意识到：</p>
+<p><strong>问题并不只停留在某一代高通芯片，也不只停留在“能不能永久解 BL”这一个层面。</strong></p>
+<p>一旦事情开始从“启动链漏洞”外溢成“系统内高权限能力也可能被滥用”，它就已经不只是刷机圈的话题了。</p>
+<p>那时候，讨论的重点就不再只是：</p>
+<ul>
+<li>能不能解锁</li>
+<li>能不能 root</li>
+<li>能不能刷机</li>
+</ul>
+<p>而是：</p>
+<p><strong>设备原本承诺给用户的那条安全边界，到底还剩下多少。</strong></p>
+]]></content>
+      <categories>
+        <category>偶有所得</category>
+      </categories>
+      <tags>
+        <tag>小米</tag>
+        <tag>高通</tag>
+        <tag>Bootloader</tag>
+        <tag>全线溃败设备原本承诺给用户的那条安全边界，到底还剩下多少。</tag>
       </tags>
   </entry>
 </search>

@@ -6,7 +6,7 @@
   <link href="https://blog.wayneshao.com/atom.xml" rel="self"/>
   
   <link href="https://blog.wayneshao.com/"/>
-  <updated>2026-03-09T02:29:04.047Z</updated>
+  <updated>2026-03-09T07:04:22.967Z</updated>
   <id>https://blog.wayneshao.com/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>番外｜被捅穿的，不只是 8 Gen 5</title>
+    <link href="https://blog.wayneshao.com/posts/46192.html"/>
+    <id>https://blog.wayneshao.com/posts/46192.html</id>
+    <published>2026-03-09T07:02:25.000Z</published>
+    <updated>2026-03-09T07:04:22.967Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;设备原本承诺给用户的那条安全边界，到底还剩下多少。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;上午，我已经写过一篇更偏整体分析的文章：&lt;a href=&quot;https://blog.wayneshao.com/posts/46191.html&quot;&gt;《2026-03 小米 / 高通 GBL 解锁事件：一次从私有变现走向公开化的漏洞扩散（基于公开信息 + 笔者推演）》&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;但随着下午更多细节被公开，我越来越觉得，这件事还值得再补一篇番外。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="偶有所得" scheme="https://blog.wayneshao.com/categories/%E5%81%B6%E6%9C%89%E6%89%80%E5%BE%97/"/>
+    
+    
+    <category term="小米" scheme="https://blog.wayneshao.com/tags/%E5%B0%8F%E7%B1%B3/"/>
+    
+    <category term="高通" scheme="https://blog.wayneshao.com/tags/%E9%AB%98%E9%80%9A/"/>
+    
+    <category term="Bootloader" scheme="https://blog.wayneshao.com/tags/Bootloader/"/>
+    
+    <category term="全线溃败设备原本承诺给用户的那条安全边界，到底还剩下多少。" scheme="https://blog.wayneshao.com/tags/%E5%85%A8%E7%BA%BF%E6%BA%83%E8%B4%A5%E8%AE%BE%E5%A4%87%E5%8E%9F%E6%9C%AC%E6%89%BF%E8%AF%BA%E7%BB%99%E7%94%A8%E6%88%B7%E7%9A%84%E9%82%A3%E6%9D%A1%E5%AE%89%E5%85%A8%E8%BE%B9%E7%95%8C%EF%BC%8C%E5%88%B0%E5%BA%95%E8%BF%98%E5%89%A9%E4%B8%8B%E5%A4%9A%E5%B0%91%E3%80%82/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2026-03 小米 / 高通 GBL 解锁事件：一次从私有变现走向公开化的漏洞扩散（基于公开信息 + 笔者推演）</title>
     <link href="https://blog.wayneshao.com/posts/46191.html"/>
     <id>https://blog.wayneshao.com/posts/46191.html</id>
     <published>2026-03-09T02:21:50.000Z</published>
-    <updated>2026-03-09T02:29:04.047Z</updated>
+    <updated>2026-03-09T02:31:28.692Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -458,29 +487,6 @@
     <category term="风格转化" scheme="https://blog.wayneshao.com/tags/%E9%A3%8E%E6%A0%BC%E8%BD%AC%E5%8C%96/"/>
     
     <category term="封装" scheme="https://blog.wayneshao.com/tags/%E5%B0%81%E8%A3%85/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用 GitLab CI 进行 hexo 的持续集成</title>
-    <link href="https://blog.wayneshao.com/posts/34874.html"/>
-    <id>https://blog.wayneshao.com/posts/34874.html</id>
-    <published>2019-12-28T11:46:20.000Z</published>
-    <updated>2022-06-08T01:28:50.164Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;其实很早之前我就意识到，把博客的源码不加掩饰的直接托管在 Github 是一件颇为危险的事，配置文件中配置的各种平台的 key 随时有可能被窃取，只是一直懒得动手，今天得闲把整个流程捋顺了，遂记录一下。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="踩坑笔记" scheme="https://blog.wayneshao.com/categories/%E8%B8%A9%E5%9D%91%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="GitLab" scheme="https://blog.wayneshao.com/tags/GitLab/"/>
-    
-    <category term="CI/CD" scheme="https://blog.wayneshao.com/tags/CI-CD/"/>
-    
-    <category term="hexo" scheme="https://blog.wayneshao.com/tags/hexo/"/>
     
   </entry>
   
