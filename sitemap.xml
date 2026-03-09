@@ -79,14 +79,14 @@
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/posts/28460.html</loc>
+    <loc>https://blog.wayneshao.com/posts/9411.html</loc>
     
     <lastmod>2022-06-08</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/posts/9411.html</loc>
+    <loc>https://blog.wayneshao.com/posts/28460.html</loc>
     
     <lastmod>2022-06-08</lastmod>
     
@@ -233,14 +233,14 @@
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/posts/26097.html</loc>
+    <loc>https://blog.wayneshao.com/posts/5284.html</loc>
     
     <lastmod>2022-06-08</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/posts/5284.html</loc>
+    <loc>https://blog.wayneshao.com/posts/26097.html</loc>
     
     <lastmod>2022-06-08</lastmod>
     
@@ -471,13 +471,6 @@
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/posts/52125.html</loc>
-    
-    <lastmod>2019-04-01</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.wayneshao.com/posts/41184.html</loc>
     
     <lastmod>2019-04-01</lastmod>
@@ -485,7 +478,7 @@
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/posts/28398.html</loc>
+    <loc>https://blog.wayneshao.com/posts/52125.html</loc>
     
     <lastmod>2019-04-01</lastmod>
     
@@ -500,6 +493,13 @@
   
   <url>
     <loc>https://blog.wayneshao.com/posts/16190.html</loc>
+    
+    <lastmod>2019-04-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.wayneshao.com/posts/28398.html</loc>
     
     <lastmod>2019-04-01</lastmod>
     
@@ -688,13 +688,6 @@
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/posts/18563.html</loc>
-    
-    <lastmod>2019-03-12</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.wayneshao.com/posts/43794.html</loc>
     
     <lastmod>2019-03-12</lastmod>
@@ -703,6 +696,13 @@
   
   <url>
     <loc>https://blog.wayneshao.com/posts/21523.html</loc>
+    
+    <lastmod>2019-03-12</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.wayneshao.com/posts/18563.html</loc>
     
     <lastmod>2019-03-12</lastmod>
     
@@ -732,13 +732,6 @@
 
   
   <url>
-    <loc>https://blog.wayneshao.com/tags/Winform/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.wayneshao.com/tags/51NOD/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
@@ -760,21 +753,21 @@
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/tags/%E7%89%B9%E6%80%A7/</loc>
+    <loc>https://blog.wayneshao.com/tags/Winform/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/tags/%E6%89%A9%E5%B1%95%E6%96%B9%E6%B3%95/</loc>
+    <loc>https://blog.wayneshao.com/tags/%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/tags/%E7%A1%AC%E4%BB%B6%E4%BF%A1%E6%81%AF/</loc>
+    <loc>https://blog.wayneshao.com/tags/%E6%96%B0%E7%89%B9%E6%80%A7/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -789,6 +782,20 @@
   
   <url>
     <loc>https://blog.wayneshao.com/tags/%E8%B4%A8%E6%95%B0/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.wayneshao.com/tags/%E7%89%B9%E6%80%A7/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.wayneshao.com/tags/%E6%89%A9%E5%B1%95%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -823,14 +830,7 @@
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/tags/%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.wayneshao.com/tags/%E6%96%B0%E7%89%B9%E6%80%A7/</loc>
+    <loc>https://blog.wayneshao.com/tags/%E7%A1%AC%E4%BB%B6%E4%BF%A1%E6%81%AF/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -886,6 +886,13 @@
   </url>
   
   <url>
+    <loc>https://blog.wayneshao.com/tags/%E4%BA%91%E5%8E%9F%E7%94%9F/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.wayneshao.com/tags/%E6%9C%8D%E5%8A%A1%E6%B2%BB%E7%90%86%E5%8F%91%E7%8E%B0/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
@@ -900,7 +907,14 @@
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/tags/%E4%BA%91%E5%8E%9F%E7%94%9F/</loc>
+    <loc>https://blog.wayneshao.com/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.wayneshao.com/tags/WinForm/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -921,7 +935,14 @@
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/</loc>
+    <loc>https://blog.wayneshao.com/tags/MVC/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.wayneshao.com/tags/%E7%B4%A2%E5%BC%95/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -950,27 +971,6 @@
   
   <url>
     <loc>https://blog.wayneshao.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.wayneshao.com/tags/WinForm/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.wayneshao.com/tags/MVC/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.wayneshao.com/tags/%E7%B4%A2%E5%BC%95/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1152,6 +1152,34 @@
   </url>
   
   <url>
+    <loc>https://blog.wayneshao.com/tags/%E5%B0%8F%E7%B1%B3/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.wayneshao.com/tags/%E9%AB%98%E9%80%9A/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.wayneshao.com/tags/Bootloader/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.wayneshao.com/tags/%E5%85%A8%E7%BA%BF%E6%BA%83%E8%B4%A5/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.wayneshao.com/tags/redhat/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
@@ -1194,6 +1222,13 @@
   </url>
   
   <url>
+    <loc>https://blog.wayneshao.com/tags/Log4Net/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.wayneshao.com/tags/Spring-Net/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
@@ -1202,13 +1237,6 @@
   
   <url>
     <loc>https://blog.wayneshao.com/tags/IOC/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.wayneshao.com/tags/Log4Net/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1236,13 +1264,6 @@
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/tags/%E9%AA%8C%E8%AF%81%E7%A0%81/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.wayneshao.com/tags/%E9%A3%8E%E6%A0%BC%E8%BD%AC%E5%8C%96/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
@@ -1257,21 +1278,14 @@
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/tags/Polly/</loc>
+    <loc>https://blog.wayneshao.com/tags/%E9%AA%8C%E8%AF%81%E7%A0%81/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/tags/%E7%86%94%E6%96%AD%E9%99%8D%E7%BA%A7/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.wayneshao.com/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</loc>
+    <loc>https://blog.wayneshao.com/tags/%E5%8D%95%E4%BE%8B/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1299,13 +1313,6 @@
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/tags/%E5%8D%95%E4%BE%8B/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.wayneshao.com/tags/Introspector/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
@@ -1321,6 +1328,27 @@
   
   <url>
     <loc>https://blog.wayneshao.com/tags/ScrapySharp/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.wayneshao.com/tags/Polly/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.wayneshao.com/tags/%E7%86%94%E6%96%AD%E9%99%8D%E7%BA%A7/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.wayneshao.com/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1348,14 +1376,14 @@
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/tags/Bloom-Filter/</loc>
+    <loc>https://blog.wayneshao.com/tags/Extractor/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/tags/Extractor/</loc>
+    <loc>https://blog.wayneshao.com/tags/Bloom-Filter/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1397,20 +1425,6 @@
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/tags/GeoIP2/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.wayneshao.com/tags/IP/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.wayneshao.com/tags/CNCF/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
@@ -1419,6 +1433,20 @@
   
   <url>
     <loc>https://blog.wayneshao.com/tags/Kubernetes/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.wayneshao.com/tags/GeoIP2/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.wayneshao.com/tags/IP/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1495,6 +1523,20 @@
   </url>
   
   <url>
+    <loc>https://blog.wayneshao.com/tags/%E7%A7%9F%E6%88%BF/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.wayneshao.com/tags/%E7%A6%BB%E8%81%8C/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.wayneshao.com/tags/GitFlow/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
@@ -1537,34 +1579,6 @@
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/tags/%E7%A7%9F%E6%88%BF/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.wayneshao.com/tags/%E7%A6%BB%E8%81%8C/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.wayneshao.com/tags/%E6%9F%90%E6%9F%90%E5%A4%A7%E5%AD%A6/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.wayneshao.com/tags/%E5%B7%A5%E4%BD%9C%E7%BB%8F%E5%8E%86/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.wayneshao.com/tags/Kestrel/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
@@ -1593,6 +1607,20 @@
   </url>
   
   <url>
+    <loc>https://blog.wayneshao.com/tags/%E6%9F%90%E6%9F%90%E5%A4%A7%E5%AD%A6/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.wayneshao.com/tags/%E5%B7%A5%E4%BD%9C%E7%BB%8F%E5%8E%86/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.wayneshao.com/tags/await/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
@@ -1608,6 +1636,13 @@
   
   <url>
     <loc>https://blog.wayneshao.com/tags/IIS/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.wayneshao.com/tags/B%E7%AB%99/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1656,13 +1691,6 @@
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/tags/B%E7%AB%99/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.wayneshao.com/tags/InnoSetup/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
@@ -1671,6 +1699,20 @@
   
   <url>
     <loc>https://blog.wayneshao.com/tags/%E5%AE%89%E8%A3%85%E5%8C%85/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.wayneshao.com/tags/SRE/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.wayneshao.com/tags/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1698,14 +1740,14 @@
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/tags/SRE/</loc>
+    <loc>https://blog.wayneshao.com/tags/%E7%A6%BB%E8%81%8C%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/tags/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/</loc>
+    <loc>https://blog.wayneshao.com/tags/%E8%AE%A1%E5%88%92/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1740,21 +1782,14 @@
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/tags/%E7%A6%BB%E8%81%8C%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.wayneshao.com/tags/%E8%AE%A1%E5%88%92/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.wayneshao.com/tags/%E9%AB%98%E8%B4%A8%E9%87%8F%E4%BB%A3%E7%A0%81/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.wayneshao.com/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1776,13 +1811,6 @@
   
   <url>
     <loc>https://blog.wayneshao.com/tags/%E5%90%88%E7%A7%9F/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.wayneshao.com/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1823,42 +1851,7 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://blog.wayneshao.com/tags/%E5%B0%8F%E7%B1%B3/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.wayneshao.com/tags/%E9%AB%98%E9%80%9A/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.wayneshao.com/tags/Bootloader/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.wayneshao.com/tags/%E5%85%A8%E7%BA%BF%E6%BA%83%E8%B4%A5%E8%AE%BE%E5%A4%87%E5%8E%9F%E6%9C%AC%E6%89%BF%E8%AF%BA%E7%BB%99%E7%94%A8%E6%88%B7%E7%9A%84%E9%82%A3%E6%9D%A1%E5%AE%89%E5%85%A8%E8%BE%B9%E7%95%8C%EF%BC%8C%E5%88%B0%E5%BA%95%E8%BF%98%E5%89%A9%E4%B8%8B%E5%A4%9A%E5%B0%91%E3%80%82/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
-  
-  <url>
-    <loc>https://blog.wayneshao.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
   
   <url>
     <loc>https://blog.wayneshao.com/categories/%E7%AE%97%E6%B3%95%E5%88%B7%E9%A2%98/</loc>
@@ -1868,7 +1861,14 @@
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/categories/%E8%B8%A9%E5%9D%91%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://blog.wayneshao.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.wayneshao.com/categories/%E5%81%B6%E6%9C%89%E6%89%80%E5%BE%97/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1882,7 +1882,7 @@
   </url>
   
   <url>
-    <loc>https://blog.wayneshao.com/categories/%E5%81%B6%E6%9C%89%E6%89%80%E5%BE%97/</loc>
+    <loc>https://blog.wayneshao.com/categories/%E8%B8%A9%E5%9D%91%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
