@@ -6,7 +6,7 @@
   <link href="https://blog.wayneshao.com/atom.xml" rel="self"/>
   
   <link href="https://blog.wayneshao.com/"/>
-  <updated>2025-12-23T06:31:05.986Z</updated>
+  <updated>2026-03-09T02:29:04.047Z</updated>
   <id>https://blog.wayneshao.com/</id>
   
   <author>
@@ -17,15 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>2026-03 小米 / 高通 GBL 解锁事件：一次从私有变现走向公开化的漏洞扩散（基于公开信息 + 笔者推演）</title>
+    <link href="https://blog.wayneshao.com/posts/46191.html"/>
+    <id>https://blog.wayneshao.com/posts/46191.html</id>
+    <published>2026-03-09T02:21:50.000Z</published>
+    <updated>2026-03-09T02:29:04.047Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;说明：截至目前，厂商尚未公开完整的技术复盘。本文依据公开可交叉验证的 AOSP 文档、第三方公开 PoC、论坛讨论，以及笔者这几天持续跟进到的玩家侧反馈，对这次“小米 / 高通免拆机解锁 BootLoader”事件做一次阶段性分析。文中涉及根因、传播路径、厂商修补策略与后续影响的部分，均为推测，不代表事实结论。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="偶有所得" scheme="https://blog.wayneshao.com/categories/%E5%81%B6%E6%9C%89%E6%89%80%E5%BE%97/"/>
+    
+    
+    <category term="小米" scheme="https://blog.wayneshao.com/tags/%E5%B0%8F%E7%B1%B3/"/>
+    
+    <category term="高通" scheme="https://blog.wayneshao.com/tags/%E9%AB%98%E9%80%9A/"/>
+    
+    <category term="Bootloader" scheme="https://blog.wayneshao.com/tags/Bootloader/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2025-12-22快手直播涉黄刷屏事件：初步分析（基于公开信息 + 笔者推演）</title>
     <link href="https://blog.wayneshao.com/posts/46190.html"/>
     <id>https://blog.wayneshao.com/posts/46190.html</id>
     <published>2025-12-23T06:20:09.000Z</published>
-    <updated>2025-12-23T06:31:05.986Z</updated>
+    <updated>2025-12-23T07:03:19.978Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;说明：截至目前快手未公开完整事故报告/技术复盘。本文依据公开报道中可交叉验证的时间线与处置动作，并结合笔者事故处理经验，对业内常见的几种猜测做“可能性评估”，最后给出一条更自洽的链路推演。文中涉及根因的部分均为推测，不代表事实结论。&lt;/p&gt;
+&lt;p&gt;说明：截至目前快手未公开完整事故报告/技术复盘。本文依据公开报道中可交叉验证的时间线与处置动作，并结合笔者事故处理经验，对业内常见的几种猜测做“可能性评估”，最后给出一条更自洽的链路推演。文中涉及根因的部分均为推测，不代表事实结论。  &lt;/p&gt;
 &lt;/blockquote&gt;</summary>
     
     
@@ -456,27 +481,6 @@
     <category term="CI/CD" scheme="https://blog.wayneshao.com/tags/CI-CD/"/>
     
     <category term="hexo" scheme="https://blog.wayneshao.com/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git 和 GitFolw 的一些总结</title>
-    <link href="https://blog.wayneshao.com/posts/40738.html"/>
-    <id>https://blog.wayneshao.com/posts/40738.html</id>
-    <published>2019-12-19T11:16:03.000Z</published>
-    <updated>2022-06-08T01:28:50.166Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;总结一下 Git 日常开发使用常用指令，以及一个常见的 GitFlow 实践模型。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="学习笔记" scheme="https://blog.wayneshao.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="Git" scheme="https://blog.wayneshao.com/tags/Git/"/>
-    
-    <category term="GitFlow" scheme="https://blog.wayneshao.com/tags/GitFlow/"/>
     
   </entry>
   
