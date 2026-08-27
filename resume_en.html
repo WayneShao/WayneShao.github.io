@@ -1,485 +1,448 @@
-﻿<!DOCTYPE html>
-<html lang="zh-cn">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" name="robots" content="noindex, noarchive, noimageindex">
-    <title>WayneShao's Resume</title>
-    <style type="text/css">
-        html,
-        body,
-        div,
-        span,
-        applet,
-        object,
-        iframe,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p,
-        blockquote,
-        pre,
-        a,
-        abbr,
-        acronym,
-        address,
-        big,
-        cite,
-        code,
-        del,
-        dfn,
-        em,
-        img,
-        ins,
-        kbd,
-        q,
-        s,
-        samp,
-        small,
-        strike,
-        strong,
-        sub,
-        sup,
-        tt,
-        var,
-        b,
-        u,
-        i,
-        center,
-        dl,
-        dt,
-        dd,
-        ol,
-        ul,
-        li,
-        fieldset,
-        form,
-        label,
-        legend,
-        table,
-        caption,
-        tbody,
-        tfoot,
-        thead,
-        tr,
-        th,
-        td,
-        article,
-        aside,
-        canvas,
-        details,
-        embed,
-        figure,
-        figcaption,
-        footer,
-        header,
-        hgroup,
-        menu,
-        nav,
-        output,
-        ruby,
-        section,
-        summary,
-        time,
-        mark,
-        audio,
-        video {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            font-size: 100%;
-            vertical-align: baseline;
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, noarchive, noimageindex">
+    <meta name="description" content="Wayne Shao's public technical profile: backend, distributed systems, and quantitative engineering.">
+    <title>Wayne Shao | Software Engineer</title>
+    <style>
+        :root {
+            --canvas: #eef1f3;
+            --paper: #fff;
+            --ink: #20262d;
+            --muted: #66717c;
+            --line: #d9dfe4;
+            --soft: #f5f7f8;
+            --accent: #237a78;
+            --accent-dark: #185d5b;
+            --warm: #a24f43;
         }
 
-        html,
+        * { box-sizing: border-box; }
+        html, body { background: var(--canvas); }
         body {
-            color: #444;
-            background-color: #e6e6e6;
+            margin: 0;
+            color: var(--ink);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            font-size: 15px;
+            line-height: 1.75;
+            letter-spacing: 0;
         }
-
-        a:link,
-        a:visited {
-            color: #444;
-            text-decoration: none;
+        a {
+            color: var(--accent-dark);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
         }
-
+        a:hover, a:focus-visible { color: var(--warm); }
         .page {
-            width: 794px;
-            background-color: #fff;
-            margin: 20px auto;
-            padding: 20px 40px;
-            box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+            width: min(960px, calc(100% - 40px));
+            margin: 24px auto;
+            padding: 48px 56px 56px;
+            background: var(--paper);
+            border-top: 4px solid var(--accent);
+            box-shadow: 0 4px 18px rgba(32, 38, 45, 0.09);
         }
-
-        .page-head {
-            line-height: 1.846153846;
+        .header-bar {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 24px;
         }
-
-        .page-head>a {
-            color: #515151;
-            display: inline-block;
-            text-decoration: none;
-            font-size: 36px;
+        .identity h1 {
+            margin: 0;
+            font-size: 40px;
+            line-height: 1.2;
+            font-weight: 700;
         }
-
-        .page-sub-head {
-            font-weight: normal;
+        .role {
+            margin: 10px 0 0;
+            color: var(--accent-dark);
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .direction {
+            margin: 2px 0 0;
+            color: var(--muted);
+            font-size: 15px;
+        }
+        .language-link {
+            flex: 0 0 auto;
+            padding: 5px 10px;
+            border: 1px solid var(--line);
+            border-radius: 4px;
             font-size: 13px;
-            font-size: 0.928571429rem;
-            line-height: 1.846153846;
-            color: #757575;
+            text-decoration: none;
         }
-
-        .panel {
-            margin: 20px 0 10px;
+        .summary {
+            max-width: 760px;
+            margin: 22px 0 0;
+            color: #3d4852;
+            font-size: 16px;
         }
-
-        .panel-head {
-            font-size: 26px;
-            line-height: 1.846153846;
-            border-bottom: 1px solid #e0e0e0;
-            padding-left: 10px;
+        .contact-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 22px;
+            margin: 18px 0 0;
+            padding: 16px 0 0;
+            border-top: 1px solid var(--line);
+            list-style: none;
+            color: var(--muted);
+            font-size: 14px;
         }
-
-        .panel-body {
-            padding: 10px;
+        .contact-list strong { color: var(--ink); font-weight: 600; }
+        .section { margin-top: 40px; }
+        .section-title {
+            margin: 0 0 20px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--line);
+            font-size: 22px;
+            line-height: 1.35;
         }
-
-        .profile {
+        .section-title span {
+            margin-left: 8px;
+            color: var(--muted);
+            font-size: 13px;
+            font-weight: 400;
+        }
+        .capability-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px 32px;
+        }
+        .capability { padding-left: 14px; border-left: 3px solid var(--line); }
+        .capability h3 { margin: 0 0 5px; font-size: 16px; line-height: 1.4; }
+        .capability p { margin: 0; color: #4a5560; }
+        .experience {
             position: relative;
-            overflow: hidden;
-            padding-left: 20px;
+            margin-left: 7px;
+            padding: 0 0 34px 28px;
+            border-left: 1px solid var(--line);
+        }
+        .experience:last-child { padding-bottom: 0; }
+        .experience::before {
+            position: absolute;
+            top: 7px;
+            left: -5px;
+            width: 9px;
+            height: 9px;
+            content: "";
+            background: var(--paper);
+            border: 2px solid var(--accent);
+            border-radius: 50%;
+        }
+        .experience-heading {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .experience-heading h3 { margin: 0; font-size: 19px; line-height: 1.45; }
+        .experience-heading time { flex: 0 0 auto; color: var(--muted); font-size: 13px; }
+        .position { margin: 3px 0 0; color: var(--accent-dark); font-weight: 600; }
+        .experience-summary { margin: 12px 0 0; color: #3f4a54; }
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 8px;
+            margin: 18px 0;
+        }
+        .metric {
+            min-height: 72px;
+            padding: 11px 12px;
+            background: var(--soft);
+            border: 1px solid #e5e9ec;
+            border-radius: 6px;
+        }
+        .metric strong {
+            display: block;
+            color: var(--ink);
+            font-size: 18px;
+            line-height: 1.35;
+            overflow-wrap: anywhere;
+        }
+        .metric span {
+            display: block;
+            margin-top: 2px;
+            color: var(--muted);
+            font-size: 12px;
+            line-height: 1.4;
+        }
+        .fact-list { margin: 12px 0 0; padding-left: 20px; }
+        .fact-list li { margin: 6px 0; padding-left: 4px; }
+        .project-focus {
+            margin-top: 22px;
+            padding: 16px 18px;
+            background: #fbf8f7;
+            border-left: 3px solid var(--warm);
+        }
+        .project-focus h4 { margin: 0; font-size: 17px; line-height: 1.45; }
+        .project-focus .project-meta { margin: 2px 0 10px; color: var(--muted); font-size: 13px; }
+        .technology { margin: 12px 0 0; color: var(--muted); font-size: 13px; }
+        .experience-section {
+            margin-top: 22px;
+            padding-top: 17px;
+            border-top: 1px solid var(--line);
+        }
+        .experience-section h4 { margin: 0; font-size: 17px; line-height: 1.45; }
+        .experience-section .fact-list { margin-top: 8px; }
+        .early-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 26px 34px;
+        }
+        .early-item { padding-top: 14px; border-top: 2px solid var(--line); }
+        .early-item h3 { margin: 0; font-size: 17px; line-height: 1.45; }
+        .early-item .meta { margin: 3px 0 8px; color: var(--muted); font-size: 13px; }
+        .early-item .fact-list { margin-top: 8px; }
+        .writing {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+            gap: 24px;
+        }
+        .writing p { margin: 0; color: #3f4a54; }
+        .writing-links { display: flex; gap: 10px; }
+        .writing-links a {
+            padding: 7px 12px;
+            border: 1px solid var(--accent);
+            border-radius: 4px;
+            text-decoration: none;
         }
 
-        .profile>li {
-            width: 50%;
-            float: left;
-            line-height: 36px;
+        @media (max-width: 720px) {
+            html, body { background: var(--paper); }
+            .page {
+                width: 100%;
+                margin: 0;
+                padding: 30px 20px 44px;
+                border-top-width: 3px;
+                box-shadow: none;
+            }
+            .header-bar, .experience-heading, .writing { display: block; }
+            .language-link { display: inline-block; margin-top: 14px; }
+            .identity h1 { font-size: 32px; }
+            .role { font-size: 17px; }
+            .contact-list { gap: 6px 18px; }
+            .section { margin-top: 34px; }
+            .capability-grid, .early-grid { grid-template-columns: 1fr; gap: 20px; }
+            .experience { padding-left: 20px; }
+            .experience-heading time { display: block; margin-top: 3px; }
+            .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .metric { min-height: 68px; padding: 10px; }
+            .metric strong { font-size: 16px; }
+            .project-focus { padding: 14px; }
+            .writing-links { margin-top: 14px; }
         }
 
-        .content-list {
-            padding-left: 30px;
-        }
-
-        .content-list>li {
-            line-height: 25px;
-        }
-
-        .timeline {
-            padding-left: 30px;
-        }
-
-        .timeline>li {
-            line-height: 36px;
-        }
-
-        .timeline>li>span {
-            width: 33%;
-            display: inline-block;
-        }
-
-        .projects {
-            padding-left: 30px;
-        }
-
-        .project-detail {
-            padding: 15px 5px 0;
-            padding-left: 15px;
-        }
-
-        .project-detail>li>p {
-            margin: 10px;
-            margin-bottom: 15px;
-        }
-
-        .project-detail>li>ul,
-        .project-detail>li>ol {
-            padding-left: 30px;
-            margin: 10px;
-            line-height: 23px;
-        }
-
-        p {
-            text-indent: 2em;
-            line-height: 28px;
-        }
-
-        ol>li>ul>li {
-            margin: 0px 0px 5px;
-        }
-
-        .projects>li {
-            margin: 0px 0px 18px;
+        @media print {
+            html, body { background: #fff; }
+            .page { width: 100%; margin: 0; padding: 20px; box-shadow: none; }
+            .language-link { display: none; }
+            a { color: var(--ink); }
         }
     </style>
 </head>
-
 <body>
-    <section class="page">
-        <hgroup>
-            <h1 class="page-head"><a href="https://blog.wayneshao.com/resume.html" title="Wayne Shao's Resume">Wayne Shao's Personal Resume</a></h1>
-            <h2 class="page-sub-head">.NET Software Engineer </h2>
-        </hgroup>
-        <section class="panel">
-            <h2 class="panel-head">Basic Information</h2>
-            <div class="panel-body">
-                <ul class="profile">
-                    <li>Name : Wayne Shao</li>
-                    <li>Hometown : Shanxi (currently in Shanghai)</li>
-                    <li>Date of Birth : September 1994</li>
-                    <li>Work Experience : 7 years</li>
-                    <li>Email : <a href="mailto:owner@wayneshao.com" >owner@wayneshao.com</a></li>
-                    <li>Tel : <a href="tel:+8613794981669">+86 13794981669</a></li>
-                    <li>Highest Education : <a href="https://www.chsi.com.cn/xlcx/bg.do?vcode=AHLL3P8TXJMLU7RU&ln=en"  target="_blank">Bachelor of Engineering</a></li>
-                    <li>Major : <a href="https://baike.baidu.com/item/%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E4%B8%8E%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F/890173"  target="_blank">IMIS</a></li>
-                    <li>MBTI : <a href="https://www.16personalities.com/infj-personality">INFJ (Advocate)</a></li>
+    <main class="page">
+        <header>
+            <div class="header-bar">
+                <div class="identity">
+                    <h1>Wayne Shao</h1>
+                    <p class="role">Software Engineer</p>
+                    <p class="direction">Backend · Distributed Systems · Quant Engineering</p>
+                </div>
+                <a class="language-link" href="/resume.html" lang="zh-CN" hreflang="zh-CN" data-language-switch>中文</a>
+            </div>
+            <p class="summary">
+                Started full-time software engineering practice in 2016 and continued professionally after graduating in 2017. My work has focused on complex backend systems, distributed systems, and high-performance engineering; I currently work in quantitative development. .NET and C# are core tools, not the boundary of my role.
+            </p>
+            <ul class="contact-list" aria-label="Contact information">
+                <li><strong>Shanghai, China</strong></li>
+                <li><strong>Email</strong> <a href="mailto:owner@wayneshao.com">owner@wayneshao.com</a></li>
+                <li><strong>GitHub</strong> <a href="https://github.com/wayneshao/" target="_blank" rel="noopener noreferrer">github.com/wayneshao</a></li>
+                <li><strong>Blog</strong> <a href="https://blog.wayneshao.com/" target="_blank" rel="noopener noreferrer">blog.wayneshao.com</a></li>
+            </ul>
+        </header>
+
+        <section class="section" aria-labelledby="capabilities-title">
+            <h2 class="section-title" id="capabilities-title">Capabilities</h2>
+            <div class="capability-grid">
+                <article class="capability">
+                    <h3>Backend &amp; Distributed Systems</h3>
+                    <p>C# / .NET / ASP.NET Core are my primary stack. Production work includes high-concurrency, high-performance backend and distributed systems involving caching, messaging, RPC, and consistency.</p>
+                </article>
+                <article class="capability">
+                    <h3>Data &amp; Messaging</h3>
+                    <p>Production experience with MySQL, PostgreSQL, SQL Server, Redis, Elasticsearch, MongoDB, Kafka, and RocketMQ.</p>
+                </article>
+                <article class="capability">
+                    <h3>Real-time Processing</h3>
+                    <p>Real-time data pipelines built with Flink, Kafka, and Hive for large-scale price verification, monitoring, anomaly detection, and business interception.</p>
+                </article>
+                <article class="capability">
+                    <h3>Cloud Native &amp; Engineering</h3>
+                    <p>Hands-on delivery with Docker, Kubernetes, and GitLab CI/CD, plus APM, structured logging, dashboards, alerting, and service governance.</p>
+                </article>
+                <article class="capability">
+                    <h3>Architecture &amp; Delivery</h3>
+                    <p>Experience applying DDD, microservices, caching, high availability, disaster recovery, and performance optimization, alongside technical selection, code review, and engineering standards.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="experience-title">
+            <h2 class="section-title" id="experience-title">Experience</h2>
+            <article class="experience">
+                <div class="experience-heading">
+                    <h3>A Quantitative Private Fund Firm</h3>
+                    <time>Mar 2025 — Present</time>
+                </div>
+                <p class="position">Quantitative Developer</p>
+                <p class="experience-summary">Develop quantitative strategy backtesting and live-trading engineering, market data platforms, and compute-cluster infrastructure using C# / .NET, C++, and Rust for research and production workloads.</p>
+                <div class="metrics" aria-label="Quant engineering system scale and performance">
+                    <div class="metric"><strong>9.37 seconds</strong><span>cached full-market daily replay for 4,932 stocks</span></div>
+                    <div class="metric"><strong>~2.4M events/sec</strong><span>SSE batch-matching throughput</span></div>
+                    <div class="metric"><strong>510–530K/sec</strong><span>single-thread market-data consumption with core pinning</span></div>
+                    <div class="metric"><strong>1.218 billion events</strong><span>extreme-day replay with zero overruns</span></div>
+                    <div class="metric"><strong>40+ servers</strong><span>cross-data-center compute and storage</span></div>
+                    <div class="metric"><strong>80+ GPUs</strong><span>GPU compute resources</span></div>
+                    <div class="metric"><strong>~90 TiB</strong><span>aggregate parallel-filesystem capacity</span></div>
+                </div>
+
+                <section class="experience-section" aria-labelledby="quant-engineering-title">
+                    <h4 id="quant-engineering-title">Quant Strategy, Backtesting &amp; Live Engineering</h4>
+                    <ul class="fact-list">
+                        <li>Contribute to C# / .NET, C++, and Rust backtesting and live-trading paths. A new Rust engine replayed one full market day for 4,932 stocks in 26.85 seconds and 9.37 seconds with cache; a 2,033-stock run completed in 3.77 seconds versus a 28.9-second C# baseline, a 7.7× improvement with byte-identical SHA-256 results.</li>
+                        <li>Developed a C++ batch-matching engine processing about 2.4 million SSE events/sec and 1.1 million SZE events/sec. A 32-thread SSE run matched one day for 2,306 stocks in about 18.9 seconds, with 15.47 million trades byte-identical to the existing matcher.</li>
+                        <li>Optimized a live market-data path, reducing key-thread stalls per model interval from 3,795 ms to 0–1 ms with bit-identical output across 119,669 dump rows. Core-pinned single-thread throughput reached 510–530K events/sec against observed peaks of about 310–370K events/sec.</li>
+                        <li>Completed a 1× full-day replay of an extreme session covering 6,600 instruments and 1.218 billion events with zero ring overruns. Reduced model inference from about 4 ms to 66 μs and end-to-end latency from 327 μs to 124 μs.</li>
+                    </ul>
+                </section>
+
+                <section class="experience-section" aria-labelledby="market-data-title">
+                    <h4 id="market-data-title">Market Data Platform</h4>
+                    <ul class="fact-list">
+                        <li>Migrated full-history SSE/SZE order, trade, snapshot, and futures data from csv.gz to Parquet and Arrow IPC, implementing C# and Rust transcoders, incremental scheduling, old/new consistency checks, and malformed-data recovery.</li>
+                        <li>Optimized streaming market-data loading for monthly datasets exceeding 10 billion rows: 2.4–2.8× faster reads, peak throughput of 1,779 MB/s, and peak memory reduced from about 40 GB to 2–4 GB.</li>
+                        <li>Maintain scheduled production-trading-log ingestion into ClickHouse with result notifications, failure detection, and reruns; minute-level scans cover late logs from the previous three days.</li>
+                    </ul>
+                </section>
+
+                <section class="experience-section" aria-labelledby="cluster-title">
+                    <h4 id="cluster-title">Compute Cluster &amp; Engineering</h4>
+                    <ul class="fact-list">
+                        <li>Build and maintain cross-data-center Slurm, parallel-filesystem, and identity infrastructure spanning 40+ servers, 80+ GPUs, and ~90 TiB of aggregate storage; delivered dual-controller high availability, weighted CPU/GPU partition scheduling, and controller migration.</li>
+                        <li>Standardized node provisioning, retirement, and runtime configuration with Ansible and scripts. Built checks and alerts for node state, GPU health, OOM conditions, and filesystem capacity while handling compute, storage, and network incidents.</li>
+                        <li><strong>AI Engineering:</strong> Integrated multi-agent cross-development, independent audits, and handoff briefs into engineering workflows, and maintain shared scripts for team AI-tool upgrades and configuration.</li>
+                    </ul>
+                </section>
+                <p class="technology">Primary technologies: C# / .NET, C++, Rust, Flink, ClickHouse, Arrow, Parquet, Slurm, BeeGFS, MinIO, Ansible, and CUDA / TensorRT.</p>
+            </article>
+
+            <article class="experience">
+                <div class="experience-heading">
+                    <h3>Tongcheng Network Technology Co., Ltd.</h3>
+                    <time>Apr 2022 — Feb 2025</time>
+                </div>
+                <p class="position">Senior Engineer, Domestic Air Ticket Search (T6)</p>
+                <p class="experience-summary">Worked on Tongcheng's core domestic air ticket query platform, supporting tens of millions of active users and multi-channel distribution traffic. The production system comprised about 25 horizontally scalable services and more than 1,000 service instances.</p>
+                <div class="metrics" aria-label="Domestic air ticket query platform scale">
+                    <div class="metric"><strong>~25</strong><span>scalable services</span></div>
+                    <div class="metric"><strong>1,000+</strong><span>service instances</span></div>
+                    <div class="metric"><strong>28,000+</strong><span>CPU cores</span></div>
+                    <div class="metric"><strong>53+ TB</strong><span>cluster memory</span></div>
+                    <div class="metric"><strong>35,000+ QPS</strong><span>peak request rate</span></div>
+                    <div class="metric"><strong>1,000+ TPS</strong><span>core interface capacity</span></div>
+                    <div class="metric"><strong>~150 ms average</strong><span>query path latency</span></div>
+                    <div class="metric"><strong>~500 ms P95</strong><span>query path latency</span></div>
+                    <div class="metric"><strong>99.9%</strong><span>annual availability</span></div>
+                </div>
+                <ul class="fact-list">
+                    <li><strong>Owner for children's ticket pricing:</strong> Redesigned complex legacy ticketing logic as a pipeline, improving computation performance, code reuse, and flow flexibility.</li>
+                    <li><strong>Owner for the low-price calendar:</strong> Led its refactoring to support finer-grained price data; pricing accuracy increased from about 93% to more than 98%.</li>
+                    <li><strong>Backup owner for round-trip pricing:</strong> Worked with the team to optimize the round-trip query flow, reducing average computation time from about 800 ms to about 400 ms.</li>
+                    <li><strong>Observability and resilience:</strong> Drove key metrics into APM, structured logs, dashboards, and alerts, and improved circuit-breaking and degradation strategies. The core system remained 100% available during network-disconnection drills; in a single-data-center drill, half of the machines stably carried all traffic.</li>
                 </ul>
-            </div>
-        </section>
-        <section class="panel">
-            <h2 class="panel-head">Expertise</h2>
-            <div class="panel-body">
-                <ol class="content-list">
-                    <li>Proficient with <strong>mainstream relational databases</strong> such as <strong>MySQL, SQL Server, and PostgreSQL</strong>, and skilled in performance tuning.</li>
-                    <li>Mastery of <strong>ASP.NET Core</strong>; familiar with core module source code and <strong>ORM components</strong> like EF Core and Dapper.</li>
-                    <li>Skilled in <strong>utilizing NoSQL databases</strong> such as <strong>Redis, ElasticSearch, and MongoDB</strong>.</li>
-                    <li>Familiar with design patterns; possess <strong>system architecture planning abilities</strong> for <strong>distributed system</strong> design and development.</li>
-                    <li>Knowledgeable in <strong>DevOps</strong> with practical experience in <strong>GitLab-based DevOps platforms</strong>.</li>
-                    <li>Competent in <strong>Docker/Kubernetes</strong> technologies with experience in <strong>cloud-native implementations</strong>.</li>
-                    <li>Proficient in <strong>version control</strong> using SVN, Git, and deeply practiced in <strong>GitFlow</strong>.</li>
-                    <li>Experience in <strong>agile development</strong> with practice in <strong>SCRUM methodology</strong>, having served as a Scrum Master.</li>
-                    <li>Understanding of <strong>domain-driven design</strong> with experience transitioning <strong>from monolithic to DDD</strong> architecture.</li>
-                    <li>Strong practice in <strong>unit and integration testing</strong>; experienced in leading <strong>Code Reviews</strong> with insights into writing quality code.</li>
-                    <li>Experience with <strong>other .NET technologies</strong> such as <strong>Xamarin, WinForm, WPF, WCF</strong>.</li>
-                    <li>Fundamental skills in <strong>front-end development</strong> with experience in <strong>Vue.js</strong> for <strong>backend system</strong> page development.</li>
-                    <li>Adaptability to <strong>learning new technologies</strong> with the ability to <strong>quickly</strong> grasp technical <strong>documentation</strong>.</li>
-                    <li>Medical background with industry experience in <strong>healthcare, education, OA, real estate, and tourism</strong> projects.</li>
-                </ol>
-            </div>
-        </section>
-        <section class="panel">
-            <h2 class="panel-head">Work Experiences</h2>
-            <div class="panel-body">
-                <!-- <ul>
-                    <li><strong>【Growth Project Team Leader】</strong>Shenzhen Apu Technology Co.（2019/12 — 2021/11）</li>
-                    <li><strong>【Web Backend R&D Engineer】</strong>Guangzhou Duoyi Network Technology Co., Ltd.（2018/04 — 2019/09）</li>
-                    <li><strong>【Streaming Media R&D Engineer】</strong>Guangzhou Chenrui Puhui Software Technology Co.（2016/11 — 2018/04）</li>
-                    <li><strong>【Student】</strong>Guangdong Medical University（2013/09 — 2017/07）</li>
-                </ul> -->
-                <ul class="timeline">
-                    <li><span>2025/03 - now</span><span><a href="https://www.tianyancapital.com/en/index.html" title=" Tianyan Capital Ltd. " target="_blank"> Tianyan</a></span><span>Quantitative Developer</span></li>
-                    <li><span>2022/04 - 2025/02</span><span><a href="https://www.ly.com/" title=" Tongcheng Network Technology Co., Ltd. " target="_blank"> Tongcheng</a></span><span>Senior Engineer (T6)</span></li>
-                    <li><span>2019/12 — 2021/11</span><span><a href="https://www.apukj.com" title="Shenzhen Apu Technology Co." target="_blank">APU</a></span><span>Growth Project Team Leader</span></li>
-                    <li><span>2018/04 — 2019/09</span><span><a href="https://www.duoyi.com" title="Guangzhou Duoyi Network Technology Co., Ltd." target="_blank">DUOYI</a></span><span>Web Backend R&D Engineer</span></li>
-                    <li><span>2016/11 — 2018/04</span><span><a href="https://www.cr-health.com" title="Guangzhou Chenrui Puhui Software Technology Co." target="_blank">CHENRUI</a></span><span>Streaming Media R&D Engineer</span></li>
-                    <li><span>2013/09 — 2017/07</span><span><a href="https://www.gdmu.edu.cn" title="Guangdong Medical University" target="_blank">GDMU</a></span><span>Student</span></li>
-                </ul>
-            </div>
-        </section>
-        <section class="panel">
-            <h2 class="panel-head">Project Experiences</h2>
-            <div class="panel-body">
-                <ol class="projects">
-                    <li>
-                        <h3 class="project-title">Tongcheng Domestic Air Ticket Query Platform（<time>2022/04-2025/02</time>）</h3>
-                        <ul class="project-detail">
-                            <li>
-                                <b>Project Overview: </b>
-                                <ol>
-                                     The platform supports domestic air ticket searches for Tongcheng, accommodating millions of active users and multi-channel distribution flow demands. The system architecture utilizes 25 horizontally scalable services, comprising over 1000 instances, totaling more than 28,000 CPU cores and over 53 TB of memory. During peak times, the system can handle over 35,000 requests per second, with concurrent processing capability of more than 1,000 TPS for one-way and multi-stop interfaces. The average link latency is maintained below 150ms, with P95 latency also under 500ms, achieving an annual availability of 99.9%, effectively meeting high concurrency and real-time response needs.
-                                </ol>
-                            </li>
-                            <li>
-                                <b>Technology Stack: </b>.NET Core 8, Redis, Docker, etc.
-                            </li>
-                            <li>
-                                <b>Responsibilities:</b>
-                                <ol>
-                                    <li><b>Children's Ticket Pricing Leader:</b> Redesigned the ticketing logic, transforming complex legacy logic into a pipeline process, significantly enhancing computational performance and code reusability while increasing process flexibility.</li>
-                                    <li><b>Low Price Calendar Leader:</b> Led the refactoring of the low price calendar, enabling support for finer dimensions and improved pricing accuracy.</li>
-                                    <li><b>Roundtrip Ticket Price Backup Leader:</b> Collaborated with the team to optimize the round-trip query process, reducing average calculation time from 800ms to 400ms.</li>
-                                </ol>
-                            </li>
-                            <li>
-                                <b>Project Achievements:</b>
-                                <ol>
-                                    <li>Achieved over 1,000 TPS in core business concurrent processing capability, ensuring a smooth user search experience.</li>
-                                    <li>Organized comprehensive performance monitoring and alert mechanisms for quick response when performance is impacted.</li>
-                                    <li>Efficiently refactored the children's ticket logic, improving code maintainability.</li>
-                                    <li>Significantly improved low price calendar accuracy from 93% to over 98%, supporting more detailed low price data delivery both internally and externally.</li>
-                                    <li>Promoted the integration of key metrics into APM, logging, and monitoring dashboards, with 24-hour monitoring and instant alerts for key indicators.</li>
-                                    <li>Enhanced fuse downgrade strategies, maintaining 100% system availability in network failure drills, and ensuring that half the machines stably handle all traffic in single-center drills.</li>
-                                </ol>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3 class="project-title">Price Monitoring and Alert System（<time>2023/12-2025/02</time>）</h3>
-                        <ul class="project-detail">
-                            <li>
-                                <b>Project Overview: </b>
-                                <ol>
-                                     The system monitors real-time query prices based on historical pricing, providing seamless end-to-end filtering and interception capabilities from inquiry to order placement. Utilizing Flink technology, the system performs over a billion checks daily, with peak-period verification surpassing 300,000 checks per second. Upon detecting price anomalies, the system promptly notifies staff via phone or company WeChat for rapid response. Since launching four months ago, the strategy has stabilized with a false positive rate below 1% and a 100% success rate in interception, effectively safeguarding partner interests.
-                                     <li><b>Average Price Calculation:</b> Real-time price recording and storage to Hive tables, with scheduled tasks for average price calculation.</li>
-                                     <li><b>Product Verification:</b> Real-time price verification using Flink, with automatic alerts and blocking of non-compliant prices.</li>
-                                     <li><b>Product Interception:</b> Effectively intercepting abnormal products during the ordering stage.</li>
-                                </ol>
-                            </li>
-                            <li>
-                                <b>Technology Stack: </b>.NET Core 8, ElasticSearch, Flink, Kafka, RocketMQ, Redis, MySQL, etc.
-                            </li>
-                            <li>
-                                <b>Responsibilities (Main Leader):</b>
-                                <ol>
-                                    <li>Responsible for the overall system architecture design and development of key modules, ensuring high performance and scalability.</li>
-                                    <li>Designed and implemented price deviation monitoring logic for automatic detection and handling of abnormal products.</li>
-                                    
-                                </ol>
-                            </li>
-                            <li>
-                                <b>Project Achievements:</b>
-                                <ol>
-                                    <li>Reduced anomaly detection feedback time, with second-level alerts and blocking of abnormal resources; current anomaly resource interception rate is 100% with less than 1% false positives.</li>
-                                    <li>Automated risk control processes significantly reduced operation costs and improved decision-making efficiency.</li>
-                                </ol>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3 class="project-title">Apu Real Estate Platform（<time>2019/12-2021/11</time>）</h3>
-                        <ul class="project-detail">
-                            <li>
-                                <b>Project Overview: </b>
-                                <ol>
-                                    <li><b>Real Estate System:</b> A comprehensive information database for 2B + 2C platforms in the Pearl River Delta region, handling approximately 100,000 QPS.</li>
-                                    <li><b>New House Distribution System:</b> Assists stores and agents in the new house sales process.</li>
-                                    <li><b>Financial Reconciliation System:</b> Facilitates financial dealings with agents, stores, and developers.</li>
-                                </ol>
-                            </li>
-                            <li>
-                                <b>Technology Stack: </b>.NET Core 3.1, Flutter, React.JS, ElasticSearch, Redis, SQLServer...
-                            </li>
-                            <li>
-                                <b>Responsibilities (Backend Lead):</b>
-                                <ol>
-                                    <li>Designed and implemented the order module, including order flow and statistics.</li>
-                                    <li>Collaborated with product teams to refine and discuss requirements, and reviewed product-provided prototypes and UI drafts.</li>
-                                    <li>Actively introduced new team models (GitFlow, DevOps, Scrum, DDD) and collaborated with product-research teams to implement practices.</li>
-                                    <li>Translated the agreed code standards into foundational frameworks and core dependency modules, extracting and encapsulating them as the codebase expanded.</li>
-                                    <li>Advanced the framework from a three-tier architecture to a DDD-rich model, segregating the housing module into a standalone service.</li>
-                            </li>
-                        </ul>
-                    </li>
-                    </li>
-                    <li>
-                        <h3 class="project-title">Duoyi University（<time>2018/04-2019/09</time>）</h3>
-                        <ul class="project-detail">
-                            <li>
-                                <b>Project Overview: </b>
-                                <ol>
-                                    <li><b>Training Camp:</b> A system where internal employees act as lecturers for campus recruitment students, teaching according to the course schedule.</li>
-                                    <li><b>Public Courses:</b> An online learning system open to all employees.</li>
-                                    <li><b>Exams:</b> Provides systems for flexible exam scenarios with question bank configuration, examination, and automatic grading.</li>
-                                </ol>
-                            </li>
-                            <li>
-                                <b>Technology Stack: </b>.NET Core 1.1、ElasticSearch、Redis、PostgreSQL、Docker
-                            </li>
-                            <li>
-                                <b>Responsibilities (Lead Backend Developer):</b>
-                                <ol>
-                                    <li>Responsible for technical selection and development work for new features of the system's backend part.</li>
-                                    <li>Collaborated with planners to evaluate and determine functionalities, ensuring the feasibility of planned solutions.</li>
-                                    <li>Conducted backend newcomer training and code review.</li>
-                            </li>
-                        </ul>
-                    </li>
-                    </li>
-                    <li>
-                        <h3 class="project-title"> CRLIVE Player（<time>2017/03-2018/04</time>）</h3>
-                        <ul class="project-detail">
-                            <li>
-                                <b>Project Overview: </b>
-                                <ol>
-                                    <li><b>Playback:</b> Player component providing foundational capabilities for on-demand and live services.</li>
-                                    <li><b>Remote Control:</b> Integrated with signaling servers, allowing users to remotely control local players via PDAs or mobile phones.</li>
-                                    <li><b>Streaming Media Distribution:</b> Distributed streaming media service capable of integrating third-party streaming media services.</li>
-                                </ol>
-                            </li>
-                            <li>
-                                <b>Technology Stack: </b>FFMPEG、WinForm、WebSocket、SRS、WPF
-                            </li>
-                            <li>
-                                <b>Responsibilities (Streaming Media Engineer):</b>  Developed and maintained the player backend services and streaming media servers.
-                            </li>
-                        </ul>
-                    </li>
+                <p class="technology">Primary technologies: .NET 8, Redis, Docker, APM, and distributed service governance.</p>
 
-                    <li>
-                        <h3 class="project-title"> CR Cloud Assistant<time>2017/01-2017/10</time>）</h3>
-                        <ul class="project-detail">
-                            <li>
-                                <b>Project Overview: </b> Features cloud file management, upload, download, and voice input functionalities. All network communications utilize a self-designed internal protocol.
-                            </li>
+                <section class="project-focus" aria-labelledby="price-monitor-title">
+                    <h4 id="price-monitor-title">Price Monitoring and Alert System</h4>
+                    <p class="project-meta">Dec 2023 — Feb 2025 · Main owner for overall architecture and key modules</p>
+                    <p>Verified real-time query prices against historical baselines and covered the full path from automatic filtering during search to interception at order placement. Anomalies triggered second-level alerts by phone or enterprise WeChat.</p>
+                    <div class="metrics" aria-label="Price monitoring and alert system scale">
+                        <div class="metric"><strong>1B+ / day</strong><span>price checks</span></div>
+                        <div class="metric"><strong>~300K / sec</strong><span>peak verification</span></div>
+                        <div class="metric"><strong>&lt; 1%</strong><span>stable false-positive rate</span></div>
+                        <div class="metric"><strong>100%</strong><span>abnormal-resource interception</span></div>
+                    </div>
+                    <ul class="fact-list">
+                        <li>Owned the overall architecture and key modules, including the design and implementation of price-deviation monitoring.</li>
+                        <li>Used Flink for real-time verification; wrote live prices to Hive and calculated historical averages with scheduled jobs.</li>
+                        <li>Automatically alerted and filtered abnormal products during search, with a second interception step at order placement.</li>
+                    </ul>
+                    <p class="technology">Primary technologies: .NET 8, Flink, Kafka, RocketMQ, Elasticsearch, Redis, MySQL, and Hive.</p>
+                </section>
+            </article>
+        </section>
 
-                        </ul>
-                    </li>
-                    <li>
-                        <h3 class="project-title">Proposal Management System of Guangdong Medical University's Dual Congress（<time>2016/03-2017/11</time>）</h3>
-                        <ul class="project-detail">
-                            <li>
-                                <b>Project Overview:</b> This project automates and paperless the entire process for the annual assemblies of the school's faculty representative conference and union. Primary functions include new proposal submission and review, proposal search, summary analysis, progress tracking of approved proposals, and email notifications at each stage. I served as the main programmer and was responsible for the core code.
-                            </li>
-                        </ul>
+        <section class="section" aria-labelledby="earlier-title">
+            <h2 class="section-title" id="earlier-title">Earlier Experience</h2>
+            <div class="early-grid">
+                <article class="early-item">
+                    <h3>Shenzhen Apu Technology Co., Ltd.</h3>
+                    <p class="meta">Growth Project Team Lead · Dec 2019 — Nov 2021</p>
+                    <ul class="fact-list">
+                        <li>Led backend work for a real-estate platform spanning property data, new-house distribution, and financial reconciliation; the property system handled about 100,000 QPS.</li>
+                        <li>Designed and implemented order workflow and reporting modules, and participated in requirements, prototype, and UI reviews.</li>
+                        <li>Drove GitFlow, DevOps, Scrum, and DDD practices; participated in evolving a three-tier architecture toward DDD and extracting the housing module into an independent service.</li>
+                    </ul>
+                    <p class="technology">.NET Core 3.1, Elasticsearch, Redis, SQL Server, Flutter, React</p>
+                </article>
 
-                    </li>
-                    <li>
-                        <h3 class="project-title">Supervisor listening and scheduling system（<time>2014/03-2015/08</time>）</h3>
-                        <p>······</p>
-                    </li>
-                </ol>
+                <article class="early-item">
+                    <h3>Guangzhou Duoyi Network</h3>
+                    <p class="meta">Web Backend Engineer · Apr 2018 — Sep 2019</p>
+                    <ul class="fact-list">
+                        <li>Developed backend features for Duoyi University's training camp, public course, and examination systems.</li>
+                        <li>Handled technical selection and development for new features, and participated in feasibility reviews, onboarding, and code reviews.</li>
+                    </ul>
+                    <p class="technology">.NET Core 1.1, Elasticsearch, Redis, PostgreSQL, Docker</p>
+                </article>
+
+                <article class="early-item">
+                    <h3>Guangzhou Chenrui Software Technology Co., Ltd.</h3>
+                    <p class="meta">Streaming Media Engineer · Nov 2016 — Apr 2018</p>
+                    <ul class="fact-list">
+                        <li>Worked on the CRLIVE player, remote control, and distributed streaming services, developing and maintaining background player services and streaming servers.</li>
+                        <li>Contributed file management, upload/download, and voice-input features to CR Cloud Assistant; network communication used an internally designed protocol.</li>
+                    </ul>
+                    <p class="technology">WPF, WinForm, FFmpeg, WebSocket, SRS</p>
+                </article>
+
+                <article class="early-item">
+                    <h3>Guangdong Medical University</h3>
+                    <p class="meta">B.Eng. in Information Management and Information Systems · Sep 2013 — Jul 2017</p>
+                    <ul class="fact-list">
+                        <li>Served as the primary programmer for the university proposal-management system, implementing submission, review, analysis, progress tracking, and email notifications.</li>
+                        <li>Earlier work also included a class-observation scheduling system, forming the path from campus projects to full-time software engineering.</li>
+                    </ul>
+                </article>
             </div>
         </section>
-        <section class="panel">
-            <h2 class="panel-head">Fork Me</h2>
-            <div class="panel-body">
-                <ol class="content-list">
-                    <li>
-                        GitHub
-                        :<a href="https://github.com/wayneshao/">https://github.com/wayneshao/</a>
-                    </li>
-                    <li>
-                        Blog
-                        :<a href="https://blog.wayneshao.com/">https://blog.wayneshao.com/</a>
-                    </li>
-                </ol>
+
+        <section class="section" aria-labelledby="writing-title">
+            <h2 class="section-title" id="writing-title">Writing &amp; Open Source <span>Technical Notes</span></h2>
+            <div class="writing">
+                <p>I regularly document software engineering, distributed systems, cloud-native systems, incident analysis, and AI engineering. The blog and public repositories provide a longer record of my technical interests and development beyond individual roles.</p>
+                <div class="writing-links">
+                    <a href="https://blog.wayneshao.com/" target="_blank" rel="noopener noreferrer">Blog</a>
+                    <a href="https://github.com/wayneshao/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
             </div>
         </section>
-        <section class="panel">
-            <h2 class="panel-head">Personal Evaluation</h2>
-            <div class="panel-body">
-                <ol class="content-list">
-                    <li>
-                        <b>Self-Driven:</b><p>Able to proactively learn programming knowledge and apply it to solve practical problems. Uses notes, blogs, and public accounts to document and integrate knowledge, rapidly mastering new knowledge and drawing parallels across different subjects.</p>
-                    </li>
-                    <li>
-                        <b>Reliable:</b><p>Upholds commitments, demonstrates responsibility, ambition, and sees tasks through completion. Takes ownership of problems, willing to bear responsibility.</p>
-                    </li>
-                </ol>
-            </div>
-        </section>
-        <!-- <section class="panel">
-            <h2 class="panel-head">Something I want to do</h2>
-            <div class="panel-body">
-                <ol class="content-list">
-                    <li>Keeping abreast of relevant cutting-edge technologies, actively participating in the technical community and contributing to open source projects.</li>
-                    <li> Diligent blogging and public documentation to share what  have learned while learning.</li>
-                </ol>
-            </div>
-        </section> -->
-    </section>
+    </main>
+    <script src="/js/resume-language.js" defer></script>
 </body>
-
 </html>
