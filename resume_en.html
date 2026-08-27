@@ -317,7 +317,7 @@
                 <section class="experience-section" aria-labelledby="quant-engineering-title">
                     <h4 id="quant-engineering-title">Backtesting &amp; Live Trading Systems</h4>
                     <ul class="fact-list">
-                        <li>Develop C# / .NET, C++, and Rust systems for backtesting and live trading. A new Rust engine replayed one trading day for the full market (4,932 stocks) in 26.85 seconds, or 9.37 seconds with cached inputs. On a separate 2,033-stock workload, the same task fell from a 28.9-second C# baseline to 3.77 seconds, a 7.7× speedup, with byte-identical outputs verified by SHA-256.</li>
+                        <li>Develop C# / .NET, C++, and Rust systems for backtesting and live trading. A new Rust engine replayed one trading day for the full market (4,932 stocks) in 26.85 seconds, or 9.37 seconds with cached inputs. On a separate 2,033-stock workload, the same task fell from a 28.9-second C# baseline to 3.77 seconds, a 7.7× speedup, with byte-identical outputs verified by SHA-256. This shortens full-market replay and result-validation cycles for research iteration.</li>
                         <li>Built a C++ batch matching engine processing about 2.4 million events per second for the Shanghai market. On 32 threads, it processed a full trading day for 2,306 Shanghai-listed stocks in about 18.9 seconds and produced 15.47 million trades byte-identical to the existing implementation.</li>
                         <li>Designed a streaming parallel replay pipeline with run-to-run byte-identical multithreaded results as a hard determinism constraint. A full day across 2,306 stocks, including inference, completed in about 52 minutes, or approximately 4.6× real-time speed.</li>
                         <li>Optimized the live market data path, reducing key-thread stalls within each model interval from 3,795 ms to 0–1 ms while preserving bit-identical output across 119,669 rows. Core-pinned single-thread throughput covered observed production peaks.</li>
@@ -329,7 +329,7 @@
                     <h4 id="market-data-title">Market Data Platform</h4>
                     <ul class="fact-list">
                         <li>Migrated full-history order, trade, and snapshot data for Shanghai and Shenzhen equities, together with futures data, from CSV gzip files to Parquet and Arrow IPC. Implemented C# and Rust transcoders, incremental scheduling, cross-format consistency checks, and malformed-data recovery.</li>
-                        <li>Optimized streaming market data loading for monthly datasets exceeding 10 billion rows, making reads 2.4–2.8× faster, reaching 1,779 MB/s peak throughput, and reducing peak memory use from about 40 GB to 2–4 GB.</li>
+                        <li>Optimized streaming market data loading for monthly datasets exceeding 10 billion rows, making reads 2.4–2.8× faster, reaching 1,779 MB/s peak throughput, and reducing peak memory use from about 40 GB to 2–4 GB. This reduces I/O and memory pressure for large-scale market data research workloads.</li>
                         <li>Process about 100,000 data objects in each daily increment. The post-market data batch covers 50,000–70,000 objects and completes in 2–3.5 minutes; the full workflow, including validation and cross-data-center synchronization, completes in about 20 minutes.</li>
                         <li>Maintain a scheduled pipeline that ingests production trading logs into ClickHouse, with result notifications, failure detection, and reruns. It scans every minute and looks back three days for late-arriving logs.</li>
                     </ul>
@@ -340,7 +340,7 @@
                     <ul class="fact-list">
                         <li>Build and maintain cross-data-center compute infrastructure covering Slurm scheduling, hundred-GPU-scale resources, parallel file systems, and identity services; delivered dual-controller high availability, weighted CPU/GPU partition scheduling, and controller migration.</li>
                         <li>Automated and standardized node provisioning, retirement, and runtime configuration with Ansible and scripts. Added checks and alerts for node state, GPU health, OOM conditions, and filesystem capacity, and resolved compute, storage, and network incidents.</li>
-                        <li><strong>AI Engineering:</strong> Introduced multi-agent collaborative development, independent technical reviews, and structured handoff briefs into engineering workflows, and maintain shared scripts for team-wide AI tooling upgrades and configuration.</li>
+                        <li><strong>AI Engineering:</strong> Established governance and validation practices for AI-assisted development: cross-checked agent implementations, independent audits, and structured handoffs, with result comparison, automated tests, and independent review built into code acceptance; maintain shared scripts for team-wide AI tooling configuration and upgrades.</li>
                     </ul>
                 </section>
                 <p class="technology">Primary technologies: C# / .NET, C++, Rust, Flink, ClickHouse, Arrow, Parquet, Slurm, BeeGFS, MinIO, Ansible, and CUDA / TensorRT.</p>
@@ -373,7 +373,7 @@
                     <h4 id="price-monitor-title">Price Monitoring and Alerting System</h4>
                     <p class="project-meta">Dec 2023 — Feb 2025 · Primary owner of architecture and key modules</p>
                     <p>Validated real-time query prices against historical baselines and enforced safeguards across the full booking flow, from automatic filtering in search to blocking at order placement. Anomalies triggered phone or WeCom alerts within seconds.</p>
-                    <div class="metrics" aria-label="Price monitoring and alert system scale">
+                    <div class="metrics metrics--four" aria-label="Price monitoring and alert system scale">
                         <div class="metric"><strong>1B+ per day</strong><span>price checks</span></div>
                         <div class="metric"><strong>~300K/sec</strong><span>peak validation rate</span></div>
                         <div class="metric"><strong>&lt; 1%</strong><span>steady-state false-positive rate</span></div>

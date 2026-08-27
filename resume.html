@@ -322,7 +322,7 @@
                 <section class="experience-section" aria-labelledby="quant-engineering-title">
                     <h4 id="quant-engineering-title">量化策略与回测/实盘工程</h4>
                     <ul class="fact-list">
-                        <li>参与 C# / .NET、C++ 与 Rust 量化回测及实盘链路研发。新一代 Rust 回测引擎完成全市场（4,932 只股票）单日回放 26.85 秒，使用缓存后总耗时 9.37 秒；另一组 2,033 只股票的同任务回放由 C# 基线 28.9 秒降至 3.77 秒（7.7 倍），结果经 SHA-256 验证逐字节一致。</li>
+                        <li>参与 C# / .NET、C++ 与 Rust 量化回测及实盘链路研发。新一代 Rust 回测引擎完成全市场（4,932 只股票）单日回放 26.85 秒，使用缓存后总耗时 9.37 秒；另一组 2,033 只股票的同任务回放由 C# 基线 28.9 秒降至 3.77 秒（7.7 倍），结果经 SHA-256 验证逐字节一致。缩短全市场级回放与结果验证周期，提高研究迭代效率。</li>
                         <li>开发 C++ 批量撮合引擎，沪市撮合吞吐约 240 万事件/秒；2,306 只沪市股票使用 32 线程完成单日撮合约 18.9 秒，与既有撮合实现对比 1,547 万笔成交逐字节零差异。</li>
                         <li>设计流式在线并行回放，以多线程结果 run-to-run byte-equal 为确定性硬约束；2,306 只股票含推理的单日回放约 52 分钟，达到约 4.6× 实时速度。</li>
                         <li>优化实盘行情链路，将关键线程每模型区间停摆由 3,795 ms 降至 0–1 ms，119,669 行结果 bit 级一致；绑核条件下单线程消费吞吐覆盖已观测的生产行情峰值。</li>
@@ -334,7 +334,7 @@
                     <h4 id="market-data-title">行情数据平台</h4>
                     <ul class="fact-list">
                         <li>推进沪深股票逐笔委托、成交、快照及期货全历史数据由 csv.gz 向 Parquet、Arrow IPC 列式格式迁移，先后以 C# 和 Rust 实现转码、增量调度、新旧数据一致性校验及异常数据修复。</li>
-                        <li>优化行情数据流式加载，月级 100 亿行以上场景读取速度提升 2.4–2.8 倍，峰值达到 1,779 MB/s，峰值内存由约 40 GB 降至 2–4 GB。</li>
+                        <li>优化行情数据流式加载，月级 100 亿行以上场景读取速度提升 2.4–2.8 倍，峰值达到 1,779 MB/s，峰值内存由约 40 GB 降至 2–4 GB。降低大规模行情研究任务的 I/O 与内存压力。</li>
                         <li>日增量约 10 万个对象，其中盘后行情批（5–7 万个对象）在 2–3.5 分钟内完成；包含校验与跨机房同步的全链路约 20 分钟闭环。</li>
                         <li>维护生产交易日志到 ClickHouse 的定时解析管线，提供结果通知、失败检测与补跑；改为分钟级扫描后覆盖回看 3 天内的迟到日志。</li>
                     </ul>
@@ -345,7 +345,7 @@
                     <ul class="fact-list">
                         <li>参与跨机房 Slurm、百卡级别 GPU 计算资源、并行文件系统与统一身份基础设施建设和维护；完成双控制节点高可用、CPU/GPU 分区加权调度及控制节点迁移。</li>
                         <li>使用 Ansible 与脚本标准化新节点上架、退役及运行环境配置，建设节点状态、GPU 健康、OOM 和文件系统容量巡检告警，持续处理计算、存储与网络故障。</li>
-                        <li><strong>AI 工程化：</strong>将多 Agent 交叉开发、独立审计和交接 brief 纳入研发流程，并维护团队统一的 AI 工具升级与配置脚本。</li>
+                        <li><strong>AI 工程化：</strong>建立多 Agent 交叉实现、独立审计与结构化交接机制，将结果对拍、自动化测试与独立审查纳入代码验收流程；维护团队统一的 AI 工具配置与升级脚本。</li>
                     </ul>
                 </section>
                 <p class="technology">主要技术：C# / .NET、C++、Rust、Flink、ClickHouse、Arrow、Parquet、Slurm、BeeGFS、MinIO、Ansible、CUDA / TensorRT。</p>
@@ -378,7 +378,7 @@
                     <h4 id="price-monitor-title">价格监控预警系统</h4>
                     <p class="project-meta">2023/12 — 2025/02 · 整体架构和关键模块主负责人</p>
                     <p>以历史价格为基准，对实时查询价格进行校验，并覆盖查询自动屏蔽到下单拦截的完整链路；异常发生时通过电话或企业微信进行秒级告警。</p>
-                    <div class="metrics" aria-label="价格监控预警系统规模">
+                    <div class="metrics metrics--four" aria-label="价格监控预警系统规模">
                         <div class="metric"><strong>每日十亿级</strong><span>价格校验</span></div>
                         <div class="metric"><strong>峰值约 30 万次/秒</strong><span>实时校验</span></div>
                         <div class="metric"><strong>&lt; 1%</strong><span>稳定期误报率</span></div>
