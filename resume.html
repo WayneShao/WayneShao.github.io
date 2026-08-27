@@ -3,8 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex, noarchive, noimageindex">
+    <meta name="robots" content="index, follow">
     <meta name="description" content="邵玮（Wayne Shao）的公开技术履历：后端、分布式系统与量化工程。">
+    <link rel="canonical" href="https://blog.wayneshao.com/resume.html">
+    <link rel="alternate" hreflang="zh-CN" href="https://blog.wayneshao.com/resume.html">
+    <link rel="alternate" hreflang="en" href="https://blog.wayneshao.com/resume_en.html">
+    <link rel="alternate" hreflang="x-default" href="https://blog.wayneshao.com/resume.html">
     <title>邵玮（Wayne Shao）| 软件工程师</title>
     <style>
         :root {
@@ -153,6 +157,7 @@
             gap: 8px;
             margin: 18px 0;
         }
+        .metrics--four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
         .metric {
             min-height: 72px;
             padding: 11px 12px;
@@ -261,7 +266,8 @@
                 <a class="language-link" href="/resume_en.html" lang="en" hreflang="en" data-language-switch>English</a>
             </div>
             <p class="summary">
-                2016 年起开始全职软件研发实践，2017 年毕业后持续从事软件工程工作。长期参与复杂后端、分布式系统与高性能工程实践，目前从事量化开发。.NET / C# 是主要技术能力，但不是职业边界。
+                2016 年开始全职实习，2017 年毕业后持续从事软件工程工作。长期参与复杂后端、分布式系统与高性能工程实践，目前从事量化开发；<br>
+                主要使用 C# / .NET，并在 C++、Rust 与计算基础设施方向持续开展工程实践。
             </p>
             <ul class="contact-list" aria-label="联系方式">
                 <li><strong>上海</strong></li>
@@ -306,23 +312,20 @@
                 </div>
                 <p class="position">量化开发工程师</p>
                 <p class="experience-summary">负责量化策略回测与实盘工程、行情数据平台及计算集群基础设施研发，使用 C# / .NET、C++ 与 Rust 支撑研究和生产链路。</p>
-                <div class="metrics" aria-label="量化研发系统规模与性能">
+                <div class="metrics metrics--four" aria-label="量化研发性能与正确性">
                     <div class="metric"><strong>9.37 秒</strong><span>4,932 只股票缓存后全市场单日回放</span></div>
-                    <div class="metric"><strong>约 240 万事件/秒</strong><span>上交所批量撮合吞吐</span></div>
-                    <div class="metric"><strong>51–53 万条/秒</strong><span>绑核条件下单线程行情消费</span></div>
-                    <div class="metric"><strong>12.18 亿条事件</strong><span>极端交易日回放，overrun = 0</span></div>
-                    <div class="metric"><strong>40+ 台服务器</strong><span>跨机房计算与存储集群</span></div>
-                    <div class="metric"><strong>80+ 张 GPU</strong><span>GPU 计算资源</span></div>
-                    <div class="metric"><strong>约 90 TiB</strong><span>并行文件系统聚合容量</span></div>
+                    <div class="metric"><strong>7.7 倍</strong><span>Rust 回测相对 C# 基线</span></div>
+                    <div class="metric"><strong>2.4–2.8 倍</strong><span>月级行情数据读取性能提升</span></div>
+                    <div class="metric"><strong>逐字节一致</strong><span>回测与撮合结果验证</span></div>
                 </div>
 
                 <section class="experience-section" aria-labelledby="quant-engineering-title">
                     <h4 id="quant-engineering-title">量化策略与回测/实盘工程</h4>
                     <ul class="fact-list">
                         <li>参与 C# / .NET、C++ 与 Rust 量化回测及实盘链路研发。新一代 Rust 回测引擎完成 4,932 只股票全市场单日回放 26.85 秒，使用缓存后总耗时 9.37 秒；2,033 只股票回放 3.77 秒，相对 C# 基线 28.9 秒提升 7.7 倍，结果 SHA-256 逐字节一致。</li>
-                        <li>开发 C++ 批量撮合引擎，上交所约 240 万事件/秒、深交所约 110 万事件/秒；2,306 只上交所股票使用 32 线程完成单日撮合约 18.9 秒，与既有撮合实现对比 1,547 万笔成交逐字节零差异。</li>
-                        <li>优化实盘行情链路，将关键线程每模型区间停摆由 3,795 ms 降至 0–1 ms，119,669 行结果 bit 级一致；绑核条件下单线程消费吞吐 51–53 万条/秒，覆盖实测约 31–37 万条/秒的行情峰值。</li>
-                        <li>完成极端交易日 6,600 个标的、12.18 亿条事件的全天 1× 回放，ring overrun 为 0；将模型推理由约 4 ms 优化至 66 μs，端到端耗时由 327 μs 降至 124 μs。</li>
+                        <li>开发 C++ 批量撮合引擎，达到百万事件/秒级吞吐；2,306 只上交所股票使用 32 线程完成单日撮合约 18.9 秒，与既有撮合实现对比 1,547 万笔成交逐字节零差异。</li>
+                        <li>优化实盘行情链路，将关键线程每模型区间停摆由 3,795 ms 降至 0–1 ms，119,669 行结果 bit 级一致；绑核条件下单线程消费吞吐覆盖已观测的生产行情峰值。</li>
+                        <li>完成极端交易日 6,600 个标的、十亿级事件的全天 1× 回放，ring overrun 为 0；将模型推理由约 4 ms 优化至 66 μs，端到端耗时由 327 μs 降至 124 μs。</li>
                     </ul>
                 </section>
 
@@ -338,7 +341,7 @@
                 <section class="experience-section" aria-labelledby="cluster-title">
                     <h4 id="cluster-title">计算集群与工程化</h4>
                     <ul class="fact-list">
-                        <li>参与跨机房 Slurm、并行文件系统与统一身份服务建设和维护，覆盖 40+ 台服务器、80+ 张 GPU 与约 90 TiB 聚合存储；完成双控制节点高可用、CPU/GPU 分区加权调度及控制节点迁移。</li>
+                        <li>参与跨机房 Slurm、百卡级别 GPU 计算资源、并行文件系统与统一身份基础设施建设和维护；完成双控制节点高可用、CPU/GPU 分区加权调度及控制节点迁移。</li>
                         <li>使用 Ansible 与脚本标准化新节点上架、退役及运行环境配置，建设节点状态、GPU 健康、OOM 和文件系统容量巡检告警，持续处理计算、存储与网络故障。</li>
                         <li><strong>AI 工程化：</strong>将多 Agent 交叉开发、独立审计和交接 brief 纳入研发流程，并维护团队统一的 AI 工具升级与配置脚本。</li>
                     </ul>
@@ -352,16 +355,13 @@
                     <time>2022/04 — 2025/02</time>
                 </div>
                 <p class="position">国内机票搜索资深工程师（T6）</p>
-                <p class="experience-summary">参与同程旅行国内机票查询核心系统研发，支撑数千万活跃用户与多渠道分销流量。系统由约 25 个可水平扩展服务组成，形成超过 1,000 个实例的大规模生产集群。</p>
+                <p class="experience-summary">参与同程旅行国内机票查询核心系统研发，支撑数千万活跃用户与多渠道分销流量，生产集群包含超过 1,000 个服务实例。</p>
                 <div class="metrics" aria-label="国内机票查询系统规模">
-                    <div class="metric"><strong>约 25 个</strong><span>可水平扩展服务</span></div>
                     <div class="metric"><strong>1,000+</strong><span>服务实例</span></div>
                     <div class="metric"><strong>28,000+</strong><span>CPU Core</span></div>
-                    <div class="metric"><strong>53 TB+</strong><span>集群内存</span></div>
                     <div class="metric"><strong>35,000+ QPS</strong><span>高峰请求量</span></div>
                     <div class="metric"><strong>1,000+ TPS</strong><span>核心接口处理能力</span></div>
-                    <div class="metric"><strong>平均约 150 ms</strong><span>查询链路耗时</span></div>
-                    <div class="metric"><strong>P95 约 500 ms</strong><span>查询链路耗时</span></div>
+                    <div class="metric"><strong>平均约 150 ms / P95 约 500 ms</strong><span>查询链路耗时</span></div>
                     <div class="metric"><strong>99.9%</strong><span>年度可用性</span></div>
                 </div>
                 <ul class="fact-list">

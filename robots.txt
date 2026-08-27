@@ -3,10 +3,9 @@ User-agent: *
 
 Allow: /
 Allow: /archives/
-
-
-Disallow: /resume.html
-Disallow: /resume_en.html
+Allow: /resume.html
+Allow: /resume_en.html
+Allow: /js/resume-language.js
 
 Disallow: /vendors/
 Disallow: /js/
@@ -15,6 +14,7 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://blog.tangxiaozhu.com/search.xml
-Sitemap: http://blog.tangxiaozhu.com/sitemap.xml
-Sitemap: http://blog.tangxiaozhu.com/baidusitemap.xml
+Sitemap: https://blog.wayneshao.com/search.xml
+Sitemap: https://blog.wayneshao.com/sitemap.xml
+Sitemap: https://blog.wayneshao.com/baidusitemap.xml
+Sitemap: https://blog.wayneshao.com/resume-sitemap.xml

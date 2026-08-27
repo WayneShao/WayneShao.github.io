@@ -3,8 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex, noarchive, noimageindex">
+    <meta name="robots" content="index, follow">
     <meta name="description" content="Wayne Shao's public technical profile: backend, distributed systems, and quantitative engineering.">
+    <link rel="canonical" href="https://blog.wayneshao.com/resume_en.html">
+    <link rel="alternate" hreflang="zh-CN" href="https://blog.wayneshao.com/resume.html">
+    <link rel="alternate" hreflang="en" href="https://blog.wayneshao.com/resume_en.html">
+    <link rel="alternate" hreflang="x-default" href="https://blog.wayneshao.com/resume.html">
     <title>Wayne Shao | Software Engineer</title>
     <style>
         :root {
@@ -148,6 +152,7 @@
             gap: 8px;
             margin: 18px 0;
         }
+        .metrics--four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
         .metric {
             min-height: 72px;
             padding: 11px 12px;
@@ -256,7 +261,8 @@
                 <a class="language-link" href="/resume.html" lang="zh-CN" hreflang="zh-CN" data-language-switch>中文</a>
             </div>
             <p class="summary">
-                Started full-time software engineering practice in 2016 and continued professionally after graduating in 2017. My work has focused on complex backend systems, distributed systems, and high-performance engineering; I currently work in quantitative development. .NET and C# are core tools, not the boundary of my role.
+                I started a full-time internship in 2016 and have worked in software engineering since graduating in 2017. My work spans complex backend systems, distributed systems, and high-performance engineering, and I currently work in quantitative development.<br>
+                I primarily use C# and .NET, alongside ongoing engineering work in C++, Rust, and compute infrastructure.
             </p>
             <ul class="contact-list" aria-label="Contact information">
                 <li><strong>Shanghai, China</strong></li>
@@ -301,23 +307,20 @@
                 </div>
                 <p class="position">Quantitative Developer</p>
                 <p class="experience-summary">Develop quantitative strategy backtesting and live-trading engineering, market data platforms, and compute-cluster infrastructure using C# / .NET, C++, and Rust for research and production workloads.</p>
-                <div class="metrics" aria-label="Quant engineering system scale and performance">
+                <div class="metrics metrics--four" aria-label="Quant engineering performance and correctness">
                     <div class="metric"><strong>9.37 seconds</strong><span>cached full-market daily replay for 4,932 stocks</span></div>
-                    <div class="metric"><strong>~2.4M events/sec</strong><span>SSE batch-matching throughput</span></div>
-                    <div class="metric"><strong>510–530K/sec</strong><span>single-thread market-data consumption with core pinning</span></div>
-                    <div class="metric"><strong>1.218 billion events</strong><span>extreme-day replay with zero overruns</span></div>
-                    <div class="metric"><strong>40+ servers</strong><span>cross-data-center compute and storage</span></div>
-                    <div class="metric"><strong>80+ GPUs</strong><span>GPU compute resources</span></div>
-                    <div class="metric"><strong>~90 TiB</strong><span>aggregate parallel-filesystem capacity</span></div>
+                    <div class="metric"><strong>7.7×</strong><span>Rust backtesting versus the C# baseline</span></div>
+                    <div class="metric"><strong>2.4–2.8×</strong><span>monthly market-data read performance</span></div>
+                    <div class="metric"><strong>Byte-identical</strong><span>backtesting and matching validation</span></div>
                 </div>
 
                 <section class="experience-section" aria-labelledby="quant-engineering-title">
                     <h4 id="quant-engineering-title">Quant Strategy, Backtesting &amp; Live Engineering</h4>
                     <ul class="fact-list">
                         <li>Contribute to C# / .NET, C++, and Rust backtesting and live-trading paths. A new Rust engine replayed one full market day for 4,932 stocks in 26.85 seconds and 9.37 seconds with cache; a 2,033-stock run completed in 3.77 seconds versus a 28.9-second C# baseline, a 7.7× improvement with byte-identical SHA-256 results.</li>
-                        <li>Developed a C++ batch-matching engine processing about 2.4 million SSE events/sec and 1.1 million SZE events/sec. A 32-thread SSE run matched one day for 2,306 stocks in about 18.9 seconds, with 15.47 million trades byte-identical to the existing matcher.</li>
-                        <li>Optimized a live market-data path, reducing key-thread stalls per model interval from 3,795 ms to 0–1 ms with bit-identical output across 119,669 dump rows. Core-pinned single-thread throughput reached 510–530K events/sec against observed peaks of about 310–370K events/sec.</li>
-                        <li>Completed a 1× full-day replay of an extreme session covering 6,600 instruments and 1.218 billion events with zero ring overruns. Reduced model inference from about 4 ms to 66 μs and end-to-end latency from 327 μs to 124 μs.</li>
+                        <li>Developed a C++ batch-matching engine with million-event-per-second throughput. A 32-thread SSE run matched one day for 2,306 stocks in about 18.9 seconds, with 15.47 million trades byte-identical to the existing matcher.</li>
+                        <li>Optimized a live market-data path, reducing key-thread stalls per model interval from 3,795 ms to 0–1 ms with bit-identical output across 119,669 dump rows. Core-pinned single-thread throughput covered observed production market-data peaks.</li>
+                        <li>Completed a 1× full-day replay of an extreme session covering 6,600 instruments and more than one billion events with zero ring overruns. Reduced model inference from about 4 ms to 66 μs and end-to-end latency from 327 μs to 124 μs.</li>
                     </ul>
                 </section>
 
@@ -333,7 +336,7 @@
                 <section class="experience-section" aria-labelledby="cluster-title">
                     <h4 id="cluster-title">Compute Cluster &amp; Engineering</h4>
                     <ul class="fact-list">
-                        <li>Build and maintain cross-data-center Slurm, parallel-filesystem, and identity infrastructure spanning 40+ servers, 80+ GPUs, and ~90 TiB of aggregate storage; delivered dual-controller high availability, weighted CPU/GPU partition scheduling, and controller migration.</li>
+                        <li>Build and maintain cross-data-center Slurm, hundred-GPU-scale compute resources, parallel filesystems, and identity infrastructure; delivered dual-controller high availability, weighted CPU/GPU partition scheduling, and controller migration.</li>
                         <li>Standardized node provisioning, retirement, and runtime configuration with Ansible and scripts. Built checks and alerts for node state, GPU health, OOM conditions, and filesystem capacity while handling compute, storage, and network incidents.</li>
                         <li><strong>AI Engineering:</strong> Integrated multi-agent cross-development, independent audits, and handoff briefs into engineering workflows, and maintain shared scripts for team AI-tool upgrades and configuration.</li>
                     </ul>
@@ -347,16 +350,13 @@
                     <time>Apr 2022 — Feb 2025</time>
                 </div>
                 <p class="position">Senior Engineer, Domestic Air Ticket Search (T6)</p>
-                <p class="experience-summary">Worked on Tongcheng's core domestic air ticket query platform, supporting tens of millions of active users and multi-channel distribution traffic. The production system comprised about 25 horizontally scalable services and more than 1,000 service instances.</p>
+                <p class="experience-summary">Worked on Tongcheng's core domestic air ticket query platform, supporting tens of millions of active users and multi-channel distribution traffic across more than 1,000 production service instances.</p>
                 <div class="metrics" aria-label="Domestic air ticket query platform scale">
-                    <div class="metric"><strong>~25</strong><span>scalable services</span></div>
                     <div class="metric"><strong>1,000+</strong><span>service instances</span></div>
                     <div class="metric"><strong>28,000+</strong><span>CPU cores</span></div>
-                    <div class="metric"><strong>53+ TB</strong><span>cluster memory</span></div>
                     <div class="metric"><strong>35,000+ QPS</strong><span>peak request rate</span></div>
                     <div class="metric"><strong>1,000+ TPS</strong><span>core interface capacity</span></div>
-                    <div class="metric"><strong>~150 ms average</strong><span>query path latency</span></div>
-                    <div class="metric"><strong>~500 ms P95</strong><span>query path latency</span></div>
+                    <div class="metric"><strong>~150 ms avg / ~500 ms P95</strong><span>query path latency</span></div>
                     <div class="metric"><strong>99.9%</strong><span>annual availability</span></div>
                 </div>
                 <ul class="fact-list">
