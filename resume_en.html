@@ -261,8 +261,8 @@
                 <a class="language-link" href="/resume.html" lang="zh-CN" hreflang="zh-CN" data-language-switch>中文</a>
             </div>
             <p class="summary">
-                I started a full-time internship in 2016 and have worked in software engineering since graduating in 2017. My work spans complex backend systems, distributed systems, and high-performance engineering, and I currently work in quantitative development.<br>
-                I primarily use C# and .NET, alongside ongoing engineering work in C++, Rust, and compute infrastructure.
+                I started as a full-time intern in 2016 and have worked in software engineering since graduating in 2017. My work spans complex backend systems, distributed systems, and high-performance engineering, and I now work in quantitative software development.<br>
+                My primary stack is C# and .NET, with additional production work in C++, Rust, and compute infrastructure.
             </p>
             <ul class="contact-list" aria-label="Contact information">
                 <li><strong>Shanghai, China</strong></li>
@@ -277,23 +277,23 @@
             <div class="capability-grid">
                 <article class="capability">
                     <h3>Backend &amp; Distributed Systems</h3>
-                    <p>C# / .NET / ASP.NET Core are my primary stack. Production work includes high-concurrency, high-performance backend and distributed systems involving caching, messaging, RPC, and consistency.</p>
+                    <p>C#, .NET, and ASP.NET Core are my primary stack. My production work spans high-throughput, high-performance backend and distributed systems, including caching, messaging, RPC, and distributed consistency.</p>
                 </article>
                 <article class="capability">
                     <h3>Data &amp; Messaging</h3>
-                    <p>Production experience with MySQL, PostgreSQL, SQL Server, Redis, Elasticsearch, MongoDB, Kafka, and RocketMQ.</p>
+                    <p>I have used MySQL, PostgreSQL, SQL Server, Redis, Elasticsearch, MongoDB, Kafka, and RocketMQ in production.</p>
                 </article>
                 <article class="capability">
-                    <h3>Real-time Processing</h3>
-                    <p>Real-time data pipelines built with Flink, Kafka, and Hive for large-scale price verification, monitoring, anomaly detection, and business interception.</p>
+                    <h3>Real-Time Processing</h3>
+                    <p>I have built real-time data pipelines with Flink, Kafka, and Hive for large-scale price validation, monitoring, anomaly detection, and automated blocking.</p>
                 </article>
                 <article class="capability">
-                    <h3>Cloud Native &amp; Engineering</h3>
-                    <p>Hands-on delivery with Docker, Kubernetes, and GitLab CI/CD, plus APM, structured logging, dashboards, alerting, and service governance.</p>
+                    <h3>Cloud-Native Engineering</h3>
+                    <p>I have delivered systems with Docker, Kubernetes, and GitLab CI/CD, and worked on APM instrumentation, structured logging, dashboards, alerting, and service governance.</p>
                 </article>
                 <article class="capability">
                     <h3>Architecture &amp; Delivery</h3>
-                    <p>Experience applying DDD, microservices, caching, high availability, disaster recovery, and performance optimization, alongside technical selection, code review, and engineering standards.</p>
+                    <p>My work includes DDD, microservices, caching architectures, high availability, disaster recovery, and performance optimization, alongside technology selection, code review, and engineering standards.</p>
                 </article>
             </div>
         </section>
@@ -302,43 +302,45 @@
             <h2 class="section-title" id="experience-title">Experience</h2>
             <article class="experience">
                 <div class="experience-heading">
-                    <h3>A Quantitative Private Fund Firm</h3>
+                    <h3>A Quantitative Investment Firm</h3>
                     <time>Mar 2025 — Present</time>
                 </div>
                 <p class="position">Quantitative Developer</p>
-                <p class="experience-summary">Develop quantitative strategy backtesting and live-trading engineering, market data platforms, and compute-cluster infrastructure using C# / .NET, C++, and Rust for research and production workloads.</p>
+                <p class="experience-summary">Develop and maintain backtesting and live trading systems, market data platforms, and compute cluster infrastructure, using C# / .NET, C++, and Rust to support research and production workloads.</p>
                 <div class="metrics metrics--four" aria-label="Quant engineering performance and correctness">
-                    <div class="metric"><strong>9.37 seconds</strong><span>cached full-market daily replay for 4,932 stocks</span></div>
-                    <div class="metric"><strong>7.7×</strong><span>Rust backtesting versus the C# baseline</span></div>
-                    <div class="metric"><strong>2.4–2.8×</strong><span>monthly market-data read performance</span></div>
-                    <div class="metric"><strong>Byte-identical</strong><span>backtesting and matching validation</span></div>
+                    <div class="metric"><strong>9.37 seconds</strong><span>cached full-market replay for one trading day across 4,932 stocks</span></div>
+                    <div class="metric"><strong>7.7×</strong><span>faster than the C# backtesting baseline</span></div>
+                    <div class="metric"><strong>2.4–2.8×</strong><span>faster reads for monthly market data workloads</span></div>
+                    <div class="metric"><strong>Byte-identical</strong><span>validated backtest and matching outputs</span></div>
                 </div>
 
                 <section class="experience-section" aria-labelledby="quant-engineering-title">
-                    <h4 id="quant-engineering-title">Quant Strategy, Backtesting &amp; Live Engineering</h4>
+                    <h4 id="quant-engineering-title">Backtesting &amp; Live Trading Systems</h4>
                     <ul class="fact-list">
-                        <li>Contribute to C# / .NET, C++, and Rust backtesting and live-trading paths. A new Rust engine replayed one full market day for 4,932 stocks in 26.85 seconds and 9.37 seconds with cache; a 2,033-stock run completed in 3.77 seconds versus a 28.9-second C# baseline, a 7.7× improvement with byte-identical SHA-256 results.</li>
-                        <li>Developed a C++ batch-matching engine with million-event-per-second throughput. A 32-thread SSE run matched one day for 2,306 stocks in about 18.9 seconds, with 15.47 million trades byte-identical to the existing matcher.</li>
-                        <li>Optimized a live market-data path, reducing key-thread stalls per model interval from 3,795 ms to 0–1 ms with bit-identical output across 119,669 dump rows. Core-pinned single-thread throughput covered observed production market-data peaks.</li>
-                        <li>Completed a 1× full-day replay of an extreme session covering 6,600 instruments and more than one billion events with zero ring overruns. Reduced model inference from about 4 ms to 66 μs and end-to-end latency from 327 μs to 124 μs.</li>
+                        <li>Develop C# / .NET, C++, and Rust systems for backtesting and live trading. A new Rust engine replayed one trading day for the full market (4,932 stocks) in 26.85 seconds, or 9.37 seconds with cached inputs. On a separate 2,033-stock workload, the same task fell from a 28.9-second C# baseline to 3.77 seconds, a 7.7× speedup, with byte-identical outputs verified by SHA-256.</li>
+                        <li>Built a C++ batch matching engine processing about 2.4 million events per second for the Shanghai market. On 32 threads, it processed a full trading day for 2,306 Shanghai-listed stocks in about 18.9 seconds and produced 15.47 million trades byte-identical to the existing implementation.</li>
+                        <li>Designed a streaming parallel replay pipeline with run-to-run byte-identical multithreaded results as a hard determinism constraint. A full day across 2,306 stocks, including inference, completed in about 52 minutes, or approximately 4.6× real-time speed.</li>
+                        <li>Optimized the live market data path, reducing key-thread stalls within each model interval from 3,795 ms to 0–1 ms while preserving bit-identical output across 119,669 rows. Core-pinned single-thread throughput covered observed production peaks.</li>
+                        <li>Completed a full-day replay at real-time speed (1×) for an extreme session covering 6,600 instruments and more than one billion events, with zero ring overruns. Reduced inference from about 4 ms in ONNX Runtime to 66 μs (269 μs for a monolithic TensorRT engine and 66 μs after parallel graph partitioning); end-to-end latency, including feature packing, fell from 327 μs to 124 μs, with a 65× improvement at p99.</li>
                     </ul>
                 </section>
 
                 <section class="experience-section" aria-labelledby="market-data-title">
                     <h4 id="market-data-title">Market Data Platform</h4>
                     <ul class="fact-list">
-                        <li>Migrated full-history SSE/SZE order, trade, snapshot, and futures data from csv.gz to Parquet and Arrow IPC, implementing C# and Rust transcoders, incremental scheduling, old/new consistency checks, and malformed-data recovery.</li>
-                        <li>Optimized streaming market-data loading for monthly datasets exceeding 10 billion rows: 2.4–2.8× faster reads, peak throughput of 1,779 MB/s, and peak memory reduced from about 40 GB to 2–4 GB.</li>
-                        <li>Maintain scheduled production-trading-log ingestion into ClickHouse with result notifications, failure detection, and reruns; minute-level scans cover late logs from the previous three days.</li>
+                        <li>Migrated full-history order, trade, and snapshot data for Shanghai and Shenzhen equities, together with futures data, from CSV gzip files to Parquet and Arrow IPC. Implemented C# and Rust transcoders, incremental scheduling, cross-format consistency checks, and malformed-data recovery.</li>
+                        <li>Optimized streaming market data loading for monthly datasets exceeding 10 billion rows, making reads 2.4–2.8× faster, reaching 1,779 MB/s peak throughput, and reducing peak memory use from about 40 GB to 2–4 GB.</li>
+                        <li>Process about 100,000 data objects in each daily increment. The post-market data batch covers 50,000–70,000 objects and completes in 2–3.5 minutes; the full workflow, including validation and cross-data-center synchronization, completes in about 20 minutes.</li>
+                        <li>Maintain a scheduled pipeline that ingests production trading logs into ClickHouse, with result notifications, failure detection, and reruns. It scans every minute and looks back three days for late-arriving logs.</li>
                     </ul>
                 </section>
 
                 <section class="experience-section" aria-labelledby="cluster-title">
-                    <h4 id="cluster-title">Compute Cluster &amp; Engineering</h4>
+                    <h4 id="cluster-title">Compute Infrastructure &amp; Engineering</h4>
                     <ul class="fact-list">
-                        <li>Build and maintain cross-data-center Slurm, hundred-GPU-scale compute resources, parallel filesystems, and identity infrastructure; delivered dual-controller high availability, weighted CPU/GPU partition scheduling, and controller migration.</li>
-                        <li>Standardized node provisioning, retirement, and runtime configuration with Ansible and scripts. Built checks and alerts for node state, GPU health, OOM conditions, and filesystem capacity while handling compute, storage, and network incidents.</li>
-                        <li><strong>AI Engineering:</strong> Integrated multi-agent cross-development, independent audits, and handoff briefs into engineering workflows, and maintain shared scripts for team AI-tool upgrades and configuration.</li>
+                        <li>Build and maintain cross-data-center compute infrastructure covering Slurm scheduling, hundred-GPU-scale resources, parallel file systems, and identity services; delivered dual-controller high availability, weighted CPU/GPU partition scheduling, and controller migration.</li>
+                        <li>Automated and standardized node provisioning, retirement, and runtime configuration with Ansible and scripts. Added checks and alerts for node state, GPU health, OOM conditions, and filesystem capacity, and resolved compute, storage, and network incidents.</li>
+                        <li><strong>AI Engineering:</strong> Introduced multi-agent collaborative development, independent technical reviews, and structured handoff briefs into engineering workflows, and maintain shared scripts for team-wide AI tooling upgrades and configuration.</li>
                     </ul>
                 </section>
                 <p class="technology">Primary technologies: C# / .NET, C++, Rust, Flink, ClickHouse, Arrow, Parquet, Slurm, BeeGFS, MinIO, Ansible, and CUDA / TensorRT.</p>
@@ -349,38 +351,38 @@
                     <h3>Tongcheng Network Technology Co., Ltd.</h3>
                     <time>Apr 2022 — Feb 2025</time>
                 </div>
-                <p class="position">Senior Engineer, Domestic Air Ticket Search (T6)</p>
-                <p class="experience-summary">Worked on Tongcheng's core domestic air ticket query platform, supporting tens of millions of active users and multi-channel distribution traffic across more than 1,000 production service instances.</p>
+                <p class="position">Senior Engineer, Domestic Flight Search (T6)</p>
+                <p class="experience-summary">Worked on Tongcheng's core domestic flight-search platform, supporting tens of millions of active users and multi-channel distribution traffic through more than 1,000 production service instances.</p>
                 <div class="metrics" aria-label="Domestic air ticket query platform scale">
                     <div class="metric"><strong>1,000+</strong><span>service instances</span></div>
                     <div class="metric"><strong>28,000+</strong><span>CPU cores</span></div>
                     <div class="metric"><strong>35,000+ QPS</strong><span>peak request rate</span></div>
-                    <div class="metric"><strong>1,000+ TPS</strong><span>core interface capacity</span></div>
+                    <div class="metric"><strong>1,000+ TPS</strong><span>core API throughput</span></div>
                     <div class="metric"><strong>~150 ms avg / ~500 ms P95</strong><span>query path latency</span></div>
                     <div class="metric"><strong>99.9%</strong><span>annual availability</span></div>
                 </div>
                 <ul class="fact-list">
-                    <li><strong>Owner for children's ticket pricing:</strong> Redesigned complex legacy ticketing logic as a pipeline, improving computation performance, code reuse, and flow flexibility.</li>
-                    <li><strong>Owner for the low-price calendar:</strong> Led its refactoring to support finer-grained price data; pricing accuracy increased from about 93% to more than 98%.</li>
-                    <li><strong>Backup owner for round-trip pricing:</strong> Worked with the team to optimize the round-trip query flow, reducing average computation time from about 800 ms to about 400 ms.</li>
-                    <li><strong>Observability and resilience:</strong> Drove key metrics into APM, structured logs, dashboards, and alerts, and improved circuit-breaking and degradation strategies. The core system remained 100% available during network-disconnection drills; in a single-data-center drill, half of the machines stably carried all traffic.</li>
+                    <li><strong>Children's fare pricing:</strong> Owned and redesigned complex legacy fare logic as a pipeline, improving runtime performance, code reuse, and workflow flexibility.</li>
+                    <li><strong>Low-fare calendar:</strong> Led a refactor to support finer-grained fare data, increasing low-fare accuracy from about 93% to more than 98%.</li>
+                    <li><strong>Round-trip fare calculation:</strong> Served as the secondary owner and worked with the team to optimize the query flow, reducing average computation time from about 800 ms to about 400 ms.</li>
+                    <li><strong>Observability and resilience:</strong> Instrumented key metrics through APM, structured logging, dashboards, and alerts, and improved circuit-breaking and degradation strategies. The core system remained 100% available during a network-isolation drill; during a single-data-center drill, the remaining half of the fleet sustained the full production load.</li>
                 </ul>
                 <p class="technology">Primary technologies: .NET 8, Redis, Docker, APM, and distributed service governance.</p>
 
                 <section class="project-focus" aria-labelledby="price-monitor-title">
-                    <h4 id="price-monitor-title">Price Monitoring and Alert System</h4>
-                    <p class="project-meta">Dec 2023 — Feb 2025 · Main owner for overall architecture and key modules</p>
-                    <p>Verified real-time query prices against historical baselines and covered the full path from automatic filtering during search to interception at order placement. Anomalies triggered second-level alerts by phone or enterprise WeChat.</p>
+                    <h4 id="price-monitor-title">Price Monitoring and Alerting System</h4>
+                    <p class="project-meta">Dec 2023 — Feb 2025 · Primary owner of architecture and key modules</p>
+                    <p>Validated real-time query prices against historical baselines and enforced safeguards across the full booking flow, from automatic filtering in search to blocking at order placement. Anomalies triggered phone or WeCom alerts within seconds.</p>
                     <div class="metrics" aria-label="Price monitoring and alert system scale">
-                        <div class="metric"><strong>1B+ / day</strong><span>price checks</span></div>
-                        <div class="metric"><strong>~300K / sec</strong><span>peak verification</span></div>
-                        <div class="metric"><strong>&lt; 1%</strong><span>stable false-positive rate</span></div>
-                        <div class="metric"><strong>100%</strong><span>abnormal-resource interception</span></div>
+                        <div class="metric"><strong>1B+ per day</strong><span>price checks</span></div>
+                        <div class="metric"><strong>~300K/sec</strong><span>peak validation rate</span></div>
+                        <div class="metric"><strong>&lt; 1%</strong><span>steady-state false-positive rate</span></div>
+                        <div class="metric"><strong>100%</strong><span>anomalous-product blocking</span></div>
                     </div>
                     <ul class="fact-list">
-                        <li>Owned the overall architecture and key modules, including the design and implementation of price-deviation monitoring.</li>
-                        <li>Used Flink for real-time verification; wrote live prices to Hive and calculated historical averages with scheduled jobs.</li>
-                        <li>Automatically alerted and filtered abnormal products during search, with a second interception step at order placement.</li>
+                        <li>Owned the overall architecture and key modules, and designed and implemented the price deviation monitoring logic.</li>
+                        <li>Used Flink for real-time price validation, persisted live prices to Hive, and computed historical averages through scheduled jobs.</li>
+                        <li>Triggered alerts and automatically filtered anomalous products during search, with a second blocking check at order placement.</li>
                     </ul>
                     <p class="technology">Primary technologies: .NET 8, Flink, Kafka, RocketMQ, Elasticsearch, Redis, MySQL, and Hive.</p>
                 </section>
@@ -394,9 +396,9 @@
                     <h3>Shenzhen Apu Technology Co., Ltd.</h3>
                     <p class="meta">Growth Project Team Lead · Dec 2019 — Nov 2021</p>
                     <ul class="fact-list">
-                        <li>Led backend work for a real-estate platform spanning property data, new-house distribution, and financial reconciliation; the property system handled about 100,000 QPS.</li>
-                        <li>Designed and implemented order workflow and reporting modules, and participated in requirements, prototype, and UI reviews.</li>
-                        <li>Drove GitFlow, DevOps, Scrum, and DDD practices; participated in evolving a three-tier architecture toward DDD and extracting the housing module into an independent service.</li>
+                        <li>Led backend work for a real estate platform spanning property data, new-home distribution, and financial reconciliation; the property data system handled about 100,000 QPS.</li>
+                        <li>Designed and implemented order workflow and reporting modules, and participated in requirements analysis, prototype reviews, and UI reviews.</li>
+                        <li>Drove GitFlow, DevOps, Scrum, and DDD practices; helped evolve a three-tier architecture toward DDD and extracted the housing module into an independent service.</li>
                     </ul>
                     <p class="technology">.NET Core 3.1, Elasticsearch, Redis, SQL Server, Flutter, React</p>
                 </article>
@@ -406,7 +408,7 @@
                     <p class="meta">Web Backend Engineer · Apr 2018 — Sep 2019</p>
                     <ul class="fact-list">
                         <li>Developed backend features for Duoyi University's training camp, public course, and examination systems.</li>
-                        <li>Handled technical selection and development for new features, and participated in feasibility reviews, onboarding, and code reviews.</li>
+                        <li>Selected technologies and implemented new features, and contributed to feasibility reviews, onboarding, and code review.</li>
                     </ul>
                     <p class="technology">.NET Core 1.1, Elasticsearch, Redis, PostgreSQL, Docker</p>
                 </article>
@@ -415,8 +417,8 @@
                     <h3>Guangzhou Chenrui Software Technology Co., Ltd.</h3>
                     <p class="meta">Streaming Media Engineer · Nov 2016 — Apr 2018</p>
                     <ul class="fact-list">
-                        <li>Worked on the CRLIVE player, remote control, and distributed streaming services, developing and maintaining background player services and streaming servers.</li>
-                        <li>Contributed file management, upload/download, and voice-input features to CR Cloud Assistant; network communication used an internally designed protocol.</li>
+                        <li>Worked on the CRLIVE player, remote control, and distributed streaming services, developing and maintaining the player's long-running background service and streaming server components.</li>
+                        <li>Contributed file management, upload/download, and voice-input features to CR Cloud Assistant; network communication used an internally designed and encapsulated protocol.</li>
                     </ul>
                     <p class="technology">WPF, WinForm, FFmpeg, WebSocket, SRS</p>
                 </article>
@@ -425,8 +427,8 @@
                     <h3>Guangdong Medical University</h3>
                     <p class="meta">B.Eng. in Information Management and Information Systems · Sep 2013 — Jul 2017</p>
                     <ul class="fact-list">
-                        <li>Served as the primary programmer for the university proposal-management system, implementing submission, review, analysis, progress tracking, and email notifications.</li>
-                        <li>Earlier work also included a class-observation scheduling system, forming the path from campus projects to full-time software engineering.</li>
+                        <li>Served as the primary programmer for the university proposal management system, implementing submission, review, analysis, progress tracking, and email notifications.</li>
+                        <li>Earlier work also included a class-observation scheduling system, marking the transition from campus projects to full-time software engineering.</li>
                     </ul>
                 </article>
             </div>
@@ -435,7 +437,7 @@
         <section class="section" aria-labelledby="writing-title">
             <h2 class="section-title" id="writing-title">Writing &amp; Open Source <span>Technical Notes</span></h2>
             <div class="writing">
-                <p>I regularly document software engineering, distributed systems, cloud-native systems, incident analysis, and AI engineering. The blog and public repositories provide a longer record of my technical interests and development beyond individual roles.</p>
+                <p>I maintain long-running technical notes on software engineering, distributed systems, cloud-native infrastructure, incident analysis, and AI engineering. The blog and public repositories provide a broader record of my technical interests and growth beyond individual roles.</p>
                 <div class="writing-links">
                     <a href="https://blog.wayneshao.com/" target="_blank" rel="noopener noreferrer">Blog</a>
                     <a href="https://github.com/wayneshao/" target="_blank" rel="noopener noreferrer">GitHub</a>
