@@ -1,0 +1,14 @@
+Live2D web runtime notices
+
+Hiyori Momose sample data:
+https://www.live2d.com/zh-CHS/learn/sample/momose-hiyori/
+https://www.live2d.com/zh-CHS/learn/sample/model-terms/
+
+Live2D Cubism Core for Web:
+https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js
+
+PixiJS 6.5.10:
+https://www.npmjs.com/package/pixi.js/v/6.5.10
+
+pixi-live2d-display 0.4.0:
+https://www.npmjs.com/package/pixi-live2d-display/v/0.4.0
